@@ -2,7 +2,7 @@
 	import heroImage from '$lib/assets/hero-image.jpeg';
 </script>
 
-<div class="w-full bg-background">
+<div class="w-full">
 	<div class="mx-auto lg:flex max-w-7xl justify-between items-center p-x6 pb-24 pt-10 lg:px-8">
 		<div class="basis-7/12">
 			<h1 class="text-5xl font-bold font-sans">Schön, dass du hier bist!</h1>

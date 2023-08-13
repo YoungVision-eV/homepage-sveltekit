@@ -12,7 +12,7 @@
 	let menuOpen = false;
 </script>
 
-<header class="bg-background">
+<header>
 	<nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 		<div class="flex lg:flex-1">
 			<a href="/" class="-m-1.5 p-1.5">
@@ -20,6 +20,7 @@
 				<img class="h-8 w-auto" src={logo} alt="YoungVision Logo" />
 			</a>
 		</div>
+		<!-- Mobile menu -->
 		<div class="flex lg:hidden">
 			<button
 				type="button"
@@ -43,6 +44,7 @@
 				</svg>
 			</button>
 		</div>
+		<!-- Desktop menu -->
 		<div class="hidden lg:flex lg:gap-x-12">
 			{#each Object.entries(pages) as [page, url]}
 				<a href={url} class="text-sm font-semibold leading-6 text-black hover:underline">{page}</a>
