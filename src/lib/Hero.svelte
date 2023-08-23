@@ -1,6 +1,7 @@
 <script>
 	import heroImage from '$lib/assets/hero-image.jpeg';
 	import heroBackground from '$lib/assets/background-hero.jpeg';
+	import Button from './components/Button.svelte';
 </script>
 
 <div class="w-full bg-cover" style="background-image: url({heroBackground});">
@@ -11,14 +12,7 @@
 				Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 				Elit sunt amet fugiat veniam occaecat fugiat aliqua.
 			</p>
-			<button
-				class="flex mt-8 p-4 px-8 bg-black text-white text-xl font-bold justify-between items-center"
-			>
-				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<circle cx="12" cy="12" r="10" stroke-width="3.45596" />
-				</svg>
-				Call To Action</button
-			>
+			<Button text="Call To Action" inverted={true} />
 		</div>
 		<div class="basis-5/12">
 			<img
