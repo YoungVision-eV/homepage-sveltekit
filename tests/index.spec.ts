@@ -7,6 +7,10 @@ test.beforeEach(async ({ page }) => {
 test('index page screenshot', async ({ page }) => {
 	await expect(page).toHaveScreenshot();
 });
+test('read more section screenshot', async ({ page }) => {
+	await page.getByRole('button', { name: 'Read more' }).focus();
+	await expect(page).toHaveScreenshot();
+});
 test('index page has navigation', async ({ page }) => {
 	await expect(page.getByRole('navigation')).toBeVisible();
 });
