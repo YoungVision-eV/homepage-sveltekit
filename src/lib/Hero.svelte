@@ -1,25 +1,25 @@
 <script>
-	import heroImage from '$lib/assets/hero-image.jpeg';
-	import heroBackground from '$lib/assets/background-hero.jpeg';
+	import heroImage from '$lib/assets/hero-image-landscape.jpeg';
+	import heroBackground from '$lib/assets/background-hero-landscape.jpeg';
 	import Button from './components/Button.svelte';
 </script>
 
 <div class="w-full bg-cover" style="background-image: url({heroBackground});">
-	<div class="mx-auto lg:flex max-w-7xl justify-between items-center p-x6 pb-24 pt-10 lg:px-8">
-		<div class="basis-7/12">
-			<h1 class="text-5xl font-bold font-sans">Schön, dass du hier bist!</h1>
-			<p class="text-xl mt-12">
-				Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-				Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-			</p>
-			<Button text="Call To Action" inverted={true} />
-		</div>
-		<div class="basis-5/12">
+	<div class="mx-auto max-w-7xl justify-between items-center px-5 pb-16 pt-14 lg:px-8">
+		<div class="mx-6 h-96">
 			<img
-				class="rounded-2xl h-[36rem] object-cover"
+				class="rounded-2xl h-full w-auto object-cover"
 				src={heroImage}
 				alt="People sit on the ground hugging and embracing the person in the middle"
 			/>
+		</div>
+		<div class="mt-14">
+			<h1 class="text-3xl font-bold font-sans">Schön, dass du hier bist!</h1>
+			<p class="text-xl mt-8">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua ut enim ad.
+			</p>
+			<Button class="mx-auto" text="Call To Action" inverted={true} />
 		</div>
 	</div>
 </div>
