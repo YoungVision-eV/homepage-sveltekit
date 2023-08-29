@@ -1,6 +1,6 @@
 <script>
 	import readMoreBackground from '$lib/assets/background-read-more.jpeg';
-	import Button from './components/Button.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="w-full bg-cover pt-12 pb-16" style="background-image: url({readMoreBackground});">

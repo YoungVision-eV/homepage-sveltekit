@@ -1,7 +1,7 @@
 <script>
 	import heroImage from '$lib/assets/hero-image-landscape.jpeg';
 	import heroBackground from '$lib/assets/background-hero-landscape.jpeg';
-	import Button from './components/Button.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="w-full bg-cover" style="background-image: url({heroBackground});">

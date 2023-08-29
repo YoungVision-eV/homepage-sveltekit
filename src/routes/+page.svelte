@@ -1,7 +1,7 @@
 <script>
-	import Navbar from '$lib/Navbar.svelte';
-	import Hero from '$lib/Hero.svelte';
-	import ReadMore from '$lib/ReadMore.svelte';
+	import Navbar from '$lib/homepage/Navbar.svelte';
+	import Hero from '$lib/homepage/Hero.svelte';
+	import ReadMore from '$lib/homepage/ReadMore.svelte';
 </script>
 
 <Navbar />
