@@ -10,6 +10,6 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua ut enim ad.
 		</p>
-		<Button class="mt-14" text="Read More" />
+		<Button class="mt-14" text="Read More" color="white" />
 	</div>
 </div>

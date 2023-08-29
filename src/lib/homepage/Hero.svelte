@@ -19,7 +19,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua ut enim ad.
 			</p>
-			<Button class="mx-auto" text="Call To Action" inverted={true} />
+			<Button class="mx-auto" text="Call To Action" color="black" />
 		</div>
 	</div>
 </div>

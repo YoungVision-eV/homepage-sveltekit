@@ -2,9 +2,9 @@
 	let className = '';
 	export { className as class };
 	export let text: string;
-	export let inverted = false;
+	export let color: 'black' | 'white';
 
-	const classes = inverted ? 'bg-black text-white' : 'bg-white text-black';
+	const classes = color === 'black' ? 'bg-black text-white' : 'bg-white text-black';
 </script>
 
 <button

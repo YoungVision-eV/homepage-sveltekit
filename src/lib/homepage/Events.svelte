@@ -8,5 +8,5 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
 	</p>
-	<Button class="mt-14" text="Follow us on Telegram" inverted={true} />
+	<Button class="mt-14" text="Follow us on Telegram" color="black" />
 </div>
