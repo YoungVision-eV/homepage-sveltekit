@@ -6,7 +6,7 @@
 
 <!-- TODO: add Background -->
 
-<section class="w-full py-24 px-5">
+<section class="w-full pt-24 pb-12 px-5">
 	<h1 class="text-3xl font-bold font-serif">Von YoungVision Leuten</h1>
 	<figure>
 		<div class="w-full mt-3 flex justify-between items-center">
@@ -25,4 +25,3 @@
 		<figcaption class="mt-2 italic">Name, Age</figcaption>
 	</figure>
 </section>
-
