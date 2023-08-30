@@ -4,6 +4,7 @@
 	import ReadMore from '$lib/homepage/ReadMore.svelte';
 	import Events from '$lib/homepage/Events.svelte';
 	import Calendar from '$lib/homepage/Calendar.svelte';
+	import Testimonial from '$lib/homepage/Testimonial.svelte';
 </script>
 
 <Navbar />
@@ -12,4 +13,5 @@
 	<ReadMore />
 	<Events />
 	<Calendar />
+	<Testimonial />
 </main>
