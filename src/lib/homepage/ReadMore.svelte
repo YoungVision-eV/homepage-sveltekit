@@ -3,7 +3,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<div class="w-full bg-cover pt-12 pb-16" style="background-image: url({readMoreBackground});">
+<section class="w-full bg-cover pt-12 pb-16" style="background-image: url({readMoreBackground});">
 	<div class="flex flex-col items-center">
 		<h1 class="text-white text-3xl font-bold font-serif">Wir sind YoungVision e.V.</h1>
 		<p class="mt-4 text-xl text-center mx-5 leading-8">
@@ -12,4 +12,4 @@
 		</p>
 		<Button class="mt-14" text="Read More" color="white" />
 	</div>
-</div>
+</section>

@@ -1,4 +1,4 @@
-<div class="w-full bg-dark-green py-6 px-5">
+<footer class="w-full bg-dark-green py-6 px-5">
 	<div class="flex">
 		<!-- TODO: correct this SVG instead of rotation it -->
 		<svg
@@ -30,4 +30,4 @@
 			<dd class="mt-1">Am bhf 4, 16307 Mescherin</dd>
 		</div>
 	</dl>
-</div>
+</footer>

@@ -4,7 +4,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<div class="w-full bg-cover" style="background-image: url({heroBackground});">
+<section class="w-full bg-cover" style="background-image: url({heroBackground});">
 	<div class="px-5 pb-16 pt-14">
 		<div class="mx-6 h-96">
 			<img
@@ -22,4 +22,4 @@
 			<Button class="mx-auto" text="Call To Action" color="black" />
 		</div>
 	</div>
-</div>
+</section>
