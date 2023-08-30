@@ -7,6 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
+		"test-ui": "playwright test --ui-host localhost",
+		"update-snapshots": "playwright test --update-snapshots",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
