@@ -5,12 +5,12 @@
 </script>
 
 <div class="w-full bg-cover" style="background-image: url({heroBackground});">
-	<div class="mx-auto max-w-7xl justify-between items-center px-5 pb-16 pt-14 lg:px-8">
+	<div class="px-5 pb-16 pt-14">
 		<div class="mx-6 h-96">
 			<img
 				class="rounded-2xl h-full w-auto object-cover"
 				src={heroImage}
-				alt="People sit on the ground hugging and embracing the person in the middle"
+				alt="People sit before a wall and one is smiling into the camera"
 			/>
 		</div>
 		<div class="mt-14">
