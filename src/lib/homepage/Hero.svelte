@@ -19,7 +19,7 @@
 			/>
 		</div>
 		<div class="mt-14 md:mt-0 order-first">
-			<h1 class="text-3xl md:text-5xl font-bold font-sans">Schön, dass du hier bist!</h1>
+			<h1 class="text-3xl md:text-5xl font-bold font-serif">Schön, dass du hier bist!</h1>
 			<p class="text-xl mt-8 md:mt-14">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua ut enim ad.
