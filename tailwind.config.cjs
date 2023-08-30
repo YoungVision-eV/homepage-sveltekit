@@ -16,6 +16,7 @@ const config = {
 			gray: colors.gray,
 			orange: '#E97D2B',
 			yellow: '#F0EC57',
+			'soft-yellow': '#F0EC5799',
 			pink: '#EA6C92'
 		},
 		extend: {}

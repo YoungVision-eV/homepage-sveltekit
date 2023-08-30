@@ -3,6 +3,7 @@
 	import Hero from '$lib/homepage/Hero.svelte';
 	import ReadMore from '$lib/homepage/ReadMore.svelte';
 	import Events from '$lib/homepage/Events.svelte';
+	import Calendar from '$lib/homepage/Calendar.svelte';
 </script>
 
 <Navbar />
@@ -10,4 +11,5 @@
 	<Hero />
 	<ReadMore />
 	<Events />
+	<Calendar />
 </main>
