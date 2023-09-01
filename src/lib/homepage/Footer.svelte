@@ -21,8 +21,7 @@
 			<dt class="font-medium leading-6">Email</dt>
 			<dd class="mt-1">
 				<!-- TODO: what color should the link be? -->
-				<a class="text-light-green" href="mailto:kontakt@youngvision.org">kontakt@youngvision.org</a
-				>
+				<a class="underline" href="mailto:kontakt@youngvision.org">kontakt@youngvision.org</a>
 			</dd>
 		</div>
 		<div class="flex items-baseline justify-between">
