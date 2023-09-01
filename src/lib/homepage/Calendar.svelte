@@ -2,7 +2,7 @@
 	import calendarCover from '$lib/assets/calendar-cover.jpeg';
 </script>
 
-<section class="w-full">
+<div class="w-full">
 	<img src={calendarCover} alt="Leute sitzen am Tisch" class="w-full rounded-t-2xl" />
 	<div class="py-3 pl-7 pr-6 flex items-center justify-between gap-x-12">
 		<div class="text-center flex-none">
@@ -38,4 +38,4 @@
 			<p class="leading-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 		</div>
 	</div>
-</section>
+</div>
