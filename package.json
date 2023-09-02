@@ -7,11 +7,13 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
-		"test-ui": "playwright test --ui-host localhost",
+		"test:ui": "playwright test --ui-host localhost",
 		"update-snapshots": "playwright test --update-snapshots",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"lint": "pnpm run lint:prettier && pnpm run lint:eslint",
+		"lint:prettier": "prettier --plugin-search-dir . --check .",
+		"lint:eslint": "eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
