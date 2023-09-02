@@ -1,4 +1,4 @@
-name: Linting
+name: Checks
 
 on:
   pull_request:
@@ -50,3 +50,22 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           report-json: 'eslint_report.json'
+
+  sveltecheck:
+    runs-on: ubuntu-latest
+    permissions:
+      check: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+      - name: Install Node Dependencies
+        run: pnpm install
+      - name: run svelte check
+        run: pnpm run check
