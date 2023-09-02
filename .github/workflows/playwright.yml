@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     permissions:
-      check: write
+      checks: write
       contents: read
     steps:
       - uses: actions/checkout@v3
