@@ -27,7 +27,7 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     permissions:
-      content: read
+      contents: read
       checks: write
     steps:
       - uses: actions/checkout@v3
@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       checks: write
-      content: read
+      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
