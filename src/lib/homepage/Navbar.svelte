@@ -3,7 +3,7 @@
 	// TODO: get these from CMS?
 	const pages = {
 		Home: '/',
-		About: '/about',
+		About: '/about-us',
 		Projekte: '/projects',
 		Support: '/support',
 		Platform: '/platform'
