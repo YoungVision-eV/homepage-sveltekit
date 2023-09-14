@@ -8,6 +8,8 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-22.04
+    container:
+      image: mcr.microsoft.com/playwright:v1.38.0-jammy
     permissions:
       checks: write
       contents: read
@@ -22,8 +24,6 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Install Playwright Browsers
-        run: pnpm exec playwright install --with-deps
       - name: Run Playwright tests
         run: pnpm run test --reporter=html
       - uses: actions/upload-artifact@v3
