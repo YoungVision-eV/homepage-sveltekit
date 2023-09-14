@@ -7,6 +7,10 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		fontFamily: {
+			sans: ['Montserrat', 'sans-serif'],
+			serif: ['Source Serif 4', 'serif']
+		},
 		colors: {
 			black: colors.black,
 			white: colors.white,
