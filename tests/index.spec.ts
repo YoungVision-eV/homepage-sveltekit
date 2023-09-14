@@ -13,7 +13,8 @@ test('index page has navigation', async ({ page }) => {
 });
 
 for (const subPage of [
-	{ name: 'Home', url: '/' }
+	{ name: 'Home', url: '/' },
+	{ name: 'About', url: '/about-us' }
 	// TODO: Add tests for new sub pages
 ]) {
 	test(`clicking '${subPage.name}' navigates to ${subPage.url}`, async ({ page, isMobile }) => {
