@@ -4,12 +4,12 @@
 	export let text: string;
 	export let color: 'black' | 'white';
 
-	const classes = color === 'black' ? 'bg-black text-white' : 'bg-white text-black';
+	const colorationClasses = color === 'black' ? 'bg-black text-white' : 'bg-white text-black';
 </script>
 
 <button
-	class={'flex mt-8 p-4 px-8 text-xl font-bold justify-between items-center ' +
-		classes +
+	class={'flex p-4 px-8 text-xl font-bold justify-between items-center ' +
+		colorationClasses +
 		' ' +
 		className}
 >
