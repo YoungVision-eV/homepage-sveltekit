@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	export let title: string;
 	const leaders = [
 		{
 			name: 'Matthias',
@@ -20,7 +21,7 @@
 </script>
 
 <section class="px-5 py-16">
-	<h1 class="text-2xl font-bold font-serif">Workshop Leiter*innen</h1>
+	<h1 class="text-2xl font-bold font-serif">{title}</h1>
 	<p class="mt-6">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua ut enim ad.
