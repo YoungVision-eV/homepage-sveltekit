@@ -19,7 +19,7 @@
 					ut labore et dolore magna aliqua ut enim ad.
 				</p>
 			</div>
-			<Button class="mt-14" text="Follow us on Telegram" color="black" />
+			<Button class="mt-14 md:mt-8 mx-auto md:mx-0" text="Follow us on Telegram" color="black" />
 		</div>
 		<Calendar />
 	</div>
