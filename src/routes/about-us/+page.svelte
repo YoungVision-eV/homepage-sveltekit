@@ -8,4 +8,5 @@
 <TeamMembers />
 <WhatWeDo />
 <TryThisAtHome />
-<WorkshopLeaders />
+<WorkshopLeaders title="Workshop Leiter*innen" />
+<WorkshopLeaders title="Kooperationen" />
