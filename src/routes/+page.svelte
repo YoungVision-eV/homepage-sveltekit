@@ -6,11 +6,15 @@
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
 	import Instagram from '$lib/homepage/Instagram.svelte';
 	import Footer from '$lib/homepage/Footer.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	const { hero: heroData } = data;
 </script>
 
 <Navbar />
 <main>
-	<Hero />
+	<Hero data={heroData} />
 	<ReadMore />
 	<Events />
 	<Testimonial />
