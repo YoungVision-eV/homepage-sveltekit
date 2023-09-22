@@ -9,13 +9,12 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-	const { hero: heroData } = data;
 </script>
 
 <Navbar />
 <main>
-	<Hero data={heroData} />
-	<ReadMore />
+	<Hero data={data.hero} />
+	<ReadMore data={data.readMore} />
 	<Events />
 	<Testimonial />
 	<Instagram />

@@ -23,6 +23,7 @@
 		</div>
 		<div class="mt-14 md:mt-0 order-first">
 			<h1 class="text-3xl md:text-5xl font-bold font-serif">{data.title}</h1>
+			<!-- TODO: allow multiple paragraphs -->
 			<p class="text-xl mt-8 md:mt-14">{data.subtitle}</p>
 			<Button class="mx-auto md:mx-0 md:mt-10" text={data.callToAction} color="black" />
 		</div>
