@@ -19,6 +19,7 @@ export async function load({ fetch }) {
 	const data = await response.json();
 	const heroData = data.hero;
 	const readMoreData = data.readMore;
+	const eventsSectionData = data.events;
 	return {
 		hero: {
 			// TODO: spread data when we have generated types or something
@@ -32,6 +33,12 @@ export async function load({ fetch }) {
 			subtitle: readMoreData.subtitle,
 			callToAction: readMoreData.callToAction,
 			image: makeImage(readMoreData.image)
+		},
+		events: {
+			title: eventsSectionData.title,
+			leftSubtitle: eventsSectionData.leftSubtitle,
+			rightSubtitle: eventsSectionData.rightSubtitle,
+			callToAction: eventsSectionData.callToAction
 		}
 	};
 }

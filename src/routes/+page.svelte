@@ -15,7 +15,7 @@
 <main>
 	<Hero data={data.hero} />
 	<ReadMore data={data.readMore} />
-	<Events />
+	<Events data={data.events} />
 	<Testimonial />
 	<Instagram />
 	<div class="h-40 w-full bg-light-green" />
