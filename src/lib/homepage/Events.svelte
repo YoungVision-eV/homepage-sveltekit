@@ -2,11 +2,22 @@
 	import Button from '$lib/components/Button.svelte';
 	import Calendar from './Calendar.svelte';
 
+	type Event = {
+		title: string;
+		description: string;
+		date: Date;
+	};
+
 	export let data: {
 		title: string;
 		leftSubtitle: string;
 		rightSubtitle: string;
 		callToAction: string;
+		calendar: {
+			nextEvent: Event;
+			lastEvent: Event;
+			nextPartnerEvent: Event;
+		};
 	};
 </script>
 
@@ -22,6 +33,10 @@
 			</div>
 			<Button class="mt-14" text={data.callToAction} color="black" />
 		</div>
-		<Calendar />
+		<Calendar
+			nextEvent={data.calendar.nextEvent}
+			lastEvent={data.calendar.lastEvent}
+			nextPartnerEvent={data.calendar.nextPartnerEvent}
+		/>
 	</div>
 </section>
