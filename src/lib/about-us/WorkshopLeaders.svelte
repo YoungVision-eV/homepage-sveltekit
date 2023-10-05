@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ReadMoreExpandButton from '$lib/components/ReadMoreExpandButton.svelte';
+
 	export let title: string;
 	const leaders = [
 		{
@@ -37,8 +39,5 @@
 			</div>
 		{/each}
 	</div>
-	<div class="mt-12 w-full flex flex-col justify-center">
-		<button class="text-sm">See More</button>
-		<div class="mt-6 w-full border-t border-gray-300" />
-	</div>
+	<ReadMoreExpandButton class="mt-12" />
 </section>

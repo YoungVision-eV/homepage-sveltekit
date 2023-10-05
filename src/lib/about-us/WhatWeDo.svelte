@@ -1,3 +1,7 @@
+<script>
+	import ReadMoreExpandButton from '$lib/components/ReadMoreExpandButton.svelte';
+</script>
+
 <section class="w-full pt-24 pb-16 px-5">
 	<h1 class="text-center text-3xl font-bold font-serif">Was wir tun</h1>
 	<h2 class="mt-14 text-2xl font-bold font-serif">Main exercises</h2>
@@ -33,8 +37,5 @@
 			labore et dolore magna aliqua ut enim ad.
 		</p>
 	</div>
-	<div class="mt-16 w-full flex flex-col justify-center">
-		<button class="text-sm">See More</button>
-		<div class="mt-6 w-full border-t border-gray-300" />
-	</div>
+	<ReadMoreExpandButton class="mt-16" />
 </section>
