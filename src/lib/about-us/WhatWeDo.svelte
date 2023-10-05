@@ -14,7 +14,9 @@
 		labore et dolore magna aliqua ut enim ad.
 	</p>
 	<div class="mt-16">
-		<div class="bg-gray-300 w-full h-auto aspect-square rounded-full" />
+		<div class="px-20">
+			<div class="bg-light-green w-full h-auto aspect-square rounded-full" />
+		</div>
 		<h3 class="mt-5 text-center text-xl font-sans">Lorem Ipsum</h3>
 		<p class="mt-3 text-sm font-sans">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -22,7 +24,9 @@
 		</p>
 	</div>
 	<div class="mt-12">
-		<div class="bg-gray-300 w-full h-auto aspect-square rounded-full" />
+		<div class="px-20">
+			<div class="bg-light-green w-full h-auto aspect-square rounded-full" />
+		</div>
 		<h3 class="mt-5 text-center text-xl font-sans">Lorem Ipsum</h3>
 		<p class="mt-3 text-sm font-sans">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
