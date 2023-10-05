@@ -30,7 +30,8 @@ async function getNextEvent(fetch) {
 	const stringifiedQuery = qs.stringify(
 		{
 			where: query, // ensure that `qs` adds the `where` property, too!
-			sort: 'date'
+			sort: 'date',
+			limit: 1
 		},
 		{ addQueryPrefix: true }
 	);
@@ -68,7 +69,8 @@ async function getLastEvent(fetch) {
 	const stringifiedQuery = qs.stringify(
 		{
 			where: query, // ensure that `qs` adds the `where` property, too!
-			sort: '-date'
+			sort: '-date',
+			limit: 1
 		},
 		{ addQueryPrefix: true }
 	);
@@ -106,7 +108,8 @@ async function getNextPartnerEvent(fetch) {
 	const stringifiedQuery = qs.stringify(
 		{
 			where: query, // ensure that `qs` adds the `where` property, too!
-			sort: 'date'
+			sort: 'date',
+			limit: 1
 		},
 		{ addQueryPrefix: true }
 	);
