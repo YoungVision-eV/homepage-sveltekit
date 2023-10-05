@@ -16,7 +16,7 @@
 	<Hero data={data.hero} />
 	<ReadMore data={data.readMore} />
 	<Events data={data.events} />
-	<Testimonial />
+	<Testimonial testimonials={data.testimonials} />
 	<Instagram />
 	<div class="h-40 w-full bg-light-green" />
 	<Footer />

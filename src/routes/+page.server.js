@@ -139,6 +139,19 @@ export async function load({ fetch }) {
 	const readMoreData = data.readMore;
 	const eventsSectionData = data.events;
 
+	console.log('Starting testimonial fetching');
+	// TODO: get more testimonials (how many, which ones, ...)?
+	const testimonialData = await fetch(new URL('/api/testimonials?limit=1', CMS_ROOT)).then(
+		(response) => response.json()
+	);
+	// @ts-expect-error typings suck still
+	const testimonials = testimonialData.docs.map(({ author, quote, image }) => ({
+		author,
+		quote,
+		image: makeImage(image)
+	}));
+	console.log(testimonials);
+
 	return {
 		hero: {
 			// TODO: spread data when we have generated types or something
@@ -163,6 +176,7 @@ export async function load({ fetch }) {
 				lastEvent: await getLastEvent(fetch),
 				nextPartnerEvent: await getNextPartnerEvent(fetch)
 			}
-		}
+		},
+		testimonials
 	};
 }
