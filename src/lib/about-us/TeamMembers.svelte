@@ -20,13 +20,23 @@
 			name: 'Jakob',
 			job: 'Marketing',
 			image: placeholder
+		},
+		{
+			name: 'Noa',
+			job: 'Communication',
+			image: placeholder
+		},
+		{
+			name: 'Charly',
+			job: 'Finances',
+			image: placeholder
 		}
 	];
 </script>
 
-<section class="py-14 px-5 bg-cover">
+<section class="py-14 md:pt-20 md:pb-36 px-5 md:px-20 bg-light-green">
 	<h1 class="text-3xl font-bold font-serif">Team Members</h1>
-	<div class="mt-14 grid grid-cols-2 gap-x-5 gap-y-14">
+	<div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-x-5 md:gap-x-24 gap-y-14">
 		{#each members as member}
 			<div class="flex flex-col items-center">
 				<img
@@ -34,15 +44,9 @@
 					alt={member.name}
 					class="w-full h-auto aspect-square rounded-full bg-white object-cover object-center"
 				/>
-				<h2 class="mt-6 font-bold font-sans">{member.name}</h2>
+				<h2 class="md:text-xl mt-6 font-bold font-sans">{member.name}</h2>
 				<p>{member.job}</p>
 			</div>
 		{/each}
 	</div>
 </section>
-
-<style>
-	section {
-		background-image: url($lib/assets/about-us-members-background.jpeg);
-	}
-</style>
