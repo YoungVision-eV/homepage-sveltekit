@@ -44,8 +44,8 @@
 					alt={member.name}
 					class="w-full h-auto aspect-square rounded-full bg-white object-cover object-center"
 				/>
-				<h2 class="md:text-xl mt-6 font-bold font-sans">{member.name}</h2>
-				<p>{member.job}</p>
+				<h2 class="md:text-xl mt-6 md:mt-5 font-bold font-sans">{member.name}</h2>
+				<p class="md:mt-3">{member.job}</p>
 			</div>
 		{/each}
 	</div>
