@@ -5,7 +5,7 @@
 		Home: '/',
 		About: '/about-us',
 		Projekte: '/projects',
-		Support: '/support',
+		Support: '/support-us',
 		Platform: '/platform'
 	};
 
