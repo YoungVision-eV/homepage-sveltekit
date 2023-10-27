@@ -50,4 +50,22 @@
 			</li>
 		{/each}
 	</ul>
+	<div class="hidden md:flex mt-36 py-10 px-24 bg-yellow rounded-2xl w-full gap-x-28">
+		<div class="w-56 h-56 bg-gray-300" />
+		<div>
+			<h3 class="font-serif font-bold text-4xl">Ansprechpartner</h3>
+			<dl class="mt-8 grid grid-cols-2">
+				<dt class="font-bold">Name</dt>
+				<dd>Jakob Voigt</dd>
+
+				<dt class="font-bold">Email</dt>
+				<dd>
+					<a class="text-gray-800 underline" href="mailto:jakob.voigt@youngvision.org"
+						>jakob.voigt@youngvision.org</a
+					>
+				</dd>
+			</dl>
+			<Button class="mt-7" text="Email Now" color="black" />
+		</div>
+	</div>
 </section>
