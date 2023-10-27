@@ -21,21 +21,33 @@
 	];
 </script>
 
-<section class="py-16 px-4">
+<section class="py-16 px-4 md:px-20 md:py-24">
 	<h1 class="text-2xl font-bold font-serif">Andere Spenden Möglichkeiten</h1>
-	<p class="text-xl mt-3">Wir freuen uns über alle Spenden! Danke!</p>
-	<div class="mt-16">
+	<p class="text-xl mt-3 md:mt-4">Wir freuen uns über alle Spenden! Danke!</p>
+	<ul class="mt-20 hidden md:flex gap-x-16 items-stretch">
 		{#each possibilities as possibility}
-			<div class="first:mt-0 mt-24 group">
+			<li class="flex flex-col justify-between items-center text-center">
+				<div class="rounded-full w-56 h-56 bg-gray-300" />
+				<h3 class="mt-4 text-4xl font-serif font-bold">{possibility.title}</h3>
+				<p class="mt-4">{possibility.description}</p>
+				<Button class="mt-8" text="Email Now" color="black" />
+			</li>
+		{/each}
+	</ul>
+	<ul class="mt-16 md:hidden">
+		{#each possibilities as possibility}
+			<li
+				class="first:mt-0 mt-24 md:mt-0 md:first:mt-0 group md:flex flex-col justify-between items-center md:text-center"
+			>
 				<div class="flex group-even:flex-row-reverse gap-x-4 items-center">
-					<div class="flex-none w-40 h-40 bg-gray-300 rounded-full"></div>
+					<div class="flex-none w-40 h-40 bg-gray-300 rounded-full" />
 					<div>
 						<h3 class="text-xl">{possibility.title}</h3>
 						<p class="mt-3">{possibility.description}</p>
 					</div>
 				</div>
 				<Button class="group-odd:float-right" text="Email Now" color="black" />
-			</div>
+			</li>
 		{/each}
-	</div>
+	</ul>
 </section>
