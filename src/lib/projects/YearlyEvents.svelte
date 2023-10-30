@@ -1,5 +1,33 @@
 <script>
-	import EventImage from '$lib/assets/projects-event-image.jpeg';
+	import EventImage1 from '$lib/assets/projects-event-image-1.jpeg';
+	import EventImage2 from '$lib/assets/projects-event-image-2.jpeg';
+	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg';
+	const events = [
+		{
+			title: 'Summer Gathering',
+			day: '24',
+			month: 'August',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			image: EventImage1,
+			for_all: true
+		},
+		{
+			title: 'Winter Gathering',
+			day: '11',
+			month: 'Januar',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			image: EventImage2,
+			for_all: true
+		},
+		{
+			title: 'Mitgliederversammlung',
+			day: '25',
+			month: 'August',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			image: EventImage3,
+			for_all: false
+		}
+	];
 </script>
 
 <section class="px-6 py-14">
@@ -19,18 +47,26 @@
 			<label class="ml-4" for="only-members">Nur Mitglieder</label>
 		</div>
 	</div>
-	<section class="mt-12">
-		<img src={EventImage} alt="" class="mt-12 rounded-t-2xl" />
-		<div class="p-6 rounded-b-2xl bg-soft-yellow flex">
-			<div class="flex flex-col justify-center items-center">
-				<h1 class="text-5xl font-serif font-bold">24</h1>
-				<h1>August</h1>
+	{#each events as event}
+		<section class="mt-12">
+			<img src={event.image} alt="" class="mt-12 rounded-t-2xl" />
+			<div
+				class="p-6 rounded-b-2xl flex shadow-lg {event.for_all
+					? 'bg-soft-yellow'
+					: 'bg-light-green'}"
+			>
+				<div class="mt-4 flex flex-col items-center">
+					<h1 class="text-5xl font-serif font-bold">{event.day}</h1>
+					<h1>{event.month}</h1>
+				</div>
+				<div class="ml-10">
+					<h1 class="font-bold">{event.title}</h1>
+					<p class="mt-3">{event.text}</p>
+					<p class="mt-3 px-5 inline-block rounded-full bg-white">
+						{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
+					</p>
+				</div>
 			</div>
-			<div class="ml-10">
-				<h1 class="font-bold">Sommer Gathering</h1>
-				<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<p class="mt-3 px-5 inline-block rounded-full bg-white">Für Alle</p>
-			</div>
-		</div>
-	</section>
+		</section>
+	{/each}
 </section>
