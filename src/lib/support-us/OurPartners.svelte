@@ -22,7 +22,7 @@
 	</section>
 	<section>
 		<h1 class="mt-32 font-serif font-bold text-4xl">YoungVision Dankes-Tafel</h1>
-		<p class="mt-5">
+		<p class="mt-5 text-xl">
 			Hier möchten wir speziell Menschen danken die Fördermitglieder sind oder eine größere Summe
 			gespendet haben.
 		</p>
