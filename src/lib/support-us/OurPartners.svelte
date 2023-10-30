@@ -26,8 +26,7 @@
 			Hier möchten wir speziell Menschen danken die Fördermitglieder sind oder eine größere Summe
 			gespendet haben.
 		</p>
-		<!-- FIX: the right-most column should go all the way to the padding (right-aligned) -->
-		<ul class="mt-20 grid grid-cols-4 text-xl justify-between content-between w-full gap-y-14">
+		<ul id="honours" class="mt-20 grid text-xl w-full gap-y-14 justify-between">
 			{#each honours as honour}
 				<li>
 					<h3 class="font-bold">{honour.name}</h3>
@@ -38,3 +37,9 @@
 		<ReadMoreExpandButton class="mt-14" />
 	</section>
 </div>
+
+<style>
+	ul#honours {
+		grid-template-columns: repeat(4, auto);
+	}
+</style>
