@@ -8,13 +8,13 @@ test('Projects page screenshot', async ({ page }) => {
 });
 
 test('Filter members_only', async ({ page }) => {
-	await page.getByLabel("Nur Mitglieder").click();
-	await expect(page.getByRole("list").getByText("Nur Mitglieder")).not.toBeVisible();
+	await page.getByLabel('Nur Mitglieder').click();
+	await expect(page.getByRole('list').getByText('Nur Mitglieder')).not.toBeVisible();
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
 
 test('Filter for_all', async ({ page }) => {
-	await page.getByLabel("Für Alle").click();
-	await expect(page.getByRole("list").getByText("Für Alle")).not.toBeVisible();
+	await page.getByLabel('Für Alle').click();
+	await expect(page.getByRole('list').getByText('Für Alle')).not.toBeVisible();
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
