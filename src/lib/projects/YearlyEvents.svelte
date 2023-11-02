@@ -47,26 +47,28 @@
 			<label class="ml-4" for="only-members">Nur Mitglieder</label>
 		</div>
 	</div>
-	{#each events as event}
-		<section class="mt-12">
-			<img src={event.image} alt="" class="mt-12 rounded-t-2xl" />
-			<div
-				class="p-6 rounded-b-2xl flex shadow-lg {event.for_all
-					? 'bg-soft-yellow'
-					: 'bg-light-green'}"
-			>
-				<div class="mt-4 flex flex-col items-center">
-					<h1 class="text-5xl font-serif font-bold">{event.day}</h1>
-					<h1>{event.month}</h1>
+	<ul class="mt-12">
+		{#each events as event}
+			<li>
+				<img src={event.image} alt="" class="mt-12 rounded-t-2xl" />
+				<div
+					class="p-6 rounded-b-2xl flex shadow-lg {event.for_all
+						? 'bg-soft-yellow'
+						: 'bg-light-green'}"
+				>
+					<div class="mt-4 flex flex-col items-center">
+						<div class="text-5xl font-serif font-bold">{event.day}</div>
+						<div>{event.month}</div>
+					</div>
+					<div class="ml-10">
+						<h2 class="font-bold">{event.title}</h2>
+						<p class="mt-3">{event.text}</p>
+						<p class="mt-3 px-5 inline-block rounded-full bg-white">
+							{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
+						</p>
+					</div>
 				</div>
-				<div class="ml-10">
-					<h1 class="font-bold">{event.title}</h1>
-					<p class="mt-3">{event.text}</p>
-					<p class="mt-3 px-5 inline-block rounded-full bg-white">
-						{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
-					</p>
-				</div>
-			</div>
-		</section>
-	{/each}
+			</li>
+		{/each}
+	</ul>
 </section>
