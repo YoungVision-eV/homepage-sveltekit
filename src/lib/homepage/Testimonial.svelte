@@ -40,13 +40,11 @@
 		>
 			<div class="flex">
 				{#each testimonials as testimonial}
-					<div
-						class="embla__slide min-w-0 md:flex justify-between items-center gap-x-28 mr-5 md:mr-32"
-					>
+					<div class="embla__slide min-w-0 md:flex items-center gap-x-28 mr-5 md:mr-32">
 						<img
 							src={testimonial.image}
 							alt={testimonial.name}
-							class="w-24 h-24 md:w-96 md:h-96 rounded-full object-cover mx-auto"
+							class="w-24 h-24 md:w-96 md:h-96 rounded-full object-cover mx-auto md:mx-0"
 						/>
 						<div class="md:pb-4">
 							<blockquote class="mt-2.5 leading-6 md:text-xl">
@@ -62,9 +60,11 @@
 		<div class="absolute flex items-center justify-between top-12 md:top-48 w-full px-3">
 			<button on:click={() => emblaApi.scrollPrev()}>
 				<img src={ArrowLeft} alt="" class="w-6 h-6" />
+				<span class="sr-only">Previous Testimonial</span>
 			</button>
 			<button on:click={() => emblaApi.scrollNext()}>
 				<img src={ArrowRight} alt="" class="w-6 h-6" />
+				<span class="sr-only">Next Testimonial</span>
 			</button>
 		</div>
 	</div>
