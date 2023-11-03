@@ -8,7 +8,7 @@
 </script>
 
 <button
-	class={'flex p-4 px-8 text-xl font-bold justify-between items-center ' +
+	class={'flex p-4 px-8 font-bold justify-between items-center ' +
 		colorationClasses +
 		' ' +
 		className}
