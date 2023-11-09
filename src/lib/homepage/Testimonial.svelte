@@ -57,13 +57,13 @@
 				{/each}
 			</div>
 		</div>
-		<div class="absolute flex items-center justify-between top-12 md:top-48 w-full px-3">
+		<div class="absolute flex items-center justify-between top-9 md:top-44 w-full px-3">
 			<button on:click={() => emblaApi.scrollPrev()}>
-				<img src={ArrowLeft} alt="" class="w-6 h-6" />
+				<img src={ArrowLeft} alt="" class="w-6 h-6 md:w-8 md:h-8" />
 				<span class="sr-only">Previous Testimonial</span>
 			</button>
 			<button on:click={() => emblaApi.scrollNext()}>
-				<img src={ArrowRight} alt="" class="w-6 h-6" />
+				<img src={ArrowRight} alt="" class="w-6 h-6 md:w-8 md:h-8" />
 				<span class="sr-only">Next Testimonial</span>
 			</button>
 		</div>
