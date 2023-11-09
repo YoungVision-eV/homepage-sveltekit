@@ -18,6 +18,10 @@ for (const subPage of [
 		await expect(page).toHaveURL(subPage.url);
 		// on mobile the navbar is only the header
 		await expect(page.getByRole('navigation')).toHaveScreenshot();
+		if (isMobile) {
+			// menu closes on navigation
+			await expect(page.getByRole('button', { name: 'Close main menu' })).not.toBeVisible();
+		}
 	});
 }
 
