@@ -1,5 +1,6 @@
 <script>
 	import logo from '$lib/assets/logo.svg';
+	import { page } from '$app/stores';
 	// TODO: get these from CMS?
 	const pages = {
 		Home: '/',
@@ -10,6 +11,8 @@
 	};
 
 	let menuOpen = false;
+	$: currentPage = $page.url.pathname;
+	$: console.log(currentPage);
 </script>
 
 <header>
@@ -45,7 +48,12 @@
 		<!-- Desktop menu -->
 		<div class="hidden lg:flex lg:gap-x-12">
 			{#each Object.entries(pages) as [page, url]}
-				<a href={url} class="text-sm font-semibold leading-6 text-black hover:underline">{page}</a>
+				<a
+					href={url}
+					class={'text-sm leading-6 text-black hover:underline ' +
+						(currentPage === url ? 'font-bold' : '')}
+					aria-current="page">{page}</a
+				>
 			{/each}
 		</div>
 	</nav>
