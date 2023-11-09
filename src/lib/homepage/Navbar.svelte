@@ -77,7 +77,7 @@
 				<div class="flex items-center justify-between">
 					<a href="/" class="flex -m-1.5 p-1.5">
 						<img class="h-8 w-auto" src={logo} alt="YoungVision Logo" />
-						<span class="text-2xl font-bold font-sans text-dark-green">YoungVision</span>
+						<span class="ml-2 text-2xl font-bold font-sans text-dark-green">YoungVision</span>
 					</a>
 					<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" on:click={closeMenu}>
 						<span class="sr-only">Close main menu</span>
