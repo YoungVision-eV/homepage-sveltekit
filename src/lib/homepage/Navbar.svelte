@@ -10,7 +10,8 @@
 		Platform: '/platform'
 	};
 
-	const currentPage = $page.url.pathname;
+	// TODO: shouldn't this work because of the subscription?
+	$: currentPage = $page.url.pathname;
 
 	let menuOpen = false;
 
@@ -59,7 +60,7 @@
 				<a
 					href={url}
 					class={'text-sm leading-6 text-black hover:underline ' +
-						(currentPage === url ? 'font-bold' : '')}
+						(currentPage === url ? 'font-semibold' : '')}
 					aria-current={currentPage === url ? 'page' : undefined}>{page}</a
 				>
 			{/each}
@@ -103,7 +104,7 @@
 									aria-current={currentPage === url ? 'page' : undefined}
 									on:click={closeMenu}
 									class={'-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-black' +
-										(currentPage === url ? ' font-bold' : '')}>{page}</a
+										(currentPage === url ? ' font-semibold' : '')}>{page}</a
 								>
 							{/each}
 						</div>
