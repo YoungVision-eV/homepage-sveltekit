@@ -28,30 +28,39 @@
 	<Button class="mt-8 md:mt-6" color="black" text="Sign Up Now" />
 	<Disclosure data-testid="benefits">
 		<DisclosurePanel>
-			<div class="pt-16 pb-12" transition:slide>
+			<div class="pt-16 pb-12 md:px-16" transition:slide>
 				<h3 class="font-serif font-bold text-2xl">Vorteile</h3>
-				<div class="flex flex-col py-12">
+				<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14 md:gap-x-10">
 					{#each benefits as benefit, index}
-						<ul class="flex odd:flex-row-reverse items-center">
-							<li
-								class="w-24 h-24 text-5xl font-bold font-serif flex-none bg-gray-300 rounded-full flex justify-center items-center"
+						<li
+							class={'benefit-item group items-center col-span-3' +
+								// TODO: this will break if we have more than 5 benefits
+								(index === 3 ? ' md:col-start-2' : '')}
+						>
+							<div
+								class="group-odd:order-last md:group-odd:order-first flex flex-row group-odd:justify-end"
 							>
-								{index + 1}
-							</li>
-							<p class="ml-2 text-sm">{benefit}</p>
-						</ul>
+								<div
+									class="w-24 h-24 md:w-32 md:h-32 text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
+								>
+									{index + 1}
+								</div>
+							</div>
+							<p class="ml-2 md:ml-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
+						</li>
 					{/each}
+				</ul>
+				<div class="md:flex gap-x-5 md:text-xl">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua ut enim ad. T1
+					</p>
+					<p class="mt-4 md:mt-0">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua ut enim ad. T1
+					</p>
 				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua ut enim ad. T1
-				</p>
-				<p class="mt-4">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua ut enim ad. T1
-				</p>
 			</div>
-			Yes! You can purchase a license that you can share with your entire team.
 		</DisclosurePanel>
 		<DisclosureButton class="mt-12 md:mt-8 w-full flex flex-col justify-center items-center">
 			<span class="text-sm">Show Benefits</span>
@@ -86,3 +95,10 @@
 
 	<div class="mx-2 mt-2 w-full border-t border-gray-300" />
 </section>
+
+<style>
+	.benefit-item {
+		display: grid;
+		grid-template-columns: subgrid;
+	}
+</style>
