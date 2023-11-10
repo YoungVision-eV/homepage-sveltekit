@@ -8,7 +8,7 @@
 
 	const benefits = [
 		'Du hast Lust uns mit größeren Mengen Geld zu unterstutzen?',
-		'Einmalig oder wiederkehrende Spende.',
+		'Einmalig oder wieder​kehrende Spende.',
 		'Du hast Lust dein Wissen und Erfahrung zu teilen? Gerne hier!',
 		'Du hast Lust deine Dinge zu teilen? Gerne hier!',
 		'Du hast Lust unsere Projekte zu unterstützen?'
@@ -30,7 +30,7 @@
 		<DisclosurePanel>
 			<div class="pt-16 pb-12 md:px-16" transition:slide>
 				<h3 class="font-serif font-bold text-2xl">Vorteile</h3>
-				<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14 md:gap-x-10">
+				<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14">
 					{#each benefits as benefit, index}
 						<li
 							class={'benefit-item group items-center col-span-3' +
@@ -38,15 +38,15 @@
 								(index === 3 ? ' md:col-start-2' : '')}
 						>
 							<div
-								class="group-odd:order-last md:group-odd:order-first flex flex-row group-odd:justify-end"
+								class="group-odd:order-last md:group-odd:order-first flex flex-row flex-none group-odd:justify-end"
 							>
 								<div
-									class="w-24 h-24 md:w-32 md:h-32 text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
+									class="w-24 h-24 md:w-32 md:h-32 flex-none text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
 								>
 									{index + 1}
 								</div>
 							</div>
-							<p class="ml-2 md:ml-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
+							<p class="ml-2 md:mx-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
 						</li>
 					{/each}
 				</ul>
