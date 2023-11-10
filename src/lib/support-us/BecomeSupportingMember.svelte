@@ -1,10 +1,8 @@
 <script>
-	import { slide } from 'svelte/transition';
+	import { slide, fade } from 'svelte/transition';
 	import { Disclosure, DisclosureButton, DisclosurePanel } from '@rgossiaux/svelte-headlessui';
 
 	import Button from '$lib/components/Button.svelte';
-
-	let showMore = false;
 
 	const benefits = [
 		'Du hast Lust uns mit größeren Mengen Geld zu unterstutzen?',
@@ -26,42 +24,44 @@
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
 	<Button class="mt-8 md:mt-6" color="black" text="Sign Up Now" />
-	<Disclosure data-testid="benefits">
-		<DisclosurePanel>
-			<div class="pt-16 pb-12 md:px-16" transition:slide>
-				<h3 class="font-serif font-bold text-2xl">Vorteile</h3>
-				<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14">
-					{#each benefits as benefit, index}
-						<li
-							class={'benefit-item group items-center col-span-3' +
-								// TODO: this will break if we have more than 5 benefits
-								(index === 3 ? ' md:col-start-2' : '')}
-						>
-							<div
-								class="group-odd:order-last md:group-odd:order-first flex flex-row flex-none group-odd:justify-end"
+	<Disclosure data-testid="benefits" let:open>
+		{#if open}
+			<div transition:slide>
+				<DisclosurePanel class="pt-16 pb-12 md:px-16" static>
+					<h3 class="font-serif font-bold text-2xl">Vorteile</h3>
+					<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14">
+						{#each benefits as benefit, index}
+							<li
+								class={'benefit-item group items-center col-span-3' +
+									// TODO: this will break if we have more than 5 benefits
+									(index === 3 ? ' md:col-start-2' : '')}
 							>
 								<div
-									class="w-24 h-24 md:w-32 md:h-32 flex-none text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
+									class="group-odd:order-last md:group-odd:order-first flex flex-row flex-none group-odd:justify-end"
 								>
-									{index + 1}
+									<div
+										class="w-24 h-24 md:w-32 md:h-32 flex-none text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
+									>
+										{index + 1}
+									</div>
 								</div>
-							</div>
-							<p class="ml-2 md:mx-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
-						</li>
-					{/each}
-				</ul>
-				<div class="md:flex gap-x-5 md:text-xl">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua ut enim ad. T1
-					</p>
-					<p class="mt-4 md:mt-0">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua ut enim ad. T1
-					</p>
-				</div>
+								<p class="ml-2 md:mx-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
+							</li>
+						{/each}
+					</ul>
+					<div class="md:flex gap-x-5 md:text-xl">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+						</p>
+						<p class="mt-4 md:mt-0">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+						</p>
+					</div>
+				</DisclosurePanel>
 			</div>
-		</DisclosurePanel>
+		{/if}
 		<DisclosureButton class="mt-12 md:mt-8 w-full flex flex-col justify-center items-center">
 			<span class="text-sm">Show Benefits</span>
 			<div>
@@ -73,8 +73,9 @@
 					viewBox="0 0 13 9"
 					fill="none"
 				>
-					{#if showMore}
+					{#if open}
 						<path
+							transition:fade
 							fill-rule="evenodd"
 							clip-rule="evenodd"
 							d="M0 6.58449L1.51667 8.12085L6.5 3.0728L11.4833 8.12085L13 6.58449L6.5 7.05719e-05L0 6.58449Z"
@@ -82,6 +83,7 @@
 						/>
 					{:else}
 						<path
+							transition:fade
 							fill-rule="evenodd"
 							clip-rule="evenodd"
 							d="M13 1.53636L11.4833 0L6.5 5.04805L1.51667 0L0 1.53636L6.5 8.12078L13 1.53636Z"
