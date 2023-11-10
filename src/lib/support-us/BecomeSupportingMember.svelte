@@ -3,7 +3,6 @@
 	import { Disclosure, DisclosureButton, DisclosurePanel } from '@rgossiaux/svelte-headlessui';
 
 	import Button from '$lib/components/Button.svelte';
-	import ReadMoreExpandButton from '$lib/components/ReadMoreExpandButton.svelte';
 
 	let showMore = false;
 
