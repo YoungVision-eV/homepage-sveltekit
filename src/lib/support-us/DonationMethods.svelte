@@ -1,5 +1,6 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
+	import { Disclosure, DisclosureButton, DisclosurePanel } from '@rgossiaux/svelte-headlessui';
 
 	const possibilities = [
 		{
@@ -36,16 +37,26 @@
 	</ul>
 	<ul class="mt-16 md:hidden">
 		{#each possibilities as possibility}
-			<li
-				class="first:mt-0 mt-24 md:mt-0 md:first:mt-0 group md:flex flex-col justify-between items-center md:text-center"
-			>
-				<div class="flex group-even:flex-row-reverse gap-x-4 items-center">
-					<div class="flex-none w-40 h-40 bg-gray-300 rounded-full" />
-					<div>
-						<h3 class="text-xl">{possibility.title}</h3>
-						<p class="mt-3">{possibility.description}</p>
-					</div>
-				</div>
+			<li class="first:mt-0 mt-24 group">
+				<Disclosure>
+					<DisclosureButton class="flex group-even:flex-row-reverse gap-x-4 items-center text-left">
+						<div class="flex-none w-40 h-40 bg-gray-300 rounded-full" />
+						<div>
+							<h3 class="text-xl">{possibility.title}</h3>
+							<p class="mt-3">{possibility.description}</p>
+						</div>
+					</DisclosureButton>
+					<DisclosurePanel>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+						</p>
+					</DisclosurePanel>
+				</Disclosure>
 				<Button class="group-odd:float-right" text="Email Now" color="black" />
 			</li>
 		{/each}
