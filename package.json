@@ -37,7 +37,8 @@
 		"autoprefixer": "^10.4.16",
 		"tailwindcss": "^3.3.5",
 		"@tailwindcss/typography": "^0.5.10",
-		"embla-carousel-svelte": "8.0.0-rc14"
+		"embla-carousel-svelte": "8.0.0-rc14",
+		"@rgossiaux/svelte-headlessui": "2.0.0"
 	},
 	"type": "module"
 }

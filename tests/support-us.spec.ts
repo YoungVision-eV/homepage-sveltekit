@@ -7,3 +7,8 @@ test.beforeEach(async ({ page }) => {
 test('index page screenshot', async ({ page }) => {
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
+
+test('Expanding Fördermitglieder', async ({ page }) => {
+	await page.getByRole('button', { name: 'Show benefits' }).click();
+	await expect(page.getByTestId('benefits')).toHaveScreenshot();
+});

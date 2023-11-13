@@ -16,6 +16,9 @@ const config = {
 			white: colors.white,
 			'dark-green': '#6A845E',
 			'light-green': '#BBCEA8',
+			green: {
+				50: '#21291F'
+			},
 			background: '#F9F8F6',
 			gray: colors.gray,
 			orange: '#E97D2B',
