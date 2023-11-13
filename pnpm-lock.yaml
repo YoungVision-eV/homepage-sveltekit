@@ -26,6 +26,9 @@ devDependencies:
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
+  embla-carousel-svelte:
+    specifier: 8.0.0-rc14
+    version: 8.0.0-rc14(svelte@4.2.2)
   eslint:
     specifier: ^8.28.0
     version: 8.46.0
@@ -924,6 +927,28 @@ packages:
 
   /electron-to-chromium@1.4.490:
     resolution: {integrity: sha512-6s7NVJz+sATdYnIwhdshx/N/9O6rvMxmhVoDSDFdj6iA45gHR8EQje70+RYsF4GeB+k0IeNSBnP7yG9ZXJFr7A==}
+    dev: true
+
+  /embla-carousel-reactive-utils@8.0.0-rc14(embla-carousel@8.0.0-rc14):
+    resolution: {integrity: sha512-r153bynAo9eTBuWWggPWLYnE9xqVOYmkkeMbAuGX8pkUisJN8aTLMW9b7CYOzjURRB7z85EmYRbeBg+axQzc9g==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc14
+    dependencies:
+      embla-carousel: 8.0.0-rc14
+    dev: true
+
+  /embla-carousel-svelte@8.0.0-rc14(svelte@4.2.2):
+    resolution: {integrity: sha512-Y0qDeHDuJX5yfLgSbs5P1qYyRs2s291kLuUm0wJeS5WUo0fEvcKZGU9XokM/OIJ9F9gI99BUY05Fud7+GD2QOQ==}
+    peerDependencies:
+      svelte: ^3.49.0 || ^4.0.0
+    dependencies:
+      embla-carousel: 8.0.0-rc14
+      embla-carousel-reactive-utils: 8.0.0-rc14(embla-carousel@8.0.0-rc14)
+      svelte: 4.2.2
+    dev: true
+
+  /embla-carousel@8.0.0-rc14:
+    resolution: {integrity: sha512-/NLkMFZ7xKryRVYeUjmhbfV63Vr07saPBDwAX2TPMbcaiWwfQfU5Xsc2AiCMZANtwmzsjRK6gSBa7hOy/VXu6g==}
     dev: true
 
   /es6-promise@3.3.1:

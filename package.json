@@ -36,7 +36,8 @@
 		"postcss-load-config": "^4.0.1",
 		"autoprefixer": "^10.4.16",
 		"tailwindcss": "^3.3.5",
-		"@tailwindcss/typography": "^0.5.10"
+		"@tailwindcss/typography": "^0.5.10",
+		"embla-carousel-svelte": "8.0.0-rc14"
 	},
 	"type": "module"
 }

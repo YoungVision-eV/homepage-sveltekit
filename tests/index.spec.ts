@@ -26,6 +26,11 @@ for (const subPage of [
 	});
 }
 
+test('testimonials can be scrolled', async ({ page }) => {
+	await page.getByRole('button', { name: 'Next Testimonial' }).click();
+	await expect(page).toHaveScreenshot();
+});
+
 test.describe('Mobile only', () => {
 	test.skip(({ isMobile }) => !isMobile, 'Mobile only');
 
