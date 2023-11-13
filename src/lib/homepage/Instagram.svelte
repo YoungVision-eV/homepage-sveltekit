@@ -28,11 +28,11 @@
 		<div class="absolute flex items-center justify-between top-20 w-full">
 			<button class="p-3">
 				<img src={ArrowLeft} alt="" class="w-6 h-6" />
-				<span class="sr-only">Previous Testimonial</span>
+				<span class="sr-only">Show previous image</span>
 			</button>
 			<button class="p-3">
 				<img src={ArrowRight} alt="" class="w-6 h-6" />
-				<span class="sr-only">Next Testimonial</span>
+				<span class="sr-only">Show next image</span>
 			</button>
 		</div>
 	</div>
