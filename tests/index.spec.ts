@@ -28,7 +28,7 @@ for (const subPage of [
 
 test('testimonials can be scrolled', async ({ page }) => {
 	await page.getByRole('button', { name: 'Next Testimonial' }).click();
-	await expect(page).toHaveScreenshot();
+	await expect(page.getByTestId('testimonials')).toHaveScreenshot();
 });
 
 test.describe('Mobile only', () => {

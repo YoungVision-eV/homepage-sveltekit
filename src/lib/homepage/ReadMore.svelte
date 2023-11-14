@@ -5,20 +5,30 @@
 </script>
 
 <section
-	class="w-full md:flex flex-row justify-between items-center gap-x-40 bg-cover pt-12 pb-16 md:px-16"
+	class="w-full bg-cover pt-8 pb-7 md:px-20"
 	style="background-image: url({readMoreBackground});"
 >
-	<img
-		src={readMorePicture}
-		alt="YoungVision Leuten sitzen am Tisch"
-		class="hidden md:block h-[24rem] object-cover rounded-2xl"
-	/>
-	<div class="flex flex-col items-center md:items-start">
-		<h1 class="text-white text-3xl md:text-4xl font-bold font-serif">Wir sind YoungVision e.V.</h1>
-		<p class="mt-4 md:mt-5 text-xl text-center md:text-left mx-5 md:mx-0 leading-8">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
-		</p>
-		<Button class="mt-14 md:mt-20" text="Read More" color="white" />
+	<div
+		class="md:flex flex-row justify-between items-center gap-x-24 bg-dark-green bg-opacity-60 md:rounded-2xl"
+	>
+		<img
+			src={readMorePicture}
+			alt="Menschen sitzen in einem Van und singen. Die Perosn in der Mitte spielt Ukulele."
+			class="hidden md:block w-[27rem] h-[29rem] object-cover rounded-2xl"
+		/>
+		<div class="py-6 px-4 lg:pr-24 flex flex-col items-center md:items-start text-white">
+			<h1 class="text-2xl md:text-3xl font-bold font-serif">Wir sind YoungVision e.V.</h1>
+			<p class="mt-6 text-center md:text-left leading-7 md:leading-5">
+				Unsere Community ist geprägt von Offenheit, Empathie und gegenseitiger Unterstützung. Wir
+				glauben daran, dass wahre Veränderung durch Selbstwahrnehmung und das Teilen von Erfahrungen
+				entsteht.
+			</p>
+			<p class="mt-7 text-center md:text-left leading-7 md:leading-5">
+				Gemeinsam gestalten wir so eine Welt, in der Achtsamkeit, Verbundenheit und persönliche
+				Entwicklung im Mittelpunkt stehen. Entdecke YoungVision und werde Teil dieser inspirierenden
+				Gemeinschaft.
+			</p>
+			<Button class="mt-12" text="About YoungVision" color="white" />
+		</div>
 	</div>
 </section>

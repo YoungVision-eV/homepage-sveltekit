@@ -30,7 +30,7 @@
 
 <!-- TODO: add Background -->
 
-<section class="w-full pt-24 pb-12">
+<section class="w-full pt-24 pb-12" data-testid="testimonials">
 	<h1 class="mx-5 md:mx-16 text-3xl font-bold font-serif">Von YoungVision Leuten</h1>
 	<div class="relative overflow-hidden mt-3 md:mt-16">
 		<div
