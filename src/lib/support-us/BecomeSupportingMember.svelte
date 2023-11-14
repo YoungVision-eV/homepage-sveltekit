@@ -13,9 +13,9 @@
 	];
 </script>
 
-<section data-testid="supporting-members" class="px-4 md:px-20 py-8 md:py-12 bg-light-green">
-	<h1 class="text-2xl md:text-4xl font-serif font-bold">Werde Fördermitglied</h1>
-	<h2 class="mt-3 md:mt-2 text-xl md:text-2xl font-serif">
+<section data-testid="supporting-members" class="bg-light-green px-4 py-8 md:px-20 md:py-12">
+	<h1 class="font-serif text-2xl font-bold md:text-4xl">Werde Fördermitglied</h1>
+	<h2 class="mt-3 font-serif text-xl md:mt-2 md:text-2xl">
 		Die chance uns zu unterstutzen und mehr von uns zu erfahren!
 	</h2>
 	<p class="mt-8 md:mt-10 md:text-xl">
@@ -27,29 +27,29 @@
 	<Disclosure data-testid="benefits" let:open>
 		{#if open}
 			<div transition:slide>
-				<DisclosurePanel class="pt-16 pb-12 md:px-16" static>
-					<h3 class="font-serif font-bold text-2xl">Vorteile</h3>
-					<ul class="grid grid-cols-3 md:grid-cols-9 py-12 md:gap-y-14">
+				<DisclosurePanel class="pb-12 pt-16 md:px-16" static>
+					<h3 class="font-serif text-2xl font-bold">Vorteile</h3>
+					<ul class="grid grid-cols-3 py-12 md:grid-cols-9 md:gap-y-14">
 						{#each benefits as benefit, index}
 							<li
-								class={'benefit-item group items-center col-span-3' +
+								class={'benefit-item group col-span-3 items-center' +
 									// TODO: this will break if we have more than 5 benefits
 									(index === 3 ? ' md:col-start-2' : '')}
 							>
 								<div
-									class="group-odd:order-last md:group-odd:order-first flex flex-row flex-none group-odd:justify-end"
+									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end md:group-odd:order-first"
 								>
 									<div
-										class="w-24 h-24 md:w-32 md:h-32 flex-none text-5xl font-bold font-serif bg-gray-300 md:bg-green-50 md:text-white rounded-full flex justify-center items-center"
+										class="flex h-24 w-24 flex-none items-center justify-center rounded-full bg-gray-300 font-serif text-5xl font-bold md:h-32 md:w-32 md:bg-green-50 md:text-white"
 									>
 										{index + 1}
 									</div>
 								</div>
-								<p class="ml-2 md:mx-10 text-sm text-justify md:text-xl col-span-2">{benefit}</p>
+								<p class="col-span-2 ml-2 text-justify text-sm md:mx-10 md:text-xl">{benefit}</p>
 							</li>
 						{/each}
 					</ul>
-					<div class="md:flex gap-x-5 md:text-xl">
+					<div class="gap-x-5 md:flex md:text-xl">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua ut enim ad. T1
@@ -62,7 +62,7 @@
 				</DisclosurePanel>
 			</div>
 		{/if}
-		<DisclosureButton class="mt-12 md:mt-8 w-full flex flex-col justify-center items-center">
+		<DisclosureButton class="mt-12 flex w-full flex-col items-center justify-center md:mt-8">
 			<span class="text-sm">Show Benefits</span>
 			<div>
 				<svg

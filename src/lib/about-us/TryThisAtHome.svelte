@@ -2,16 +2,16 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section class="w-full bg-yellow px-5 md:pl-20 md:pr-40 py-10 md:pb-14 md:flex gap-x-28 items-end">
-	<div class="hidden md:block flex-shrink-0 w-60 h-60 bg-white" />
+<section class="w-full items-end gap-x-28 bg-yellow px-5 py-10 md:flex md:pb-14 md:pl-20 md:pr-40">
+	<div class="hidden h-60 w-60 flex-shrink-0 bg-white md:block" />
 	<div>
-		<h1 class="text-2xl md:text-4xl font-bold font-serif text-center md:text-left">
+		<h1 class="text-center font-serif text-2xl font-bold md:text-left md:text-4xl">
 			Try this with your friends!
 		</h1>
-		<p class="text-sm mt-6 md:mt-9">
+		<p class="mt-6 text-sm md:mt-9">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua ut enim ad.
 		</p>
-		<Button class="mt-14 md:mt-7 mx-auto md:mx-0" color="black" text="Call to action" />
+		<Button class="mx-auto mt-14 md:mx-0 md:mt-7" color="black" text="Call to action" />
 	</div>
 </section>

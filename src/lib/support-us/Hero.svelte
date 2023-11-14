@@ -1,5 +1,5 @@
-<section class="w-full h-[34rem] bg-cover bg-center pt-10 md:pt-16">
-	<h1 class="text-center md:text-white text-3xl md:text-5xl font-bold font-serif">
+<section class="h-[34rem] w-full bg-cover bg-center pt-10 md:pt-16">
+	<h1 class="text-center font-serif text-3xl font-bold md:text-5xl md:text-white">
 		Unterstütze Uns
 	</h1>
 </section>

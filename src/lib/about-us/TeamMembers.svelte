@@ -34,17 +34,17 @@
 	];
 </script>
 
-<section class="py-14 md:pt-20 md:pb-36 px-5 md:px-20 bg-light-green">
-	<h1 class="text-3xl font-bold font-serif">Team Members</h1>
-	<div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-x-5 md:gap-x-24 gap-y-14">
+<section class="bg-light-green px-5 py-14 md:px-20 md:pb-36 md:pt-20">
+	<h1 class="font-serif text-3xl font-bold">Team Members</h1>
+	<div class="mt-14 grid grid-cols-2 gap-x-5 gap-y-14 md:grid-cols-4 md:gap-x-24">
 		{#each members as member}
 			<div class="flex flex-col items-center">
 				<img
 					src={member.image}
 					alt={member.name}
-					class="w-full h-auto aspect-square rounded-full bg-white object-cover object-center"
+					class="aspect-square h-auto w-full rounded-full bg-white object-cover object-center"
 				/>
-				<h2 class="md:text-xl mt-6 md:mt-5 font-bold font-sans">{member.name}</h2>
+				<h2 class="mt-6 font-sans font-bold md:mt-5 md:text-xl">{member.name}</h2>
 				<p class="md:mt-3">{member.job}</p>
 			</div>
 		{/each}

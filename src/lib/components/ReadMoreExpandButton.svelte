@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="w-full flex flex-col justify-center items-center {className}">
+<div class="flex w-full flex-col items-center justify-center {className}">
 	<button class="text-sm" on:click={toggleShowMore}>{text}</button>
 	<button on:click={toggleShowMore}>
 		<svg

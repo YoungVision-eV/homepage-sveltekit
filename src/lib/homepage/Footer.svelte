@@ -1,1 +1,1 @@
-<footer class="w-full h-60 bg-green-50 py-6 px-5" />
+<footer class="h-60 w-full bg-green-50 px-5 py-6" />
