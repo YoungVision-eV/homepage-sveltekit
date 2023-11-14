@@ -1,5 +1,6 @@
 <script>
 	import logo from '$lib/assets/logo.svg';
+	import { page } from '$app/stores';
 	// TODO: get these from CMS?
 	const pages = {
 		Home: '/',
@@ -9,7 +10,18 @@
 		Platform: '/platform'
 	};
 
+	// TODO: shouldn't this work because of the subscription?
+	$: currentPage = $page.url.pathname;
+
 	let menuOpen = false;
+
+	const openMenu = () => {
+		menuOpen = true;
+	};
+
+	const closeMenu = () => {
+		menuOpen = false;
+	};
 </script>
 
 <header>
@@ -23,7 +35,7 @@
 			<button
 				type="button"
 				class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-dark-green"
-				on:click={() => (menuOpen = true)}
+				on:click={openMenu}
 			>
 				<span class="sr-only">Open main menu</span>
 				<svg
@@ -45,14 +57,19 @@
 		<!-- Desktop menu -->
 		<div class="hidden lg:flex lg:gap-x-12">
 			{#each Object.entries(pages) as [page, url]}
-				<a href={url} class="text-sm font-semibold leading-6 text-black hover:underline">{page}</a>
+				<a
+					href={url}
+					class={'text-sm leading-6 text-black hover:underline ' +
+						(currentPage === url ? 'font-semibold' : '')}
+					aria-current={currentPage === url ? 'page' : undefined}>{page}</a
+				>
 			{/each}
 		</div>
 	</nav>
 	<!-- Mobile menu, show/hide based on menu open state. -->
 	<!-- TODO: add animation on open and close.-->
 	{#if menuOpen}
-		<div class="lg:hidden" role="dialog" aria-modal="true">
+		<div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
 			<!-- Background backdrop, show/hide based on slide-over state. -->
 			<div class="fixed inset-0 z-10" />
 			<div
@@ -61,14 +78,10 @@
 				<div class="flex items-center justify-between">
 					<a href="/" class="flex -m-1.5 p-1.5">
 						<img class="h-8 w-auto" src={logo} alt="YoungVision Logo" />
-						<span class="text-2xl font-bold font-sans text-dark-green">YoungVision</span>
+						<span class="ml-2 text-2xl font-bold font-sans text-dark-green">YoungVision</span>
 					</a>
-					<button
-						type="button"
-						class="-m-2.5 rounded-md p-2.5 text-gray-700"
-						on:click={() => (menuOpen = false)}
-					>
-						<span class="sr-only">Close menu</span>
+					<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" on:click={closeMenu}>
+						<span class="sr-only">Close main menu</span>
 						<svg
 							class="h-6 w-6"
 							fill="none"
@@ -88,8 +101,10 @@
 							{#each Object.entries(pages) as [page, url]}
 								<a
 									href={url}
-									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black"
-									>{page}</a
+									aria-current={currentPage === url ? 'page' : undefined}
+									on:click={closeMenu}
+									class={'-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-black' +
+										(currentPage === url ? ' font-semibold' : '')}>{page}</a
 								>
 							{/each}
 						</div>
