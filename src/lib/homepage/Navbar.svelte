@@ -1,6 +1,7 @@
 <script>
 	import logo from '$lib/assets/logo.svg';
 	import { page } from '$app/stores';
+	import clsx from 'clsx';
 	// TODO: get these from CMS?
 	const pages = {
 		Home: '/',
@@ -59,8 +60,9 @@
 			{#each Object.entries(pages) as [page, url]}
 				<a
 					href={url}
-					class={'text-sm leading-6 text-black hover:underline ' +
-						(currentPage === url ? 'font-semibold' : '')}
+					class={clsx('text-sm leading-6 text-black hover:underline ', {
+						'font-semibold': currentPage === url
+					})}
 					aria-current={currentPage === url ? 'page' : undefined}>{page}</a
 				>
 			{/each}
@@ -103,8 +105,9 @@
 									href={url}
 									aria-current={currentPage === url ? 'page' : undefined}
 									on:click={closeMenu}
-									class={'-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-black' +
-										(currentPage === url ? ' font-semibold' : '')}>{page}</a
+									class={clsx('-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-black', {
+										'font-semibold': currentPage === url
+									})}>{page}</a
 								>
 							{/each}
 						</div>

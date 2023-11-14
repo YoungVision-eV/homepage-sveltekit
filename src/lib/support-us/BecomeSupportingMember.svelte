@@ -3,6 +3,7 @@
 	import { Disclosure, DisclosureButton, DisclosurePanel } from '@rgossiaux/svelte-headlessui';
 
 	import Button from '$lib/components/Button.svelte';
+	import clsx from 'clsx';
 
 	const benefits = [
 		'Du hast Lust uns mit größeren Mengen Geld zu unterstutzen?',
@@ -32,9 +33,10 @@
 					<ul class="grid grid-cols-3 py-12 md:grid-cols-9 md:gap-y-14">
 						{#each benefits as benefit, index}
 							<li
-								class={'benefit-item group col-span-3 items-center' +
+								class={clsx('benefit-item group col-span-3 items-center', {
 									// TODO: this will break if we have more than 5 benefits
-									(index === 3 ? ' md:col-start-2' : '')}
+									'md:col-start-2': index === 3
+								})}
 							>
 								<div
 									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end md:group-odd:order-first"

@@ -1,17 +1,25 @@
 <script lang="ts">
+	import clsx from 'clsx';
+
 	let className = '';
 	export { className as class };
 	export let text: string;
 	export let color: 'black' | 'white';
-
-	const colorationClasses = color === 'black' ? 'bg-black text-white' : 'bg-white text-black';
 </script>
 
 <button
-	class={'flex items-center justify-between p-4 px-8 font-bold ' +
-		colorationClasses +
-		' ' +
-		className}
+	class={clsx(
+		'flex items-center justify-between p-4 px-8 font-bold',
+		{
+			// black background, white text
+			'bg-black': color === 'black',
+			'text-white': color === 'black',
+			// white background, black text
+			'bg-white': color === 'white',
+			'text-black': color === 'white'
+		},
+		className
+	)}
 >
 	<svg class="h-6 w-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 		<circle cx="12" cy="12" r="10" stroke-width="3.45596" fill="none" />
