@@ -3,7 +3,7 @@
 	import Calendar from './Calendar.svelte';
 </script>
 
-<section class="w-full bg-cover pt-16">
+<section class="w-full bg-cover pb-10 pt-16">
 	<div class="px-5 md:px-16">
 		<h1 class="font-serif text-3xl font-bold md:text-4xl">Unsere Events</h1>
 	</div>

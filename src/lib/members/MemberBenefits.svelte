@@ -1,4 +1,4 @@
-<main class="px-4 py-14">
+<main class="px-4 pt-14">
 	<img alt="YoungVision" class="h-48 w-full bg-gray-300" />
 	<h2 class="mt-10 text-center font-serif text-2xl font-bold">Werde Mitglied</h2>
 	<p class="mt-6">
