@@ -10,6 +10,7 @@
 		TabPanel,
 		TabPanels
 	} from '@rgossiaux/svelte-headlessui';
+	import clsx from 'clsx';
 
 	const possibilities = [
 		{
@@ -40,8 +41,7 @@
 			{#each possibilities as possibility}
 				<Tab class="flex flex-col items-center justify-between text-center" let:selected>
 					<div
-						class={'h-56 w-56 rounded-full bg-gray-300' +
-							(selected ? ' border-4 border-black' : '')}
+						class={clsx('h-56 w-56 rounded-full bg-gray-300', selected && 'border-4 border-black')}
 					/>
 					<h3 class="mt-4 font-serif text-4xl font-bold">{possibility.title}</h3>
 					<p class="mt-4">{possibility.description}</p>

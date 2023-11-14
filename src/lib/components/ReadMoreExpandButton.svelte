@@ -1,4 +1,5 @@
 <script>
+	import clsx from 'clsx';
 	let className = '';
 	export { className as class };
 	export let showMore = false;
@@ -9,7 +10,7 @@
 	}
 </script>
 
-<div class="flex w-full flex-col items-center justify-center {className}">
+<div class={clsx('flex w-full flex-col items-center justify-center', className)}>
 	<button class="text-sm" on:click={toggleShowMore}>{text}</button>
 	<button on:click={toggleShowMore}>
 		<svg
