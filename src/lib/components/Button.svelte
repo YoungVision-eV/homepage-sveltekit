@@ -8,12 +8,12 @@
 </script>
 
 <button
-	class={'flex p-4 px-8 font-bold justify-between items-center ' +
+	class={'flex items-center justify-between p-4 px-8 font-bold ' +
 		colorationClasses +
 		' ' +
 		className}
 >
-	<svg class="w-6 h-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<svg class="h-6 w-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 		<circle cx="12" cy="12" r="10" stroke-width="3.45596" fill="none" />
 	</svg>
 	<span class="ml-4">

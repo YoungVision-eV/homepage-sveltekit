@@ -31,19 +31,19 @@
 	];
 </script>
 
-<section class="py-16 px-4 md:px-20 md:py-24">
-	<h1 class="text-2xl font-bold font-serif">Andere Spenden Möglichkeiten</h1>
-	<p class="text-xl mt-3 md:mt-4">Wir freuen uns über alle Spenden! Danke!</p>
+<section class="px-4 py-16 md:px-20 md:py-24">
+	<h1 class="font-serif text-2xl font-bold">Andere Spenden Möglichkeiten</h1>
+	<p class="mt-3 text-xl md:mt-4">Wir freuen uns über alle Spenden! Danke!</p>
 	<TabGroup class="mt-20 hidden md:block">
-		<TabList class="flex gap-x-16 items-stretch">
+		<TabList class="flex items-stretch gap-x-16">
 			<Tab class="hidden" />
 			{#each possibilities as possibility}
-				<Tab class="flex flex-col justify-between items-center text-center" let:selected>
+				<Tab class="flex flex-col items-center justify-between text-center" let:selected>
 					<div
-						class={'rounded-full w-56 h-56 bg-gray-300' +
+						class={'h-56 w-56 rounded-full bg-gray-300' +
 							(selected ? ' border-4 border-black' : '')}
 					/>
-					<h3 class="mt-4 text-4xl font-serif font-bold">{possibility.title}</h3>
+					<h3 class="mt-4 font-serif text-4xl font-bold">{possibility.title}</h3>
 					<p class="mt-4">{possibility.description}</p>
 					<Button class="mt-8" text="Email Now" color="black" />
 				</Tab>
@@ -52,20 +52,20 @@
 		<TabPanels>
 			<!-- TODO: is there a better way than this hidden tab? -->
 			<TabPanel class="hidden" />
-			<TabPanel class="pt-40 pb-16">
-				<h3 class="text-5xl font-serif font-bold text-center">Partner werden</h3>
+			<TabPanel class="pb-16 pt-40">
+				<h3 class="text-center font-serif text-5xl font-bold">Partner werden</h3>
 			</TabPanel>
-			<TabPanel class="pt-40 pb-16">
-				<h3 class="text-5xl font-serif font-bold text-center">Geld spenden</h3>
+			<TabPanel class="pb-16 pt-40">
+				<h3 class="text-center font-serif text-5xl font-bold">Geld spenden</h3>
 			</TabPanel>
-			<TabPanel class="pt-40 pb-16 text-2xl">
-				<h3 class="text-5xl font-serif font-bold text-center">Expertise Spenden</h3>
+			<TabPanel class="pb-16 pt-40 text-2xl">
+				<h3 class="text-center font-serif text-5xl font-bold">Expertise Spenden</h3>
 				<div class="mt-16 flex items-center justify-between gap-x-28">
-					<img class="bg-gray-300 h-[38rem] w-[28rem] flex-none" alt="Expertise Spenden" />
+					<img class="h-[38rem] w-[28rem] flex-none bg-gray-300" alt="Expertise Spenden" />
 					<div>
 						<p>Du hast Lust YoungVision mit deiner Expertise voranzubringen?</p>
 						<p class="mt-12">Wir suchen Unterstützung für folgende Bereiche:</p>
-						<ul class="list-disc list-inside">
+						<ul class="list-inside list-disc">
 							<li>Supervision</li>
 							<li>Kassenprüfer</li>
 							<li>Steuerberatung</li>
@@ -80,10 +80,10 @@
 					</div>
 				</div>
 			</TabPanel>
-			<TabPanel class="pt-40 pb-16 text-2xl">
-				<h3 class="text-5xl font-serif font-bold text-center">Sachspenden</h3>
+			<TabPanel class="pb-16 pt-40 text-2xl">
+				<h3 class="text-center font-serif text-5xl font-bold">Sachspenden</h3>
 				<div class="mt-16 flex items-center justify-between gap-x-28">
-					<img class="bg-gray-300 h-[38rem] w-[28rem] flex-none" alt="Sachspenden" />
+					<img class="h-[38rem] w-[28rem] flex-none bg-gray-300" alt="Sachspenden" />
 					<div>
 						<p>
 							Wenn du uns eine Sachspende schicken willst, dann schreib Name kurz ein Email: Email
@@ -91,7 +91,7 @@
 						<Button class="mt-8" text="Email Now" color="black" />
 						<p>Oder bring deine Sachspende einfach zum nächsten Event in Rosow mit:).</p>
 						<p>Das wird gerade benötigt</p>
-						<ul class="list-disc list-inside">
+						<ul class="list-inside list-disc">
 							<li>Laminiergerät</li>
 							<li>Zeltboden</li>
 							<li>Tipis / Pavillons</li>
@@ -106,16 +106,16 @@
 	</TabGroup>
 	<ul class="mt-16 md:hidden">
 		{#each possibilities as possibility}
-			<li class="first:mt-0 mt-24 group">
+			<li class="group mt-24 first:mt-0">
 				<Disclosure>
-					<DisclosureButton class="flex group-even:flex-row-reverse gap-x-4 items-center text-left">
-						<div class="flex-none w-40 h-40 bg-gray-300 rounded-full" />
+					<DisclosureButton class="flex items-center gap-x-4 text-left group-even:flex-row-reverse">
+						<div class="h-40 w-40 flex-none rounded-full bg-gray-300" />
 						<div>
 							<h3 class="text-xl">{possibility.title}</h3>
 							<p class="mt-3">{possibility.description}</p>
 						</div>
 					</DisclosureButton>
-					<DisclosurePanel class="pt-4 pb-8">
+					<DisclosurePanel class="pb-8 pt-4">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua ut enim ad. T1
@@ -130,10 +130,10 @@
 			</li>
 		{/each}
 	</ul>
-	<div class="hidden md:flex mt-36 py-10 px-24 bg-yellow rounded-2xl w-full gap-x-28">
-		<div class="w-56 h-56 bg-gray-300" />
+	<div class="mt-36 hidden w-full gap-x-28 rounded-2xl bg-yellow px-24 py-10 md:flex">
+		<div class="h-56 w-56 bg-gray-300" />
 		<div>
-			<h3 class="font-serif font-bold text-4xl">Ansprechpartner</h3>
+			<h3 class="font-serif text-4xl font-bold">Ansprechpartner</h3>
 			<dl class="mt-8 grid grid-cols-2">
 				<dt class="font-bold">Name</dt>
 				<dd>Jakob Voigt</dd>
