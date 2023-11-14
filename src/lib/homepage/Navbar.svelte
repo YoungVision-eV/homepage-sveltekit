@@ -8,7 +8,7 @@
 		About: '/about-us',
 		Projekte: '/projects',
 		Support: '/support-us',
-		Platform: '/platform'
+		Platform: '/members'
 	};
 
 	// TODO: shouldn't this work because of the subscription?
