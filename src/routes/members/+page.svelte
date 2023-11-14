@@ -13,3 +13,4 @@
 	alt="YoungVision Menschen sitzen am Lagerfeuer"
 	src={FooterBackground}
 />
+<footer class="h-60 bg-dark-green" />
