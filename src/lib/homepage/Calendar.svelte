@@ -118,7 +118,7 @@
 					<div
 						class={clsx(
 							'z-30 flex flex-col items-center justify-center',
-							index === selectedEvent ? '' : 'md:text-white'
+							index === selectedEvent ? '' : 'md:text-dark-green'
 						)}
 					>
 						<span class="font-serif text-5xl font-bold">{event.date.getDate()}</span>
