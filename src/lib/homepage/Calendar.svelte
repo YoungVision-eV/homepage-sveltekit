@@ -59,7 +59,7 @@
 			{/each}
 		</div>
 		<div
-			class="hidden md:absolute md:inset-y-0 md:right-[10.5rem] md:flex md:flex-col md:justify-center"
+			class="hidden md:absolute md:inset-y-0 md:right-[27%] md:flex md:flex-col md:justify-center"
 		>
 			<div class="relative">
 				<!-- HACK: this transformation calculation feels bad
