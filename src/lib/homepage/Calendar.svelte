@@ -105,13 +105,13 @@
 		{#each events as event, index}
 			<li
 				class={clsx(
-					'col-span-4 grid grid-cols-subgrid items-center bg-soft-yellow transition-colors md:col-span-5 md:bg-yellow md:bg-opacity-60',
+					'col-span-4 grid grid-cols-subgrid bg-soft-yellow transition-colors md:col-span-5 md:bg-yellow md:bg-opacity-60',
 					index === selectedEvent ? 'text-black' : 'text-dark-green',
 					index === 0 ? 'rounded-t-2xl md:rounded-tl-none' : ''
 				)}
 			>
 				<button
-					class="col-span-4 grid grid-cols-subgrid py-7 text-left md:col-span-5"
+					class="col-span-4 grid grid-cols-subgrid items-center py-7 text-left md:col-span-5"
 					on:click={() => (selectedEvent = index)}
 					disabled={selectedEvent === index}
 				>
