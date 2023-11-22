@@ -41,7 +41,7 @@
 	];
 </script>
 
-<div class="grid w-full grid-cols-4 md:grid-cols-9 md:px-16">
+<div class="grid w-full grid-cols-4 md:grid-cols-9 md:px-20">
 	<div
 		class="col-start-1 col-end-5 row-end-2 md:relative md:col-end-6 md:row-start-1 md:row-end-4 md:rounded-l-2xl md:rounded-r-none"
 	>
