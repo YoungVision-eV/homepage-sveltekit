@@ -4,6 +4,10 @@
 	import ArrowRight from '$lib/assets/Icons/Arrow-Right.svg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
 	import LenaProfile from '$lib/assets/lena-testimonial-profile.jpeg';
+	import clsx from 'clsx';
+
+	let className = '';
+	export { className as class };
 
 	let emblaApi: EmblaCarouselType;
 	let options = { loop: true };
@@ -30,7 +34,7 @@
 
 <!-- TODO: add Background -->
 
-<section class="w-full pb-12 pt-14" data-testid="testimonials">
+<section class={clsx('w-full pb-12 pt-14', className)} data-testid="testimonials">
 	<h1 class="mx-5 font-serif text-3xl font-bold md:mx-16">Von YoungVision Leuten</h1>
 	<div class="relative mt-3 overflow-hidden md:mt-16">
 		<div
