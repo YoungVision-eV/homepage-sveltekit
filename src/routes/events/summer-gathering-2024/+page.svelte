@@ -96,7 +96,7 @@
 			>
 				{info.title}
 			</h3>
-			<p class="w-full lg:text-xl">{info.text}</p>
+			<p class="mt-2 w-full lg:mt-0 lg:text-xl">{info.text}</p>
 		{/each}
 	</div>
 </section>
