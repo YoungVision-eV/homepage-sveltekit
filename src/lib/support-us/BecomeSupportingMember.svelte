@@ -33,7 +33,7 @@
 					<ul class="grid grid-cols-3 py-12 md:grid-cols-9 md:gap-y-14">
 						{#each benefits as benefit, index}
 							<li
-								class={clsx('benefit-item group col-span-3 items-center', {
+								class={clsx('group col-span-3 grid grid-cols-subgrid items-center', {
 									// TODO: this will break if we have more than 5 benefits
 									'md:col-start-2': index === 3
 								})}
