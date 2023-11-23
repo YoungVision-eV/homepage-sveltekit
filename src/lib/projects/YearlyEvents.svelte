@@ -33,7 +33,7 @@
 	let only_members = true;
 </script>
 
-<section class="px-6 py-14">
+<section class="px-6 pt-14">
 	<h1 class="text-2xl font-serif font-bold">Our Yearly Events</h1>
 	<p class="mt-5">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
