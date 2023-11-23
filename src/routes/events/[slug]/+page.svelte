@@ -8,6 +8,9 @@
 	import LoveEarth from '$lib/icons/LoveEarth.svelte';
 	import People from '$lib/icons/People.svelte';
 
+	/** @type {import('./$types').PageData} */
+	export let data;
+
 	const photos = [
 		{
 			src: 'https://placehold.co/1200x1200',
@@ -62,9 +65,7 @@
 	</div>
 </div>
 <section class="mt-12 px-4 lg:mt-20 lg:px-20">
-	<h1 class="text-center font-serif text-3xl font-bold lg:text-left lg:text-5xl">
-		Summer Gathering 2024
-	</h1>
+	<h1 class="text-center font-serif text-3xl font-bold lg:text-left lg:text-5xl">{data.title}</h1>
 	<p class="mt-6 lg:mt-16 lg:text-xl lg:leading-8">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
