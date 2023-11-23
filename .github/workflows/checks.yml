@@ -51,7 +51,14 @@ jobs:
         with:
           fail-on-warning: true
           markdown-report-on-step-summary: true
+          only-pr-files: false
           report-json: 'eslint_report.json'
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: eslint_report
+          path: eslint_report.json
+          retention-days: 30
 
   sveltecheck:
     runs-on: ubuntu-latest
