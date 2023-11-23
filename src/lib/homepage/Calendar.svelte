@@ -178,7 +178,7 @@
 </div>
 
 <style>
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		div#calendar {
 			grid-template-columns: 1.5rem repeat(4, minmax(0, 1fr));
 		}

@@ -24,11 +24,11 @@
 
 <style>
 	section {
-		background-image: url($lib/assets/background-hero-landscape.jpeg);
+		background-image: url($lib/assets/background-hero-landscape.png);
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		section {
-			background-image: url($lib/assets/background-hero.jpeg);
+			background-image: url($lib/assets/background-hero.png);
 		}
 	}
 </style>
