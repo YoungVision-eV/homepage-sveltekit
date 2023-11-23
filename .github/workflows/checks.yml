@@ -42,6 +42,8 @@ jobs:
           cache: 'pnpm'
       - name: Install Node Dependencies
         run: pnpm install
+      - name: Generate svelte-kit types
+        run: pnpm exec svelte-kit sync
       - name: Save Code Linting Report JSON
         run: pnpm run lint:eslint --output-file eslint_report.json --format json
         continue-on-error: ${{ github.actor != 'dependabot[bot]' }} # as dependabot does not allow annotations, still fail
@@ -51,14 +53,13 @@ jobs:
         with:
           fail-on-warning: true
           markdown-report-on-step-summary: true
-          only-pr-files: false
           report-json: 'eslint_report.json'
       - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: eslint_report
           path: eslint_report.json
-          retention-days: 30
+          retention-days: 7
 
   sveltecheck:
     runs-on: ubuntu-latest
