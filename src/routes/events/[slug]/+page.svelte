@@ -88,7 +88,7 @@
 			>
 				{info.title}
 			</h3>
-			<p class="mt-2 w-full lg:mt-0 lg:text-xl">{info.text}</p>
+			<p class="mb-12 mt-2 w-full lg:my-0 lg:text-xl">{info.text}</p>
 		{/each}
 	</div>
 </section>
