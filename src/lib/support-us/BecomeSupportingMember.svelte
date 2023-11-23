@@ -14,49 +14,49 @@
 	];
 </script>
 
-<section data-testid="supporting-members" class="bg-light-green px-4 py-8 md:px-20 md:py-12">
-	<h1 class="font-serif text-2xl font-bold md:text-4xl">Werde Fördermitglied</h1>
-	<h2 class="mt-3 font-serif text-xl md:mt-2 md:text-2xl">
+<section data-testid="supporting-members" class="bg-light-green px-4 py-8 lg:px-20 lg:py-12">
+	<h1 class="font-serif text-2xl font-bold lg:text-4xl">Werde Fördermitglied</h1>
+	<h2 class="mt-3 font-serif text-xl lg:mt-2 lg:text-2xl">
 		Die chance uns zu unterstutzen und mehr von uns zu erfahren!
 	</h2>
-	<p class="mt-8 md:mt-10 md:text-xl">
+	<p class="mt-8 lg:mt-10 lg:text-xl">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button class="mt-8 md:mt-6" color="black" text="Sign Up Now" />
+	<Button class="mt-8 lg:mt-6" color="black" text="Sign Up Now" />
 	<Disclosure data-testid="benefits" let:open>
 		{#if open}
 			<div transition:slide>
-				<DisclosurePanel class="pb-12 pt-16 md:px-16" static>
+				<DisclosurePanel class="pb-12 pt-16 lg:px-16" static>
 					<h3 class="font-serif text-2xl font-bold">Vorteile</h3>
-					<ul class="grid grid-cols-3 py-12 md:grid-cols-9 md:gap-y-14">
+					<ul class="grid grid-cols-3 py-12 lg:grid-cols-9 lg:gap-y-14">
 						{#each benefits as benefit, index}
 							<li
 								class={clsx('group col-span-3 grid grid-cols-subgrid items-center', {
 									// TODO: this will break if we have more than 5 benefits
-									'md:col-start-2': index === 3
+									'lg:col-start-2': index === 3
 								})}
 							>
 								<div
-									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end md:group-odd:order-first"
+									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end lg:group-odd:order-first"
 								>
 									<div
-										class="flex h-24 w-24 flex-none items-center justify-center rounded-full bg-gray-300 font-serif text-5xl font-bold md:h-32 md:w-32 md:bg-green-50 md:text-white"
+										class="flex h-24 w-24 flex-none items-center justify-center rounded-full bg-gray-300 font-serif text-5xl font-bold lg:h-32 lg:w-32 lg:bg-green-50 lg:text-white"
 									>
 										{index + 1}
 									</div>
 								</div>
-								<p class="col-span-2 ml-2 text-justify text-sm md:mx-10 md:text-xl">{benefit}</p>
+								<p class="col-span-2 ml-2 text-justify text-sm lg:mx-10 lg:text-xl">{benefit}</p>
 							</li>
 						{/each}
 					</ul>
-					<div class="gap-x-5 md:flex md:text-xl">
+					<div class="gap-x-5 lg:flex lg:text-xl">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua ut enim ad. T1
 						</p>
-						<p class="mt-4 md:mt-0">
+						<p class="mt-4 lg:mt-0">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua ut enim ad. T1
 						</p>
@@ -64,7 +64,7 @@
 				</DisclosurePanel>
 			</div>
 		{/if}
-		<DisclosureButton class="mt-12 flex w-full flex-col items-center justify-center md:mt-8">
+		<DisclosureButton class="mt-12 flex w-full flex-col items-center justify-center lg:mt-8">
 			<span class="text-sm">Show Benefits</span>
 			<div>
 				<svg

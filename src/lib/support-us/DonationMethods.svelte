@@ -32,10 +32,10 @@
 	];
 </script>
 
-<section class="px-4 py-16 md:px-20 md:py-24">
+<section class="px-4 py-16 lg:px-20 lg:py-24">
 	<h1 class="font-serif text-2xl font-bold">Andere Spenden Möglichkeiten</h1>
-	<p class="mt-3 text-xl md:mt-4">Wir freuen uns über alle Spenden! Danke!</p>
-	<TabGroup class="mt-20 hidden md:block">
+	<p class="mt-3 text-xl lg:mt-4">Wir freuen uns über alle Spenden! Danke!</p>
+	<TabGroup class="mt-20 hidden lg:block">
 		<TabList class="flex items-stretch gap-x-16">
 			<Tab class="hidden" />
 			{#each possibilities as possibility}
@@ -104,7 +104,7 @@
 			</TabPanel>
 		</TabPanels>
 	</TabGroup>
-	<ul class="mt-16 md:hidden">
+	<ul class="mt-16 lg:hidden">
 		{#each possibilities as possibility}
 			<li class="group mt-24 first:mt-0">
 				<Disclosure>
@@ -130,7 +130,7 @@
 			</li>
 		{/each}
 	</ul>
-	<div class="mt-36 hidden w-full gap-x-28 rounded-2xl bg-yellow px-24 py-10 md:flex">
+	<div class="mt-36 hidden w-full gap-x-28 rounded-2xl bg-yellow px-24 py-10 lg:flex">
 		<div class="h-56 w-56 bg-gray-300" />
 		<div>
 			<h3 class="font-serif text-4xl font-bold">Ansprechpartner</h3>

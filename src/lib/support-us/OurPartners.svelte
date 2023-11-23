@@ -5,7 +5,7 @@
 	const honours = new Array(12).fill({ name: 'Nachname, Vorname', place: 'Ort' });
 </script>
 
-<div class="hidden bg-light-green px-20 py-14 md:block">
+<div class="hidden bg-light-green px-20 py-14 lg:block">
 	<section>
 		<h1 class="font-serif text-4xl font-bold">Unsere Partner</h1>
 		<ul class="mt-14 flex justify-between">
