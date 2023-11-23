@@ -10,6 +10,10 @@
 
 	const photos = [
 		{
+			src: 'https://placehold.co/1200x1200',
+			alt: 'Placeholder'
+		},
+		{
 			src: 'https://placehold.co/800x1200',
 			alt: 'Placeholder'
 		},
@@ -22,92 +26,122 @@
 			alt: 'Placeholder'
 		}
 	];
+
+	const infos = [
+		{
+			title: 'Ort',
+			icon: People,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+		},
+		{
+			title: 'Orga',
+			icon: People,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+		},
+		{
+			title: 'Finanzierung',
+			icon: HandWithMoney,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+		},
+		{
+			title: 'Motivation',
+			icon: LoveEarth,
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+		}
+	];
 </script>
 
-<img class="h-[27rem] w-full object-cover" src={Gathering2024} alt="Gathering 2024" />
-<div class="pr-4">
-	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60">
+<img
+	class="h-[27rem] w-full object-cover"
+	src={Gathering2024}
+	alt="Gathering 2024"
+/>
+<div class="pr-4 lg:pr-20">
+	<div
+		class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl"
+	>
 		<button class="p-3">
 			<img src={ArrowLeft} alt="" class="h-6 w-6" />
-			<span class="sr-only">Show previous image</span>
+			<span class="sr-only">Zur vorherigen Seite</span>
 		</button>
 		Get Involved
 	</div>
 </div>
-<section class="px-4 pt-12">
-	<h1 class="text-center font-serif text-3xl font-bold">Summer Gathering 2024</h1>
-	<p class="mt-6">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
+<section class="mt-12 px-4 lg:mt-20 lg:px-20">
+	<h1
+		class="text-center font-serif text-3xl font-bold lg:text-left lg:text-5xl"
+	>
+		Summer Gathering 2024
+	</h1>
+	<p class="mt-6 lg:mt-16 lg:text-xl lg:leading-8">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua ut enim ad. Lorem ipsum
+		dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+		incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button text="Sign Up" color="black" class="mt-12" />
+	<Button text="Sign Up" color="black" class="mt-12 lg:mt-14" />
 </section>
-<section class="px-4 pt-14">
-	<h2 class="font-serif text-2xl font-bold">Wichtige Infos</h2>
-	<dl class="mt-12 flex flex-col items-center">
-		<dt>
-			<div class="h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
-				<People />
+<section class="mt-14 px-4 lg:mt-28 lg:px-20">
+	<h2 class="font-serif text-2xl font-bold lg:text-3xl">Wichtige Infos</h2>
+	<div
+		id="info-grid"
+		class="mt-12 grid grid-cols-1 items-center justify-center lg:grid-flow-col lg:grid-cols-4 lg:gap-x-16"
+	>
+		{#each infos as info}
+			<div class="mx-auto h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
+				<svelte:component this={info.icon} />
 			</div>
-			<h3 class="mt-12 text-center font-serif text-xl font-bold">Ort</h3>
-		</dt>
-		<dd>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
-		</dd>
-		<dt class="mt-12">
-			<div class="h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
-				<People />
-			</div>
-			<h3 class="mt-12 text-center font-serif text-xl font-bold">Orga</h3>
-		</dt>
-		<dd>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
-		</dd>
-		<dt class="mt-12">
-			<div class="h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
-				<HandWithMoney />
-			</div>
-			<h3 class="mt-12 text-center font-serif text-xl font-bold">Finanzierung</h3>
-		</dt>
-		<dd>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
-		</dd>
-		<dt class="mt-12">
-			<div class="h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
-				<LoveEarth />
-			</div>
-			<h3 class="mt-12 text-center font-serif text-xl font-bold">Motivation</h3>
-		</dt>
-		<dd>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
-		</dd>
-	</dl>
+			<h3
+				class="mt-12 text-center font-serif text-xl font-bold lg:mt-0 lg:pb-7 lg:pt-12 lg:text-3xl"
+			>
+				{info.title}
+			</h3>
+			<p class="w-full lg:text-xl">{info.text}</p>
+		{/each}
+	</div>
 </section>
-<section class="mt-14 px-4">
-	<h2 class="font-serif text-2xl font-bold">Keep Updated</h2>
-	<p class="mt-5">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
+<section class="mt-14 px-4 lg:mt-28 lg:px-20">
+	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Keep Updated</h2>
+	<p class="mt-5 lg:mt-6 lg:text-xl">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua ut enim ad. Lorem ipsum
+		dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+		incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
 	<Button class="mt-12" color="black" text="Follow Telegram Kanal" />
 </section>
-<Testimonial class="mt-14 bg-yellow bg-opacity-60" />
-<section class="mt-14 px-4">
-	<h2 class="font-serif text-2xl font-bold">Fotos vom letzten Gathering</h2>
-	<div class="flex flex-col gap-12 py-12">
-		{#each photos as photo}
-			<img class="h-[30rem] w-full object-cover" src={photo.src} alt={photo.alt} />
+<Testimonial class="mt-14 bg-yellow bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
+<section class="mt-14 px-4 lg:mt-28 lg:px-20">
+	<h2 class="font-serif text-2xl font-bold lg:text-4xl">
+		Fotos vom letzten Gathering
+	</h2>
+	<div
+		id="photo-grid"
+		class="grid grid-cols-1 gap-y-12 py-12 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-8 lg:pb-28 lg:pt-16"
+	>
+		{#each photos as photo, index}
+			<img
+				class:hidden={index > 2}
+				class:lg:col-span-2={index === 0}
+				class:lg:row-span-2={index === 1}
+				class:lg:row-span-3={index === 0 || index === 2}
+				class="h-[30rem] w-full object-cover lg:block lg:h-full"
+				src={photo.src}
+				alt={photo.alt}
+			/>
 		{/each}
 	</div>
 </section>
 <Footer />
+
+<style>
+	@media (min-width: 1024px) {
+		#info-grid {
+			grid-template-rows: 10.75rem auto auto;
+		}
+
+		#photo-grid {
+			grid-template-rows: repeat(3, 14rem);
+		}
+	}
+</style>
