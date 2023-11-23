@@ -101,6 +101,10 @@
 </section>
 
 <style>
+	section {
+		background-image: url($lib/assets/background-supporting-member.jpeg);
+		background-position: top left;
+	}
 	.benefit-item {
 		display: grid;
 		grid-template-columns: subgrid;
