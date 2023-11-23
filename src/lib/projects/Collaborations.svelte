@@ -4,7 +4,7 @@
 
 <section class="px-6 pt-14">
 	<h2 class="font-serif text-2xl font-bold">Collaborations with Luna</h2>
-	<img class="mt-12" src="https://placehold.co/600x750" />
+	<img class="mt-12" src="https://placehold.co/600x750" alt="Placeholder" />
 	<h3 class="mt-10 font-bold">LOREM IPSUM - TG</h3>
 	<p class="mt-2">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -19,7 +19,7 @@
 	</p>
 	<Button class="mt-12" text="Call to Action" color="black" />
 
-	<img class="mt-16" src="https://placehold.co/600x750" />
+	<img class="mt-16" src="https://placehold.co/600x750" alt="Placeholder" />
 	<h3 class="mt-10 font-bold">LOREM IPSUM - TG</h3>
 	<p class="mt-2">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -39,7 +39,7 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua.
 	</p>
-	<img class="mt-12" src="https://placehold.co/600x500" />
+	<img class="mt-12" src="https://placehold.co/600x500" alt="Placeholder" />
 	<h3 class="mt-10 font-bold">LOREM IPSUM - TG</h3>
 	<p class="mt-2">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
