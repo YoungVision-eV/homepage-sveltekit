@@ -15,12 +15,12 @@
 	];
 </script>
 
-<section class="w-full pb-32 pt-12 md:px-6">
-	<h1 class="mx-5 font-serif text-3xl font-bold text-dark-green md:mx-12 md:text-black">
+<section class="w-full pb-32 pt-12 lg:px-6">
+	<h1 class="mx-5 font-serif text-3xl font-bold text-dark-green lg:mx-12 lg:text-black">
 		Folge uns auf Instagram
 	</h1>
 	<div class="relative mt-11">
-		<div class="flex max-w-full gap-x-2 overflow-hidden md:mx-14">
+		<div class="flex max-w-full gap-x-2 overflow-hidden lg:mx-14">
 			{#each images as image}
 				<img class="h-52 w-52 shrink-0 object-cover" src={image.src} alt={image.alt} />
 			{/each}
