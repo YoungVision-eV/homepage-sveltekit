@@ -7,11 +7,11 @@
 
 <Hero />
 <MemberBenefits />
-<div class="md:py-24">
+<div class="lg:py-24">
 	<Testimonial />
 </div>
 <img
-	class="h-[35rem] w-full object-cover md:h-[60rem]"
+	class="h-[35rem] w-full object-cover lg:h-[60rem]"
 	alt="YoungVision Menschen sitzen am Lagerfeuer"
 	src={FooterBackground}
 />
