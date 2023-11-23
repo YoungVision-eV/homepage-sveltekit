@@ -12,9 +12,7 @@ const events: Record<string, Event> = {
 };
 
 export const load: PageLoad = ({ params }) => {
-	console.log(params);
 	const event = events[params.slug];
-	console.log(event);
 	if (event != null) {
 		return event;
 	}
