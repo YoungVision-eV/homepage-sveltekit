@@ -1,5 +1,4 @@
 <script>
-	import Gathering2024 from '$lib/assets/gathering-24-hero.jpeg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
 	import Button from '$lib/components/Button.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
@@ -53,7 +52,11 @@
 	];
 </script>
 
-<img class="h-[27rem] w-full object-cover" src={Gathering2024} alt="Gathering 2024" />
+<enhanced:img
+	class="h-[27rem] w-full object-cover"
+	src="$lib/assets/gathering-24-hero.jpeg"
+	alt="Gathering 2024"
+/>
 <div class="pr-4 lg:pr-20">
 	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl">
 		<button class="p-3">
