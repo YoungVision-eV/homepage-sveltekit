@@ -34,19 +34,19 @@
 </script>
 
 <section class="px-6 pt-14">
-	<h1 class="text-2xl font-serif font-bold">Our Yearly Events</h1>
+	<h1 class="font-serif text-2xl font-bold">Our Yearly Events</h1>
 	<p class="mt-5">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
 	<div class="mt-3 flex flex-row">
-		<div class="flex-1 flex items-center">
-			<input class="w-7 h-7" type="checkbox" id="for-all" bind:checked={for_all} />
+		<div class="flex flex-1 items-center">
+			<input class="h-7 w-7" type="checkbox" id="for-all" bind:checked={for_all} />
 			<label class="ml-4" for="for-all">Für Alle</label>
 		</div>
-		<div class="flex-1 flex items-center">
-			<input class="w-7 h-7" type="checkbox" id="only-members" bind:checked={only_members} />
+		<div class="flex flex-1 items-center">
+			<input class="h-7 w-7" type="checkbox" id="only-members" bind:checked={only_members} />
 			<label class="ml-4" for="only-members">Nur Mitglieder</label>
 		</div>
 	</div>
@@ -56,18 +56,18 @@
 				<li>
 					<img src={event.image} alt="" class="mt-12 rounded-t-2xl" />
 					<div
-						class="p-6 rounded-b-2xl flex shadow-lg {event.for_all
+						class="flex rounded-b-2xl p-6 shadow-lg {event.for_all
 							? 'bg-soft-yellow'
 							: 'bg-light-green'}"
 					>
 						<div class="mt-4 flex flex-col items-center">
-							<div class="text-5xl font-serif font-bold">{event.day}</div>
+							<div class="font-serif text-5xl font-bold">{event.day}</div>
 							<div>{event.month}</div>
 						</div>
 						<div class="ml-10">
 							<h2 class="font-bold">{event.title}</h2>
 							<p class="mt-3">{event.text}</p>
-							<p class="mt-3 px-5 inline-block rounded-full bg-white">
+							<p class="mt-3 inline-block rounded-full bg-white px-5">
 								{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
 							</p>
 						</div>

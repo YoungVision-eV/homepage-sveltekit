@@ -7,4 +7,4 @@
 <Hero />
 <YearlyEvents />
 <Collaborations />
-<div class="mt-14 w-full h-64 bg-dark-green" />
+<div class="mt-14 h-64 w-full bg-dark-green" />
