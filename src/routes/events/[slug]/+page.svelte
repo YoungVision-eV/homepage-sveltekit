@@ -59,6 +59,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>YoungVision e.V. - {data.title}</title>
+	<meta name="description" content="YoungVision e.V. - {data.title}" />
+</svelte:head>
+
 <enhanced:img
 	class="h-[27rem] w-full object-cover"
 	src="$lib/assets/gathering-24-hero.jpeg"

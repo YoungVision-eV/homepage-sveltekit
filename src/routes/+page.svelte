@@ -6,6 +6,20 @@
 	import Instagram from '$lib/homepage/Instagram.svelte';
 </script>
 
+<svelte:head>
+	<title>YoungVision e.V.</title>
+	<meta
+		name="description"
+		content="YoungVision ist ein Verein für junge Menschen von jungen Menschen."
+	/>
+	<meta
+		name="keywords"
+		content="YoungVision, YoungVision e.V., Persönliche Entwicklung, Junge Menschen, Jugendliche, Spiritualität, Verein, Erwachsen werden"
+	/>
+	<meta name="author" content="YoungVision e.V." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
+
 <Hero />
 <ReadMore />
 <Events />

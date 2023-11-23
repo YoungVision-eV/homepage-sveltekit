@@ -4,6 +4,11 @@
 	import MemberBenefits from '$lib/members/MemberBenefits.svelte';
 </script>
 
+<svelte:head>
+	<title>YoungVision e.V. - Mitglied werden</title>
+	<meta name="description" content="YoungVision e.V. - Mitglied werden" />
+</svelte:head>
+
 <Hero />
 <MemberBenefits />
 <div class="lg:py-24">

@@ -9,6 +9,11 @@
 	import Background from '$lib/assets/background-vision-statement.png?enhanced';
 </script>
 
+<svelte:head>
+	<title>YoungVision e.V. - About Us</title>
+	<meta name="description" content="YoungVision e.V. - About Us" />
+</svelte:head>
+
 <div class="relative overflow-hidden">
 	<enhanced:img
 		class="absolute right-[-5rem] top-[-5rem] -z-10 h-[19rem] w-auto lg:right-[-7rem] lg:top-[-7rem] lg:h-[32rem]"
