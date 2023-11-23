@@ -43,7 +43,7 @@
 </section>
 
 <style>
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		.leader {
 			flex-direction: column !important; /* even selector has high priority */
 		}

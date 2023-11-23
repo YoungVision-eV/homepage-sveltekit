@@ -64,7 +64,7 @@
 		display: none;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		.exercise:nth-of-type(3) {
 			display: block;
 		}
