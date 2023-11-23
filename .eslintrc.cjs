@@ -20,6 +20,18 @@ module.exports = {
 	},
 	overrides: [
 		{
+			files: ['tests/*.ts'],
+			parserOptions: {
+				project: true,
+				tsconfigRootDir: __dirname
+			},
+			// Because of svelte-kit generated tsconfig it's hard to check this for the whole project
+			rules: {
+				'require-await': 'off',
+				'@typescript-eslint/require-await': 'error'
+			}
+		},
+		{
 			files: ['*.svelte'],
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
