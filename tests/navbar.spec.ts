@@ -9,7 +9,7 @@ const SUB_PAGES = [
 ];
 
 test.beforeEach(async ({ page }) => {
-	page.goto('/');
+	await page.goto('/');
 });
 
 test.describe('Navigation', () => {
