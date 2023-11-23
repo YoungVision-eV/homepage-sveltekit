@@ -51,15 +51,9 @@
 	];
 </script>
 
-<img
-	class="h-[27rem] w-full object-cover"
-	src={Gathering2024}
-	alt="Gathering 2024"
-/>
+<img class="h-[27rem] w-full object-cover" src={Gathering2024} alt="Gathering 2024" />
 <div class="pr-4 lg:pr-20">
-	<div
-		class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl"
-	>
+	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl">
 		<button class="p-3">
 			<img src={ArrowLeft} alt="" class="h-6 w-6" />
 			<span class="sr-only">Zur vorherigen Seite</span>
@@ -68,16 +62,13 @@
 	</div>
 </div>
 <section class="mt-12 px-4 lg:mt-20 lg:px-20">
-	<h1
-		class="text-center font-serif text-3xl font-bold lg:text-left lg:text-5xl"
-	>
+	<h1 class="text-center font-serif text-3xl font-bold lg:text-left lg:text-5xl">
 		Summer Gathering 2024
 	</h1>
 	<p class="mt-6 lg:mt-16 lg:text-xl lg:leading-8">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua ut enim ad. Lorem ipsum
-		dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-		incididunt ut labore et dolore magna aliqua ut enim ad.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
 	<Button text="Sign Up" color="black" class="mt-12 lg:mt-14" />
 </section>
@@ -103,18 +94,15 @@
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Keep Updated</h2>
 	<p class="mt-5 lg:mt-6 lg:text-xl">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua ut enim ad. Lorem ipsum
-		dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-		incididunt ut labore et dolore magna aliqua ut enim ad.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
 	<Button class="mt-12" color="black" text="Follow Telegram Kanal" />
 </section>
 <Testimonial class="mt-14 bg-yellow bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
-	<h2 class="font-serif text-2xl font-bold lg:text-4xl">
-		Fotos vom letzten Gathering
-	</h2>
+	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Fotos vom letzten Gathering</h2>
 	<div
 		id="photo-grid"
 		class="grid grid-cols-1 gap-y-12 py-12 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-8 lg:pb-28 lg:pt-16"
