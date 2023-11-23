@@ -21,17 +21,21 @@ const config = {
 			},
 			'dark-green': '#6A845E',
 			'light-green': '#BBCEA8',
-			green: {
-				50: '#21291F'
-			},
 			background: '#F9F8F6',
 			gray: colors.gray,
 			orange: '#E97D2B',
 			yellow: '#F0EC57',
-			'soft-yellow': '#F0EC5799',
+			'soft-yellow': '#F4F197',
 			pink: '#EA6C92'
 		},
-		extend: {}
+		extend: {
+			gridTemplateColumns: {
+				subgrid: 'subgrid'
+			},
+			gridTemplateRows: {
+				subgrid: 'subgrid'
+			}
+		}
 	},
 
 	plugins: [typography]
