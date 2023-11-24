@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ArrowRight from '$lib/assets/Icons/Arrow-Right.svg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
-	import FirstImage from '$lib/assets/instagram/first.jpeg';
-	import SecondImage from '$lib/assets/instagram/second.jpeg';
+	import FirstImage from '$lib/assets/instagram/first.jpeg?enhanced';
+	import SecondImage from '$lib/assets/instagram/second.jpeg?enhanced';
 
 	// TODO: get from Instagram API
 
@@ -22,7 +22,9 @@
 	<div class="relative mt-11">
 		<div class="flex max-w-full gap-x-2 overflow-hidden lg:mx-14">
 			{#each images as image}
-				<img class="h-52 w-52 shrink-0 object-cover" src={image.src} alt={image.alt} />
+				<div class="shrink-0">
+					<enhanced:img class="h-52 w-52 object-cover" src={image.src} alt={image.alt} />
+				</div>
 			{/each}
 		</div>
 		<div class="absolute top-20 flex w-full items-center justify-between">
