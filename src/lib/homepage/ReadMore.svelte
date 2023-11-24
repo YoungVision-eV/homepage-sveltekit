@@ -1,6 +1,5 @@
 <script>
 	import readMoreBackground from '$lib/assets/background-read-more.jpeg';
-	import readMorePicture from '$lib/assets/read-more-image.jpeg';
 	import Button from '$lib/components/Button.svelte';
 </script>
 
@@ -11,11 +10,13 @@
 	<div
 		class="flex-row items-center justify-between gap-x-24 bg-dark-green bg-opacity-60 lg:flex lg:rounded-2xl"
 	>
-		<img
-			src={readMorePicture}
-			alt="Menschen sitzen in einem Van und singen. Die Perosn in der Mitte spielt Ukulele."
-			class="hidden h-[29rem] w-[27rem] rounded-2xl object-cover lg:block"
-		/>
+		<div class="hidden flex-none rounded-2xl lg:block">
+			<enhanced:img
+				class="h-[29rem] w-[27rem] rounded-2xl object-cover"
+				src="$lib/assets/read-more-image.jpeg"
+				alt="Menschen sitzen in einem Van und singen. Die Person in der Mitte spielt Ukulele."
+			/>
+		</div>
 		<div class="flex flex-col items-center px-4 py-6 text-white lg:items-start lg:pr-24">
 			<h1 class="font-serif text-2xl font-bold lg:text-3xl">Wir sind YoungVision e.V.</h1>
 			<p class="mt-6 text-center leading-7 lg:text-left lg:leading-5">
