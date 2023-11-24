@@ -4,7 +4,9 @@ import { devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
 	webServer: {
 		command: 'pnpm run build && pnpm run preview',
-		port: 4173
+		// optimizing images takes a long time
+		port: 4173,
+		timeout: 120 * 1000
 	},
 	projects: [
 		{
