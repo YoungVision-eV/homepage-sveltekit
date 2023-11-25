@@ -57,7 +57,7 @@
 					<img
 						src={event.image}
 						alt=""
-						class="mt-12 rounded-t-2xl lg:h-64 lg:w-full lg:object-cover"
+						class="mt-12 h-64 w-full rounded-t-2xl object-cover lg:mt-4"
 					/>
 					<div
 						class="flex rounded-b-2xl p-6 shadow-lg {event.for_all
