@@ -2,7 +2,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section class="mt-14 px-6 lg:mt-28">
+<section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold">Collaborations with InKontakt</h2>
 	<div class="lg:flex lg:flex-row lg:items-stretch">
 		<img class="mt-12 h-[26rem] w-full" src="https://placehold.co/600x750" alt="Placeholder" />
