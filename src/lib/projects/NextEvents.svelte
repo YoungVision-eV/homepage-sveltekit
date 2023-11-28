@@ -1,0 +1,15 @@
+<script>
+	//Importing form hompage folder. Not sure if this is the way. Maybe Calender should be in lib/components/
+	import Calendar from '$lib/homepage/Calendar.svelte';
+</script>
+
+<section class="mt-14">
+	<div class="mb-10 px-4 lg:mb-16 lg:px-20">
+		<h2 class="font-serif text-2xl font-bold">Our Next Events</h2>
+		<p class="mt-3 lg:mt-6">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua.
+		</p>
+	</div>
+	<Calendar />
+</section>
