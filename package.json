@@ -23,7 +23,7 @@
 		"@sveltejs/kit": "1.27.6",
 		"@tailwindcss/typography": "0.5.10",
 		"@typescript-eslint/eslint-plugin": "6.13.0",
-		"@typescript-eslint/parser": "6.13.0",
+		"@typescript-eslint/parser": "6.13.1",
 		"autoprefixer": "10.4.16",
 		"clsx": "2.0.0",
 		"embla-carousel-svelte": "8.0.0-rc14",
