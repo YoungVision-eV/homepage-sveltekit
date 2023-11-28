@@ -50,14 +50,16 @@
 			<label class="ml-4" for="only-members">Nur Mitglieder</label>
 		</div>
 	</div>
-	<ul class="mt-12 lg:grid lg:grid-cols-2 lg:gap-10">
+	<ul
+		class="mt-12 sm:flex sm:flex-col sm:items-center lg:grid lg:grid-cols-2 lg:place-items-center lg:gap-10"
+	>
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
-				<li>
+				<li class="">
 					<img
 						src={event.image}
 						alt=""
-						class="mt-12 h-64 w-full rounded-t-2xl object-cover lg:mt-4"
+						class="mt-12 max-h-64 w-full rounded-t-2xl object-cover lg:mt-4"
 					/>
 					<div
 						class="flex rounded-b-2xl p-6 shadow-lg {event.for_all
