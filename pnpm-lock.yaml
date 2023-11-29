@@ -33,8 +33,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   embla-carousel-svelte:
-    specifier: 8.0.0-rc14
-    version: 8.0.0-rc14(svelte@4.2.7)
+    specifier: 8.0.0-rc15
+    version: 8.0.0-rc15(svelte@4.2.7)
   eslint:
     specifier: 8.54.0
     version: 8.54.0
@@ -956,26 +956,26 @@ packages:
     resolution: {integrity: sha512-89o0MGoocwYbzqUUjc+VNpeOFSOK9nIdC5wY4N+PVUarUK0MtjyTjks75AZS2bW4Kl8MdewdFsWaH0jLy+JNoA==}
     dev: true
 
-  /embla-carousel-reactive-utils@8.0.0-rc14(embla-carousel@8.0.0-rc14):
-    resolution: {integrity: sha512-r153bynAo9eTBuWWggPWLYnE9xqVOYmkkeMbAuGX8pkUisJN8aTLMW9b7CYOzjURRB7z85EmYRbeBg+axQzc9g==}
+  /embla-carousel-reactive-utils@8.0.0-rc15(embla-carousel@8.0.0-rc15):
+    resolution: {integrity: sha512-17Pr+N2vULFS8Lxzi2jaebwVloiFJLpdJMJLKJKQ26NzEmX8pVtHSu3uuTWc8HPwye5HFugqCPJ2QoWWhKs6Kg==}
     peerDependencies:
-      embla-carousel: 8.0.0-rc14
+      embla-carousel: 8.0.0-rc15
     dependencies:
-      embla-carousel: 8.0.0-rc14
+      embla-carousel: 8.0.0-rc15
     dev: true
 
-  /embla-carousel-svelte@8.0.0-rc14(svelte@4.2.7):
-    resolution: {integrity: sha512-Y0qDeHDuJX5yfLgSbs5P1qYyRs2s291kLuUm0wJeS5WUo0fEvcKZGU9XokM/OIJ9F9gI99BUY05Fud7+GD2QOQ==}
+  /embla-carousel-svelte@8.0.0-rc15(svelte@4.2.7):
+    resolution: {integrity: sha512-mQF3I5Uu6hSI/i8Kaitv94DplIxpsdLDdxQJgP6Ubphv3wE2ZR0Lz4NSGuIZB2/ut8ZbBFhRVc0xRSQE7HMlJA==}
     peerDependencies:
       svelte: ^3.49.0 || ^4.0.0
     dependencies:
-      embla-carousel: 8.0.0-rc14
-      embla-carousel-reactive-utils: 8.0.0-rc14(embla-carousel@8.0.0-rc14)
+      embla-carousel: 8.0.0-rc15
+      embla-carousel-reactive-utils: 8.0.0-rc15(embla-carousel@8.0.0-rc15)
       svelte: 4.2.7
     dev: true
 
-  /embla-carousel@8.0.0-rc14:
-    resolution: {integrity: sha512-/NLkMFZ7xKryRVYeUjmhbfV63Vr07saPBDwAX2TPMbcaiWwfQfU5Xsc2AiCMZANtwmzsjRK6gSBa7hOy/VXu6g==}
+  /embla-carousel@8.0.0-rc15:
+    resolution: {integrity: sha512-s7VPexK2h8VEYjEVQFnJAPcRnY5YqJYicFxKVVyWXP3Hk9FFDkT0kqVxMM1PcL187qHOUgmGVHOrfC8xWy3OKQ==}
     dev: true
 
   /es6-promise@3.3.1:
