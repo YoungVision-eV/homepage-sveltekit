@@ -1,7 +1,7 @@
 <script lang="ts">
-	import calendarCover from '$lib/assets/calendar-cover.jpeg';
-	import pastEvent from '$lib/assets/calendar-past-event.jpeg';
-	import thirdEvent from '$lib/assets/calendar-third-event.jpeg';
+	import calendarCover from '$lib/assets/calendar-cover.jpeg?enhanced';
+	import pastEvent from '$lib/assets/calendar-past-event.jpeg?enhanced';
+	import thirdEvent from '$lib/assets/calendar-third-event.jpeg?enhanced';
 	import clsx from 'clsx';
 	import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
@@ -47,7 +47,7 @@
 	>
 		<div class="relative h-[22rem] w-full lg:h-full">
 			{#each events as event, index}
-				<img
+				<enhanced:img
 					loading="lazy"
 					src={event.image.src}
 					alt="Leute sitzen am Tisch"

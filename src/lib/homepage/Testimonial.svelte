@@ -3,7 +3,8 @@
 
 	import ArrowRight from '$lib/assets/Icons/Arrow-Right.svg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
-	import LenaProfile from '$lib/assets/lena-testimonial-profile.jpeg';
+	import LenaProfile from '$lib/assets/lena-testimonial-profile.jpeg?enhanced';
+	import Placeholder400 from '$lib/assets/placeholder/400.jpeg?enhanced';
 	import clsx from 'clsx';
 
 	let className = '';
@@ -27,7 +28,7 @@
 			name: 'Name 2',
 			age: 'Age 2',
 			text: 'Hello',
-			image: 'https://placehold.co/400'
+			image: Placeholder400
 		}
 	];
 </script>
@@ -45,11 +46,13 @@
 			<div class="flex">
 				{#each testimonials as testimonial}
 					<div class="embla__slide mr-5 min-w-0 items-center gap-x-28 lg:mr-32 lg:flex">
-						<img
-							src={testimonial.image}
-							alt={testimonial.name}
-							class="mx-auto h-24 w-24 rounded-full object-cover lg:mx-0 lg:h-96 lg:w-96"
-						/>
+						<div class="flex-none">
+							<enhanced:img
+								src={testimonial.image}
+								alt={testimonial.name}
+								class="mx-auto h-24 w-24 rounded-full object-cover lg:mx-0 lg:h-96 lg:w-96"
+							/>
+						</div>
 						<div class="lg:pb-4">
 							<blockquote class="mt-2.5 leading-6 lg:text-xl">
 								<p>{testimonial.text}</p>

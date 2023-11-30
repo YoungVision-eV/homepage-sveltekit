@@ -1,5 +1,4 @@
 <script>
-	import Gathering2024 from '$lib/assets/gathering-24-hero.jpeg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
 	import Button from '$lib/components/Button.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
@@ -7,24 +6,27 @@
 	import LoveEarth from '$lib/icons/LoveEarth.svelte';
 	import People from '$lib/icons/People.svelte';
 
+	import Placeholder1200 from '$lib/assets/placeholder/1200.jpg?enhanced';
+	import Placeholder800x1200 from '$lib/assets/placeholder/800x1200.jpg?enhanced';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 
 	const photos = [
 		{
-			src: 'https://placehold.co/1200x1200',
+			src: Placeholder1200,
 			alt: 'Placeholder'
 		},
 		{
-			src: 'https://placehold.co/800x1200',
+			src: Placeholder800x1200,
 			alt: 'Placeholder'
 		},
 		{
-			src: 'https://placehold.co/800x1200',
+			src: Placeholder800x1200,
 			alt: 'Placeholder'
 		},
 		{
-			src: 'https://placehold.co/800x1200',
+			src: Placeholder800x1200,
 			alt: 'Placeholder'
 		}
 	];
@@ -53,7 +55,11 @@
 	];
 </script>
 
-<img class="h-[27rem] w-full object-cover" src={Gathering2024} alt="Gathering 2024" />
+<enhanced:img
+	class="h-[27rem] w-full object-cover"
+	src="$lib/assets/gathering-24-hero.jpeg"
+	alt="Gathering 2024"
+/>
 <div class="pr-4 lg:pr-20">
 	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl">
 		<button class="p-3">
@@ -108,15 +114,19 @@
 		class="grid grid-cols-1 gap-y-12 py-12 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-8 lg:pb-28 lg:pt-16"
 	>
 		{#each photos as photo, index}
-			<img
+			<div
 				class:hidden={index > 2}
 				class:lg:col-span-2={index === 0}
 				class:lg:row-span-2={index === 1}
 				class:lg:row-span-3={index === 0 || index === 2}
-				class="h-[30rem] w-full object-cover lg:block lg:h-full"
-				src={photo.src}
-				alt={photo.alt}
-			/>
+				class="lg:block"
+			>
+				<enhanced:img
+					class="h-[30rem] w-full object-cover lg:h-full"
+					src={photo.src}
+					alt={photo.alt}
+				/>
+			</div>
 		{/each}
 	</div>
 </section>

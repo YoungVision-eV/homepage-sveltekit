@@ -1,8 +1,7 @@
 <script>
-	import EventImage1 from '$lib/assets/projects-event-image-1.jpeg';
-	import EventImage2 from '$lib/assets/projects-event-image-2.jpeg';
-	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg';
-	import background1 from '$lib/assets/projects-bg-lg-3.jpg';
+	import EventImage1 from '$lib/assets/projects-event-image-1.jpeg?enhanced';
+	import EventImage2 from '$lib/assets/projects-event-image-2.jpeg?enhanced';
+	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg?enhanced';
 	const events = [
 		{
 			title: 'Summer Gathering',
@@ -35,7 +34,11 @@
 </script>
 
 <section class="relative px-4 pt-14 lg:px-20 lg:pt-24">
-	<img src={background1} alt="" class="absolute -left-0 -z-10 mt-32" />
+	<enhanced:img
+		src="$lib/assets/projects-bg-lg-3.jpg"
+		alt=""
+		class="absolute -left-0 -z-10 mt-32"
+	/>
 	<h2 class="font-serif text-2xl font-bold">Our Yearly Events</h2>
 	<p class="mt-5">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -58,9 +61,9 @@
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
 				<li class="">
-					<img
-						src={event.image}
+					<enhanced:img
 						alt=""
+						src={event.image}
 						class="mt-12 max-h-64 w-full rounded-t-2xl object-cover lg:mt-4"
 					/>
 					<div

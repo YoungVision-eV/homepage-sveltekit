@@ -1,14 +1,13 @@
 <script>
-	import heroImagePortrait from '$lib/assets/hero-image.jpeg';
 	import Button from '$lib/components/Button.svelte';
 </script>
 
 <section class="w-full bg-cover">
 	<div class="grid-cols-2 items-center gap-x-20 px-5 py-16 lg:grid lg:px-20">
 		<div class="mx-9 h-96 lg:mx-0 lg:h-[36rem]">
-			<img
+			<enhanced:img
 				class="h-full w-auto rounded-2xl object-cover"
-				src={heroImagePortrait}
+				src="$lib/assets/hero-image.jpeg"
 				alt="People sit before a wall and one is smiling into the camera"
 			/>
 		</div>
