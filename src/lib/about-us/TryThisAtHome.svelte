@@ -12,6 +12,8 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua ut enim ad.
 		</p>
-		<Button class="mx-auto mt-14 lg:mx-0 lg:mt-7" color="black" text="Call to action" />
+		<div class="mt-14 text-center lg:mt-7 lg:text-left">
+			<Button color="black" text="Call to action" />
+		</div>
 	</div>
 </section>

@@ -13,12 +13,14 @@
 		<div class="mt-10 px-5 lg:mt-12 lg:px-20">
 			<div class="justify-between gap-x-10 lg:flex">
 				<p class="text-justify">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
+					Unsere Veranstaltungen sind Orte der Inspiration, Heilung und Verbundenheit. Hier kannst
+					du dich selbst erkunden, dich entfalten und Gleichgesinnte treffen, die deine Reise
+					begleiten.
 				</p>
 				<p class="hidden text-justify lg:block">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua ut enim ad.
+					Als Mitglied kannst du auch eigene Events ins Leben rufen und deine Leidenschaften teilen.
+					Egal, ob du einen Workshop, ein Treffen oder ein Projekt planst - wir sind für dich da, um
+					deine Vision Wirklichkeit werden zu lassen.
 				</p>
 			</div>
 			<Button class="mx-auto mt-14 lg:mx-0 lg:mt-12" text="Follow us on Telegram" color="black" />
