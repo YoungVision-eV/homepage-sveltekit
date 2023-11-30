@@ -5,6 +5,7 @@
 	import VisionMissionValues from '$lib/about-us/VisionMissionValues.svelte';
 	import WhatWeDo from '$lib/about-us/WhatWeDo.svelte';
 	import WorkshopLeaders from '$lib/about-us/WorkshopLeaders.svelte';
+	import Footer from '$lib/homepage/Footer.svelte';
 </script>
 
 <VisionMissionValues />
@@ -14,4 +15,4 @@
 <TryThisAtHome />
 <WorkshopLeaders title="Workshop Leiter*innen" />
 <WorkshopLeaders title="Kooperationen" />
-<footer class="h-60 w-full bg-dark-green" />
+<Footer />

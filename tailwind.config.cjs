@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const typography = require('@tailwindcss/typography');
 const colors = require('tailwindcss/colors');
+const forms = require('@tailwindcss/forms');
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -38,7 +39,7 @@ const config = {
 		}
 	},
 
-	plugins: [typography]
+	plugins: [typography, forms]
 };
 
 module.exports = config;
