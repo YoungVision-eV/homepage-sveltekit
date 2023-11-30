@@ -6,9 +6,10 @@
 	<div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 px-5 py-16 lg:grid-cols-2 lg:px-20">
 		<div class="h-96 px-9 lg:h-[36rem] lg:px-0">
 			<enhanced:img
-				class="h-full w-auto rounded-2xl object-cover"
+				class="h-full w-auto rounded-2xl object-cover object-bottom"
 				src="$lib/assets/hero-image.jpeg"
-				alt="People sit before a wall and one is smiling into the camera"
+				alt="Eine Frau breitet ihre Arme aus und lächelt mit geschlossenen Augen in die Kamera,
+				während sie ihren Kopf zur Seite neigt. Hinter ihr ist ein Haufen mit Holzscheiten zu sehen."
 			/>
 		</div>
 		<div class="lg:order-first">
@@ -20,7 +21,6 @@
 				Verbindungen zu anderen zu knüpfen. Hier darfst du ankommen und Teil einer inspirierenden
 				Gemeinschaft junger Menschen werden.
 			</p>
-			<!-- For some reason if it is an <a> element it gets stretched full-wdith -->
 			<Button
 				class="mx-auto mt-12 w-64 lg:mx-0"
 				text="Mitglied werden"

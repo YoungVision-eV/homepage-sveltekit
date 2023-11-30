@@ -11,4 +11,3 @@
 <Events />
 <Testimonial />
 <Instagram />
-<div class="h-40 w-full bg-light-green" />
