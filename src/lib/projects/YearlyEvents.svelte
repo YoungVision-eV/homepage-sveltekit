@@ -2,6 +2,7 @@
 	import EventImage1 from '$lib/assets/projects-event-image-1.jpeg';
 	import EventImage2 from '$lib/assets/projects-event-image-2.jpeg';
 	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg';
+	import background1 from '$lib/assets/projects-bg-lg-3.jpg';
 	const events = [
 		{
 			title: 'Summer Gathering',
@@ -33,7 +34,8 @@
 	let only_members = true;
 </script>
 
-<section class="px-4 pt-14 lg:px-20 lg:pt-24">
+<section class="relative px-4 pt-14 lg:px-20 lg:pt-24">
+	<img src={background1} alt="" class="absolute -left-0 -z-10 mt-32" />
 	<h2 class="font-serif text-2xl font-bold">Our Yearly Events</h2>
 	<p class="mt-5">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -51,7 +53,7 @@
 		</div>
 	</div>
 	<ul
-		class="mt-12 sm:flex sm:flex-col sm:items-center lg:grid lg:grid-cols-2 lg:place-items-center lg:gap-10"
+		class="flex flex-col items-center lg:mt-12 lg:grid lg:grid-cols-2 lg:place-items-center lg:gap-10"
 	>
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}

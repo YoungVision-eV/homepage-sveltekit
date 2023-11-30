@@ -1,8 +1,10 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
+	import background1 from '$lib/assets/projects-bg-lg-4.jpg';
 </script>
 
-<section class="mb-28 mt-14 px-4 lg:mt-28 lg:px-20">
+<section class="relative mb-28 mt-14 px-4 lg:mt-28 lg:px-20">
+	<img src={background1} alt="" class="absolute -bottom-28 right-0 -z-10" />
 	<h2 class="font-serif text-2xl font-bold">Collaborations with InKontakt</h2>
 	<div class="lg:flex lg:flex-row lg:items-stretch">
 		<img class="mt-12 h-[26rem] w-full" src="https://placehold.co/600x750" alt="Placeholder" />
