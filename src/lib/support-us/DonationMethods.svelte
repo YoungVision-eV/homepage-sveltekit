@@ -75,8 +75,8 @@
 							Wir freuen uns auf deine Kontaktaufnahme zu <a href="mailto:kontakt@youngvision.org"
 								>kontakt@youngvision.org</a
 							>
-							<Button class="mt-8" text="Email Now" color="dark" />
 						</p>
+						<Button class="mt-8" text="Email Now" color="dark" />
 					</div>
 				</div>
 			</TabPanel>
