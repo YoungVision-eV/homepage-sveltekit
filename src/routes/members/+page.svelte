@@ -1,6 +1,5 @@
 <script>
 	import FooterBackground from '$lib/assets/members-footer-background.jpeg';
-	import Footer from '$lib/homepage/Footer.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
 	import Hero from '$lib/members/Hero.svelte';
 	import MemberBenefits from '$lib/members/MemberBenefits.svelte';
@@ -16,4 +15,3 @@
 	alt="YoungVision Menschen sitzen am Lagerfeuer"
 	src={FooterBackground}
 />
-<Footer />

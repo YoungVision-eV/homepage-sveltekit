@@ -4,6 +4,7 @@
 	import Navbar from '$lib/homepage/Navbar.svelte';
 	import '../app.postcss';
 	import NewsletterSignupDialog from '$lib/components/NewsletterSignupDialog.svelte';
+	import Footer from '$lib/homepage/Footer.svelte';
 
 	const {
 		elements: { overlay, content, portalled },
@@ -16,6 +17,7 @@
 	<main>
 		<slot />
 	</main>
+	<Footer />
 
 	{#if $open}
 		<div use:melt={$overlay} class="fixed inset-0 z-50 bg-black/50" />

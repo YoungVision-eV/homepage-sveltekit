@@ -4,7 +4,7 @@ test.beforeEach(async ({ page }) => {
 	await page.goto('/support-us');
 });
 
-test('index page screenshot', async ({ page }) => {
+test('support-us page screenshot', async ({ page }) => {
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
 

@@ -35,8 +35,9 @@
 							placeholder="you@example.com"
 						/>
 						<div class="absolute inset-y-0 right-0 flex items-center pr-3">
-							<button type="submit" class="text-green-200" use:melt={$trigger}
-								><ArrowRight /></button
+							<button type="submit" class="text-green-200" use:melt={$trigger}>
+								<span class="sr-only">Sign up</span>
+								<ArrowRight /></button
 							>
 						</div>
 					</div>
