@@ -6,14 +6,14 @@
 	<div class="hidden h-60 w-60 flex-shrink-0 bg-white lg:block" />
 	<div>
 		<h1 class="text-center font-serif text-2xl font-bold lg:text-left lg:text-4xl">
-			Try this with your friends!
+			Probier das mal mit deinen Freunden aus!
 		</h1>
 		<p class="mt-6 text-sm lg:mt-9">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
+			Triaden sind eine tolle und leichte Übung, die du einfach mit deinen Freunden zuhause
+			ausprobieren kannst!
 		</p>
 		<div class="mt-14 text-center lg:mt-7 lg:text-left">
-			<Button color="dark" text="Call to action" />
+			<Button color="dark" text="Erfahre wie" />
 		</div>
 	</div>
 </section>

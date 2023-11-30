@@ -1,7 +1,4 @@
 <script lang="ts">
-	import ReadMoreExpandButton from '$lib/components/ReadMoreExpandButton.svelte';
-
-	export let title: string;
 	const leaders = [
 		{
 			name: 'Matthias',
@@ -12,21 +9,23 @@
 			job: 'JOB FOR YV'
 		},
 		{
-			name: 'Matthias',
+			name: 'Julia',
 			job: 'JOB FOR YV'
 		},
 		{
-			name: 'Luna',
+			name: 'Jonas',
 			job: 'JOB FOR YV'
 		}
 	];
 </script>
 
 <section class="px-5 py-16 lg:px-20 lg:pt-44">
-	<h1 class="font-serif text-2xl font-bold lg:text-4xl">{title}</h1>
+	<h2 class="font-serif text-2xl font-bold lg:text-4xl">
+		Workshop Leiter*innen und Ko-Operationen
+	</h2>
 	<p class="mt-6 lg:mt-9 lg:w-1/2">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua ut enim ad.
+		Dürfen wir vorstellen? Einige unserer inspirierenden Workshop-Leiter*innen - mit ihrer Arbeit
+		leisten sie einen wichtigen Beitrag zur Vielfalt und Tiefe unserer Veranstaltungen.
 	</p>
 	<div class="mt-10 justify-between gap-y-24 lg:mt-28 lg:flex">
 		{#each leaders as leader}
@@ -39,7 +38,6 @@
 			</div>
 		{/each}
 	</div>
-	<ReadMoreExpandButton class="mt-12 lg:hidden" />
 </section>
 
 <style>
