@@ -1,5 +1,11 @@
 <script>
+	import { melt } from '@melt-ui/svelte';
 	import ArrowRight from '$lib/icons/ArrowRight.svelte';
+
+	import newsletterSignup from '$lib/stores/newsletterSignup';
+	const {
+		elements: { trigger }
+	} = $newsletterSignup;
 </script>
 
 <footer class="w-full bg-green-50 px-4 py-6 lg:px-20">
@@ -29,7 +35,9 @@
 							placeholder="you@example.com"
 						/>
 						<div class="absolute inset-y-0 right-0 flex items-center pr-3">
-							<button type="submit" class="text-green-200"><ArrowRight /></button>
+							<button type="submit" class="text-green-200" use:melt={$trigger}
+								><ArrowRight /></button
+							>
 						</div>
 					</div>
 				</div>
