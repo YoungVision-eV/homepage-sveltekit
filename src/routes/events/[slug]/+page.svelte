@@ -2,7 +2,6 @@
 	import Gathering2024 from '$lib/assets/gathering-24-hero.jpeg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
 	import Button from '$lib/components/Button.svelte';
-	import Footer from '$lib/homepage/Footer.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
 	import HandWithMoney from '$lib/icons/HandWithMoney.svelte';
 	import LoveEarth from '$lib/icons/LoveEarth.svelte';
@@ -121,7 +120,6 @@
 		{/each}
 	</div>
 </section>
-<Footer />
 
 <style>
 	@media (min-width: 1024px) {

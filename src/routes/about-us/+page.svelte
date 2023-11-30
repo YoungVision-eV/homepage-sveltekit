@@ -14,4 +14,3 @@
 <TryThisAtHome />
 <WorkshopLeaders title="Workshop Leiter*innen" />
 <WorkshopLeaders title="Kooperationen" />
-<footer class="h-60 w-full bg-dark-green" />
