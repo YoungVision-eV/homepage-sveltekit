@@ -3,52 +3,56 @@
 
 	const exercises = [
 		{
-			title: 'Lorem Ipsum',
+			title: 'Triaden',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+				'Eine Triade ist eine Übung der authentischen Kommunikation, in der jede*r erleben kann, andere wirklich zu hören und selbst gehört zu werden. Sie schafft Raum für Selbsterkenntnis und unterstützt den Aufbau authentischer Verbindungen.'
 		},
 		{
-			title: 'Lorem Ipsum',
+			title: 'Kuscheln',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+				'Körperlicher Kontakt ist einer von vielen Ausdrücke von zwischenmenschlicher Verbindung. Bei unseren Veranstaltungen entsteht durch den sicheren Raum ganz natürlich eine Kuschelatmosphäre. Aber auch hier gilt: alles darf, nichts muss! Wir schreiben Konsent ganz groß und daher wird dein “nein” nicht nur respektiert sondern ist auch willkommen.'
 		},
 		{
-			title: 'Lorem Ipsum',
+			title: 'Meditation',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+				'Schon eine kurze Meditation zu Anfang jeder Runde macht einen riesen Unterschied! Sie schafft inneren Raum für eigene Empfinfungen, Tiefe in der Wahrnehmung und damit die Basis unserer gemeinsamen Arbeit'
 		},
 		{
-			title: 'Lorem Ipsum',
+			title: 'Tanzen',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
+				'Hier geht es nicht um Schritte oder Choreografie, sondern um das Loslassen und deinen Selbstausdruck. Dies ist dein Raum, dich selbst und deinen Körper zu spüren und dich einfach mal fallen zu lassen. '
+		},
+		{
+			title: 'Sharing',
+			description:
+				'In unseren Sharingrunden hat jede*r die Möglichkeit eigene Erfahrungen und Gefühle mit der Gruppe zu teilen. So können unheimlich tiefe, befreiende und verbindende Momente entstehen. '
 		}
 	];
 </script>
 
 <section class="w-full px-5 pb-16 pt-24 lg:px-20">
-	<h1 class="text-center font-serif text-3xl font-bold lg:text-5xl">Was wir tun</h1>
-	<h2 class="mt-14 font-serif text-2xl font-bold lg:mt-20 lg:text-4xl">Main exercises</h2>
-	<div class="mt-6 grid grid-cols-1 gap-y-3 lg:mt-10 lg:grid-cols-2 lg:gap-y-6">
+	<h2 class="text-center font-serif text-3xl font-bold lg:text-5xl">Was wir tun</h2>
+	<h3 class="mt-14 font-serif text-2xl font-bold lg:mt-20 lg:text-4xl">
+		Was dich bei unseren Veranstaltungen erwartet
+	</h3>
+	<div class="mt-6 grid grid-cols-1 gap-y-3 lg:mt-10 lg:grid-cols-2 lg:gap-6">
 		<p class="font-sans">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
+			Unsere Veranstaltungen sind das Herzstück dessen, was YoungVision so besonders macht. Wir
+			möchten dir einen Vorgeschmack geben auf das, was dich erwartet, und hoffen, dass du genauso
+			begeistert von unseren Angeboten sein wirst wie wir es sind.
 		</p>
 		<p class="font-sans">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
-		</p>
-		<p class="font-sans">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
+			Im Fokus stehen die Selbsterkundung- und Reflektion und das Erfahren von Verbindung. Die
+			folgenden Aktivitäten erwarten dich bei all unseren Veranstaltungen und mehr.
 		</p>
 	</div>
 	<div
 		id="exercises"
-		class="mt-16 grid auto-rows-[0] grid-cols-[1fr] grid-rows-2 gap-y-12 overflow-hidden lg:mt-40 lg:grid-cols-3 lg:grid-rows-1"
+		class="mt-16 grid auto-rows-[0] grid-cols-[1fr] grid-rows-2 gap-12 overflow-hidden lg:mt-40 lg:grid-cols-3 lg:grid-rows-1"
 	>
 		{#each exercises as exercise}
 			<div class="exercise">
-				<div class="px-20">
+				<div class="px-20 lg:px-0">
 					<div class="aspect-square h-auto w-full rounded-full bg-light-green" />
 				</div>
 				<h3 class="mt-5 text-center font-sans text-xl lg:mt-8">{exercise.title}</h3>

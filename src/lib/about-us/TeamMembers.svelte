@@ -2,40 +2,30 @@
 	import placeholder from '$lib/assets/Placeholder.svg';
 	const members = [
 		{
-			name: 'Jonas',
-			job: 'Developer',
-			image: placeholder
-		},
-		{
 			name: 'Emma',
-			job: 'Designer',
-			image: placeholder
-		},
-		{
-			name: 'Rebecca',
-			job: 'Events',
+			job: 'Design, ÖA',
 			image: placeholder
 		},
 		{
 			name: 'Jakob',
-			job: 'Marketing',
+			job: 'Finanzen, Events',
 			image: placeholder
 		},
 		{
-			name: 'Noa',
-			job: 'Communication',
+			name: 'Rebecca',
+			job: 'ÖA, Events',
 			image: placeholder
 		},
 		{
-			name: 'Charly',
-			job: 'Finances',
+			name: 'Jonas',
+			job: 'IT, Datenschutz',
 			image: placeholder
 		}
 	];
 </script>
 
 <section class="bg-light-green px-5 py-14 lg:px-20 lg:pb-36 lg:pt-20">
-	<h1 class="font-serif text-3xl font-bold">Team Members</h1>
+	<h1 class="font-serif text-3xl font-bold">Das Team</h1>
 	<div class="mt-14 grid grid-cols-2 gap-x-5 gap-y-14 lg:grid-cols-4 lg:gap-x-24">
 		{#each members as member}
 			<div class="flex flex-col items-center">
