@@ -106,7 +106,6 @@
 			<li
 				class={clsx(
 					'col-span-4 grid grid-cols-subgrid bg-yellow-700 transition-colors lg:col-span-5 lg:bg-yellow-500 lg:bg-opacity-60',
-					index === selectedEvent ? 'text-black' : 'text-dark-green',
 					index === 0 ? 'rounded-t-2xl lg:rounded-tl-none' : ''
 				)}
 			>
@@ -115,16 +114,11 @@
 					on:click={() => (selectedEvent = index)}
 					disabled={selectedEvent === index}
 				>
-					<div
-						class={clsx(
-							'z-30 flex flex-col items-center justify-center',
-							index === selectedEvent ? '' : 'lg:text-dark-green'
-						)}
-					>
+					<div class={clsx('z-30 flex flex-col items-center justify-center')}>
 						<span class="font-serif text-5xl font-bold">{event.date.getDate()}</span>
 						<span>{event.date.toLocaleString('de-DE', { month: 'long' })}</span>
-						<p class="text-sm italic text-dark-green lg:text-base">
-							{event.date <= new Date() ? 'Past Event' : 'Upcoming'}
+						<p class="text-sm italic text-gray-700 lg:text-base">
+							{event.date <= new Date() ? 'Vorbei' : 'Demnächst'}
 						</p>
 					</div>
 					<div class="z-30 col-span-3 px-4 lg:col-span-4 lg:px-10 lg:py-3">
@@ -152,8 +146,8 @@
 				class={clsx(
 					'col-span-4 grid h-36 grid-cols-subgrid items-center lg:col-span-5',
 					index === 0
-						? 'rounded-l-2xl bg-background text-black lg:rounded-r-2xl'
-						: 'bg-yellow-500 bg-opacity-60 text-dark-green '
+						? 'rounded-l-2xl bg-background lg:rounded-r-2xl'
+						: 'bg-yellow-500 bg-opacity-60 '
 				)}
 			>
 				<div
@@ -164,8 +158,8 @@
 				>
 					<span class="font-serif text-5xl font-bold">{event.date.getDate()}</span>
 					<span>{event.date.toLocaleString('de-DE', { month: 'long' })} <br /></span>
-					<p class="text-sm italic text-dark-green">
-						{event.date <= new Date() ? 'Past Event' : 'Upcoming'}
+					<p class="text-sm italic">
+						{event.date <= new Date() ? 'Vorbei' : 'Demnächst'}
 					</p>
 				</div>
 				<div class="col-span-3">
