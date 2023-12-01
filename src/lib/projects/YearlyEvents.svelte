@@ -1,33 +1,7 @@
 <script>
-	import EventImage1 from '$lib/assets/projects-event-image-1.jpeg?enhanced';
-	import EventImage2 from '$lib/assets/projects-event-image-2.jpeg?enhanced';
-	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg?enhanced';
-	const events = [
-		{
-			title: 'Sommerveranstaltung',
-			day: '24',
-			month: 'August',
-			text: 'Unsere jährliche Sommerveranstaltung ist für viele das Highlight des Jahres! Du darfst dich auf leckeres Essen, inspirierende Workshops, ganz viel Spielen, Lachen und ein liebevolles Miteinander freuen. ',
-			image: EventImage1,
-			for_all: true
-		},
-		{
-			title: 'Silvester',
-			day: '31',
-			month: 'Dezember',
-			text: 'Lass uns das vergangene Jahr ausklingen lassen und gemeinsam in das neue Jahr starten!',
-			image: EventImage2,
-			for_all: true
-		},
-		{
-			title: 'Mitgliederversammlung',
-			day: '25',
-			month: 'August',
-			text: 'Ob online oder in Person, bei der Mitgliederversammlung kommen wir zusammen und entscheiden gemeinsam über die Zukunft von YoungVision. Werde Mitglied und nutze deine Stimme!',
-			image: EventImage3,
-			for_all: false
-		}
-	];
+	import { getAllYearlyEvents } from '$lib/data/events';
+
+	const events = getAllYearlyEvents();
 
 	let for_all = true;
 	let only_members = true;
@@ -76,7 +50,7 @@
 						</div>
 						<div class="ml-10">
 							<h3 class="font-bold lg:text-xl">{event.title}</h3>
-							<p class="mt-3">{event.text}</p>
+							<p class="mt-3">{event.short_description}</p>
 							<p class="mt-3 inline-block rounded-full bg-white px-5">
 								{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
 							</p>
