@@ -14,7 +14,7 @@
 		class="absolute -left-0 -z-10 mt-32"
 	/>
 	<h2 class="font-serif text-2xl font-bold">Unsere jährlichen Veranstaltungen</h2>
-	<p class="mt-5">
+	<p class="mt-5 max-w-prose">
 		Unsere jährlichen Veranstaltungen sind ein fester Bestandteil unseres YoungVision-Kalenders. Sie
 		bieten eine entspannte Gelegenheit, zusammenzukommen, zu wachsen, Kontakte zu knüpfen und das
 		Leben in vollen Zügen zu genießen. Hier erfährst du mehr über diese besonderen Anlässe, die

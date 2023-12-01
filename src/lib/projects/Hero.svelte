@@ -4,7 +4,7 @@
 		<h2 class="font-serif text-2xl font-bold lg:text-3xl">
 			Vergangene Veranstaltungen: Sommercamp Ressourcen
 		</h2>
-		<p class="mt-5 lg:text-xl">
+		<p class="mt-5 max-w-prose lg:text-xl">
 			Dank der großzügigen Förderung des “Zukunftspakets” der dkjs, konnten wir uns ein ganzes
 			Wochenende lang intensiv mit unseren Ressourcen beschäftigen und haben dabei gemeinsam ganz
 			viel Energie und Verbindung getankt.
