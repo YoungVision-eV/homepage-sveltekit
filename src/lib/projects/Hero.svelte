@@ -13,7 +13,6 @@
 			Wochenende lang intensiv mit unseren Ressourcen beschäftigen und haben dabei gemeinsam ganz
 			viel Energie und Verbindung getankt.
 		</p>
-		<Button text="See More" color="black" class="ml-2 mt-5" />
 	</div>
 </section>
 

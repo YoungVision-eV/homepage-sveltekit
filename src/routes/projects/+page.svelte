@@ -8,4 +8,3 @@
 <Hero />
 <NextEvents />
 <YearlyEvents />
-<!--<Collaborations />-->
