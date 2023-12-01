@@ -4,18 +4,18 @@
 	import EventImage3 from '$lib/assets/projects-event-image-3.jpeg?enhanced';
 	const events = [
 		{
-			title: 'Summer Gathering',
+			title: 'Sommerveranstaltung',
 			day: '24',
 			month: 'August',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			text: 'Unsere jährliche Sommerveranstaltung ist für viele das Highlight des Jahres! Du darfst dich auf leckeres Essen, inspirierende Workshops, ganz viel Spielen, Lachen und ein liebevolles Miteinander freuen. ',
 			image: EventImage1,
 			for_all: true
 		},
 		{
-			title: 'Winter Gathering',
-			day: '11',
-			month: 'Januar',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Silvester',
+			day: '31',
+			month: 'Dezember',
+			text: 'Lass uns das vergangene Jahr ausklingen lassen und gemeinsam in das neue Jahr starten!',
 			image: EventImage2,
 			for_all: true
 		},
@@ -23,7 +23,7 @@
 			title: 'Mitgliederversammlung',
 			day: '25',
 			month: 'August',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			text: 'Ob online oder in Person, bei der Mitgliederversammlung kommen wir zusammen und entscheiden gemeinsam über die Zukunft von YoungVision. Werde Mitglied und nutze deine Stimme!',
 			image: EventImage3,
 			for_all: false
 		}
@@ -61,7 +61,7 @@
 	>
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
-				<li class="">
+				<li class="lg:shrink">
 					<enhanced:img
 						alt=""
 						src={event.image}
