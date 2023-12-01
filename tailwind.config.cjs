@@ -10,7 +10,7 @@ const config = {
 	theme: {
 		fontFamily: {
 			sans: ['Montserrat', 'sans-serif'],
-			serif: ['"Source Serif 4"', 'serif']
+			serif: ['source-serif-pro', 'serif']
 		},
 		colors: {
 			black: colors.black,
