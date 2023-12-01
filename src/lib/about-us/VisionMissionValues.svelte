@@ -1,5 +1,5 @@
 <script>
-	import Background from '$lib/assets/background-vision-statement.png';
+	import Background from '$lib/assets/background-vision-statement.png?enhanced';
 
 	import MissionIcon from './icons/MissionIcon.svelte';
 	import ValuesIcon from './icons/ValuesIcon.svelte';
@@ -7,17 +7,17 @@
 </script>
 
 <section class="relative w-full overflow-hidden px-5 pb-28 pt-14 text-center">
-	<img
+	<enhanced:img
 		class="absolute right-[-5rem] top-[-5rem] -z-10 h-[19rem] w-auto lg:right-[-7rem] lg:top-[-7rem] lg:h-[32rem]"
 		src={Background}
 		alt="YoungVision Logo"
 	/>
-	<img
+	<enhanced:img
 		class="absolute left-[-7rem] top-[7rem] -z-10 h-[14rem] w-auto lg:top-[17rem] lg:h-[25rem]"
 		src={Background}
 		alt="YoungVision Logo"
 	/>
-	<img
+	<enhanced:img
 		class="absolute bottom-[-7rem] right-[-4rem] -z-10 h-[14rem] w-auto"
 		src={Background}
 		alt="YoungVision Logo"
@@ -28,7 +28,7 @@
 	<div class="gap-x-16 lg:mt-16 lg:flex lg:px-48">
 		<div>
 			<div
-				class="bg-yellow mx-auto mt-8 flex h-24 w-24 items-center justify-center rounded-full p-5 lg:h-44 lg:w-44 lg:p-8"
+				class="mx-auto mt-8 flex h-24 w-24 items-center justify-center rounded-full bg-yellow p-5 lg:h-44 lg:w-44 lg:p-8"
 			>
 				<VisionIcon />
 			</div>

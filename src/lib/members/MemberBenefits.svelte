@@ -1,9 +1,9 @@
 <script>
-	import Background from '$lib/assets/members-background.png';
+	import Background from '$lib/assets/members-background.png?enhanced';
 </script>
 
 <main class="relative flex-col items-center px-4 pt-14 lg:flex lg:px-20 lg:pt-36">
-	<img
+	<enhanced:img
 		class="absolute left-0 top-0 -z-10 h-full w-full object-cover opacity-40"
 		src={Background}
 		alt="YoungVision"
