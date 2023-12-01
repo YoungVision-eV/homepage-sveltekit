@@ -1,9 +1,9 @@
 <script lang="ts">
-	import firstPost from '$lib/assets/instagram/first-post.png';
-	import secondPost from '$lib/assets/instagram/second-post.png';
-	import thirdPost from '$lib/assets/instagram/third-post.png';
-	import fourthPost from '$lib/assets/instagram/fourth-post.jpeg';
-	import fifthPost from '$lib/assets/instagram/fifth-post.png';
+	import firstPost from '$lib/assets/instagram/first-post.png?enhanced';
+	import secondPost from '$lib/assets/instagram/second-post.png?enhanced';
+	import thirdPost from '$lib/assets/instagram/third-post.png?enhanced';
+	import fourthPost from '$lib/assets/instagram/fourth-post.jpeg?enhanced';
+	import fifthPost from '$lib/assets/instagram/fifth-post.png?enhanced';
 	import ArrowLeft from '$lib/icons/ArrowLeft.svelte';
 	import ArrowRight from '$lib/icons/ArrowRight.svelte';
 
