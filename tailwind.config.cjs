@@ -26,8 +26,11 @@ const config = {
 			background: '#F9F8F6',
 			gray: colors.gray,
 			orange: '#E97D2B',
-			yellow: '#F0EC57',
-			'soft-yellow': '#F4F197',
+			yellow: {
+				500: '#F0EC57',
+				700: '#F4F197',
+				900: '#F9F6E4'
+			},
 			pink: '#EA6C92',
 			blue: colors.blue
 		},

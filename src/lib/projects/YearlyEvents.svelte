@@ -35,7 +35,7 @@
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
 				<li
 					class="mt-12 rounded-2xl shadow-lg lg:mt-0 {event.for_all
-						? 'bg-soft-yellow'
+						? 'bg-yellow-700'
 						: 'bg-light-green'}"
 				>
 					<a href="/events/{event.slug}">

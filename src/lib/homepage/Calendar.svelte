@@ -78,7 +78,7 @@
 					{#each events as _event, index}
 						<button on:click={() => (selectedEvent = index)}>
 							<svg
-								class="h-5 w-5 text-yellow text-opacity-60"
+								class="h-5 w-5 text-yellow-500 text-opacity-60"
 								fill="currentColor"
 								viewBox="0 0 100 100"
 								xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@
 		{#each events as event, index}
 			<li
 				class={clsx(
-					'col-span-4 grid grid-cols-subgrid bg-soft-yellow transition-colors lg:col-span-5 lg:bg-yellow lg:bg-opacity-60',
+					'col-span-4 grid grid-cols-subgrid bg-yellow-700 transition-colors lg:col-span-5 lg:bg-yellow-500 lg:bg-opacity-60',
 					index === selectedEvent ? 'text-black' : 'text-dark-green',
 					index === 0 ? 'rounded-t-2xl lg:rounded-tl-none' : ''
 				)}
@@ -153,7 +153,7 @@
 					'col-span-4 grid h-36 grid-cols-subgrid items-center lg:col-span-5',
 					index === 0
 						? 'rounded-l-2xl bg-background text-black lg:rounded-r-2xl'
-						: 'bg-yellow bg-opacity-60 text-dark-green '
+						: 'bg-yellow-500 bg-opacity-60 text-dark-green '
 				)}
 			>
 				<div
