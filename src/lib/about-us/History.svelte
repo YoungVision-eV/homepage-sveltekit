@@ -10,22 +10,22 @@
 	} = createCollapsible();
 </script>
 
-<section class="mb-28 lg:px-20">
+<section class="mb-28 px-4 lg:px-20">
 	<div
-		class="w-full items-center rounded-2xl bg-green-700 px-5 pb-16 pt-10 lg:flex lg:h-[30rem] lg:p-0"
+		class="w-full items-center rounded-2xl bg-green-700 px-6 pb-10 pt-8 shadow-lg lg:flex lg:h-[30rem] lg:p-0 lg:pb-16 lg:pt-10"
 	>
 		<h2 class="font-serif text-2xl font-bold lg:hidden">YoungVision's Entstehung</h2>
 		<div class="flex-none">
 			<enhanced:img
 				src="$lib/assets/luna-about-us-history.jpeg"
 				alt=""
-				class="mt-10 h-96 w-full rounded-2xl object-cover lg:mt-0 lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
+				class="mt-7 h-96 w-full rounded-2xl object-cover lg:mt-0 lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
 			/>
 		</div>
 
-		<div use:melt={$root} class="rounded-2xl bg-green-700 px-24 py-4">
+		<div use:melt={$root} class="rounded-2xl bg-green-700 py-4 lg:px-24">
 			<h2 class="hidden font-serif text-3xl font-bold lg:block">YoungVision's Entstehung</h2>
-			<p class="mt-8 lg:mt-6">
+			<p class="mt-4 lg:mt-6">
 				YoungVision wurde 2013 auf dem Celebrate Life Festival YoungVision gegründet, inspiriert von
 				den Ideen und Werten von
 				<a class="text-blue-700 hover:underline" href="https://thomashuebl.com/">Thomas Hübl</a>.
@@ -48,7 +48,7 @@
 					</p>
 				</div>
 			{/if}
-			<div class="mt-6 flex w-full flex-col items-center justify-center">
+			<div class="mt-5 flex w-full flex-col items-center justify-center lg:mt-6">
 				<button use:melt={$trigger} class="flex items-center">
 					Mehr lesen
 					<div class="h-10 w-10 p-2">
