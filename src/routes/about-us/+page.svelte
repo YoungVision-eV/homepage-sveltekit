@@ -6,7 +6,6 @@
 	import TryThisAtHome from '$lib/about-us/TryThisAtHome.svelte';
 	import VisionMissionValues from '$lib/about-us/VisionMissionValues.svelte';
 	import WhatWeDo from '$lib/about-us/WhatWeDo.svelte';
-	import WorkshopLeaders from '$lib/about-us/WorkshopLeaders.svelte';
 </script>
 
 <VisionMissionValues />
@@ -14,6 +13,5 @@
 <TeamMembers />
 <WhatWeDo />
 <TryThisAtHome />
-<WorkshopLeaders />
 <FlowerDecoration />
 <MainSponsors />
