@@ -6,7 +6,7 @@
 	<div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 px-5 py-16 lg:grid-cols-2 lg:px-20">
 		<div class="h-96 px-9 lg:h-[36rem] lg:px-0">
 			<enhanced:img
-				class="h-full w-auto rounded-2xl object-cover object-bottom"
+				class="h-full w-auto rounded-2xl object-cover object-center"
 				src="$lib/assets/hero-image.jpeg"
 				alt="Eine Frau breitet ihre Arme aus und lächelt mit geschlossenen Augen in die Kamera,
 				während sie ihren Kopf zur Seite neigt. Hinter ihr ist ein Haufen mit Holzscheiten zu sehen."
