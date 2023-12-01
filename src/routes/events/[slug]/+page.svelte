@@ -8,7 +8,6 @@
 
 	import Placeholder1200 from '$lib/assets/placeholder/1200.jpg?enhanced';
 	import Placeholder800x1200 from '$lib/assets/placeholder/800x1200.jpg?enhanced';
-	import { goto } from '$app/navigation';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -57,7 +56,6 @@
 
 	function goBack() {
 		window.history.back();
-		//goto('/projects');
 	}
 </script>
 
