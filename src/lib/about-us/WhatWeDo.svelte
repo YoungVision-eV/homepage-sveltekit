@@ -1,4 +1,5 @@
 <script>
+	import Background from '$lib/assets/background-what-we-do.png';
 	import ReadMoreExpandButton from '$lib/components/ReadMoreExpandButton.svelte';
 
 	const exercises = [
@@ -25,7 +26,13 @@
 	];
 </script>
 
-<section class="w-full px-5 pb-16 pt-24 lg:px-20">
+<section class="relative w-full px-5 pb-16 pt-24 lg:px-20">
+	<img
+		class="absolute left-[-6rem] top-[-9rem] -z-10 h-[18rem] w-auto lg:left-[-12rem] lg:top-[-31rem]
+		lg:h-auto lg:w-[50em]"
+		alt="Flowers"
+		src={Background}
+	/>
 	<h1 class="text-center font-serif text-3xl font-bold lg:text-5xl">Was wir tun</h1>
 	<h2 class="mt-14 font-serif text-2xl font-bold lg:mt-20 lg:text-4xl">Main exercises</h2>
 	<div class="mt-6 grid grid-cols-1 gap-y-3 lg:mt-10 lg:grid-cols-2 lg:gap-y-6">
