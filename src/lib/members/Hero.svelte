@@ -9,7 +9,7 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua ut enim ad.
 		</p>
-		<Button class="mt-12 lg:mt-4" text="Call to action" color="black" />
+		<Button class="mt-12 lg:mt-4" text="Call to action" color="dark" />
 	</div>
 </section>
 

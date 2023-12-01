@@ -4,7 +4,7 @@
 	let className = '';
 	export { className as class };
 	export let text: string;
-	export let color: 'black' | 'white';
+	export let color: 'dark' | 'bright';
 </script>
 
 <button
@@ -12,11 +12,11 @@
 		'flex items-center justify-between p-4 px-8 font-bold',
 		{
 			// black background, white text
-			'bg-black': color === 'black',
-			'text-white': color === 'black',
+			'bg-green-50': color === 'dark',
+			'text-white': color === 'dark',
 			// white background, black text
-			'bg-white': color === 'white',
-			'text-black': color === 'white'
+			'bg-white': color === 'bright',
+			'text-black': color === 'bright'
 		},
 		className
 	)}

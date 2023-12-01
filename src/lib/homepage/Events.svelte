@@ -21,7 +21,7 @@
 					ut labore et dolore magna aliqua ut enim ad.
 				</p>
 			</div>
-			<Button class="mx-auto mt-14 lg:mx-0 lg:mt-12" text="Follow us on Telegram" color="black" />
+			<Button class="mx-auto mt-14 lg:mx-0 lg:mt-12" text="Follow us on Telegram" color="dark" />
 		</div>
 	</div>
 </section>

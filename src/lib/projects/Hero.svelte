@@ -13,7 +13,7 @@
 			labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 		</p>
-		<Button text="See More" color="black" class="ml-2 mt-5" />
+		<Button text="See More" color="dark" class="ml-2 mt-5" />
 	</div>
 </section>
 

@@ -24,7 +24,7 @@
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button class="mt-8 lg:mt-6" color="black" text="Sign Up Now" />
+	<Button class="mt-8 lg:mt-6" color="dark" text="Sign Up Now" />
 	<Disclosure data-testid="benefits" let:open>
 		{#if open}
 			<div transition:slide>

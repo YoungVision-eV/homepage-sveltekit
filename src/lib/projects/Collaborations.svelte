@@ -25,7 +25,7 @@
 				labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-			<Button class="mt-12" text="Call to Action" color="black" />
+			<Button class="mt-12" text="Call to Action" color="dark" />
 		</div>
 	</div>
 </section>

@@ -29,7 +29,7 @@
 				Entwicklung im Mittelpunkt stehen. Entdecke YoungVision und werde Teil dieser inspirierenden
 				Gemeinschaft.
 			</p>
-			<Button class="mt-12" text="About YoungVision" color="white" />
+			<Button class="mt-12" text="About YoungVision" color="bright" />
 		</div>
 	</div>
 </section>

@@ -76,7 +76,7 @@
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button text="Sign Up" color="black" class="mt-12 lg:mt-14" />
+	<Button text="Sign Up" color="dark" class="mt-12 lg:mt-14" />
 </section>
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold lg:text-3xl">Wichtige Infos</h2>
@@ -104,7 +104,7 @@
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button class="mt-12" color="black" text="Follow Telegram Kanal" />
+	<Button class="mt-12" color="dark" text="Follow Telegram Kanal" />
 </section>
 <Testimonial class="mt-14 bg-yellow bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">

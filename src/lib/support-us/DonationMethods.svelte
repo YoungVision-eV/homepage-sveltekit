@@ -45,7 +45,7 @@
 					/>
 					<h3 class="mt-4 font-serif text-4xl font-bold">{possibility.title}</h3>
 					<p class="mt-4">{possibility.description}</p>
-					<Button class="mt-8" text="Email Now" color="black" />
+					<Button class="mt-8" text="Email Now" color="dark" />
 				</Tab>
 			{/each}
 		</TabList>
@@ -75,7 +75,7 @@
 							Wir freuen uns auf deine Kontaktaufnahme zu <a href="mailto:kontakt@youngvision.org"
 								>kontakt@youngvision.org</a
 							>
-							<Button class="mt-8" text="Email Now" color="black" />
+							<Button class="mt-8" text="Email Now" color="dark" />
 						</p>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 						<p>
 							Wenn du uns eine Sachspende schicken willst, dann schreib Name kurz ein Email: Email
 						</p>
-						<Button class="mt-8" text="Email Now" color="black" />
+						<Button class="mt-8" text="Email Now" color="dark" />
 						<p>Oder bring deine Sachspende einfach zum nächsten Event in Rosow mit:).</p>
 						<p>Das wird gerade benötigt</p>
 						<ul class="list-inside list-disc">
@@ -126,7 +126,7 @@
 						</p>
 					</DisclosurePanel>
 				</Disclosure>
-				<Button class="group-odd:float-right" text="Email Now" color="black" />
+				<Button class="group-odd:float-right" text="Email Now" color="dark" />
 			</li>
 		{/each}
 	</ul>
@@ -145,7 +145,7 @@
 					>
 				</dd>
 			</dl>
-			<Button class="mt-7" text="Email Now" color="black" />
+			<Button class="mt-7" text="Email Now" color="dark" />
 		</div>
 	</div>
 </section>
