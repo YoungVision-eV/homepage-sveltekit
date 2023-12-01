@@ -60,7 +60,9 @@
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
 				<li
-					class="rounded-2xl shadow-lg mt-12 lg:mt-0 {event.for_all ? 'bg-soft-yellow' : 'bg-light-green'}"
+					class="mt-12 rounded-2xl shadow-lg lg:mt-0 {event.for_all
+						? 'bg-soft-yellow'
+						: 'bg-light-green'}"
 				>
 					<enhanced:img
 						alt=""
