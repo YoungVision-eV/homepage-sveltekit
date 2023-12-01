@@ -33,7 +33,7 @@
 	let only_members = true;
 </script>
 
-<section class="relative px-4 pt-14 lg:px-20 lg:pt-24 mb-20">
+<section class="relative mb-20 px-4 pt-14 lg:px-20 lg:pt-24">
 	<enhanced:img
 		src="$lib/assets/projects-bg-lg-3.jpg"
 		alt=""
@@ -56,22 +56,18 @@
 			<label class="ml-4" for="only-members">Nur Mitglieder</label>
 		</div>
 	</div>
-	<ul
-		class="flex flex-col items-center lg:mt-12 lg:grid lg:grid-cols-2 lg:place-items-center lg:gap-10"
-	>
+	<ul class="flex flex-col lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-10">
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
-				<li class="">
+				<li
+					class="rounded-2xl shadow-lg mt-12 lg:mt-0 {event.for_all ? 'bg-soft-yellow' : 'bg-light-green'}"
+				>
 					<enhanced:img
 						alt=""
 						src={event.image}
-						class="mt-12 max-h-64 w-full rounded-t-2xl object-cover lg:mt-4"
+						class="max-h-64 w-full rounded-t-2xl object-cover"
 					/>
-					<div
-						class="flex rounded-b-2xl p-6 shadow-lg {event.for_all
-							? 'bg-soft-yellow'
-							: 'bg-light-green'}"
-					>
+					<div class="flex p-6">
 						<div class="mt-4 flex flex-col items-center">
 							<div class="font-serif text-5xl font-bold">{event.day}</div>
 							<div>{event.month}</div>
