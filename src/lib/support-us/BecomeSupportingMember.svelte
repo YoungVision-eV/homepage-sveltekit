@@ -102,11 +102,17 @@
 
 <style>
 	section {
-		background-image: url($lib/assets/background-supporting-member.jpeg);
-		background-position: top left;
+		background-image: url($lib/assets/background-supporting-member.png);
+		background-position: top center;
 	}
 	.benefit-item {
 		display: grid;
 		grid-template-columns: subgrid;
+	}
+
+	@media (min-width: 1024px) {
+		section {
+			background-size: cover;
+		}
 	}
 </style>
