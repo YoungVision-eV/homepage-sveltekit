@@ -1,4 +1,13 @@
-<main class="flex-col items-center px-4 pt-14 lg:flex lg:px-20 lg:pt-36">
+<script>
+	import Background from '$lib/assets/members-background.png';
+</script>
+
+<main class="relative flex-col items-center px-4 pt-14 lg:flex lg:px-20 lg:pt-36">
+	<img
+		class="absolute left-0 top-0 -z-10 h-full w-full object-cover opacity-40"
+		src={Background}
+		alt="YoungVision"
+	/>
 	<img alt="YoungVision" class="h-48 w-full bg-gray-300 lg:h-[27rem] lg:w-[50rem]" />
 	<h2 class="mt-10 text-center font-serif text-2xl font-bold lg:hidden">Werde Mitglied</h2>
 	<h2 class="mt-20 hidden text-center font-serif text-4xl font-bold lg:block">
