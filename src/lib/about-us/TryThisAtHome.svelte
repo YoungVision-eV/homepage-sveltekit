@@ -2,7 +2,9 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section class="w-full items-end gap-x-28 bg-yellow px-5 py-10 lg:flex lg:pb-14 lg:pl-20 lg:pr-40">
+<section
+	class="w-full items-end gap-x-28 bg-yellow-500 px-5 py-10 lg:flex lg:pb-14 lg:pl-20 lg:pr-40"
+>
 	<div class="hidden h-60 w-60 flex-shrink-0 bg-white lg:block" />
 	<div>
 		<h1 class="text-center font-serif text-2xl font-bold lg:text-left lg:text-4xl">

@@ -3,62 +3,61 @@
 	import { Disclosure, DisclosureButton, DisclosurePanel } from '@rgossiaux/svelte-headlessui';
 
 	import Button from '$lib/components/Button.svelte';
-	import clsx from 'clsx';
 
 	const benefits = [
-		'Du hast Lust uns mit größeren Mengen Geld zu unterstutzen?',
-		'Einmalig oder wieder​kehrende Spende.',
-		'Du hast Lust dein Wissen und Erfahrung zu teilen? Gerne hier!',
-		'Du hast Lust deine Dinge zu teilen? Gerne hier!',
-		'Du hast Lust unsere Projekte zu unterstützen?'
+		'Unsere Arbeit langfristig ermöglichen',
+		'Regelmäßige Updates',
+		'Jährliche Dankes​karte',
+		'Spenden​bescheinigung',
+		'Mitgliedschaft jederzeit kündbar',
+		'??'
 	];
 </script>
 
 <section data-testid="supporting-members" class="bg-light-green px-4 py-8 lg:px-20 lg:py-12">
-	<h1 class="font-serif text-2xl font-bold lg:text-4xl">Werde Fördermitglied</h1>
-	<h2 class="mt-3 font-serif text-xl lg:mt-2 lg:text-2xl">
-		Die chance uns zu unterstutzen und mehr von uns zu erfahren!
-	</h2>
-	<p class="mt-8 lg:mt-10 lg:text-xl">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
-		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
+	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Werde Fördermitglied</h2>
+	<p class="mt-3 font-serif text-xl font-bold lg:mt-2 lg:text-2xl">
+		Deine Chance uns zu unterstützen und mehr über uns zu erfahren!
 	</p>
-	<Button class="mt-8 lg:mt-6" color="dark" text="Sign Up Now" />
+	<p class="mt-8 max-w-prose lg:mt-10 lg:text-xl">
+		Du willst junge Menschen auf ihrer Reise zur persönlichen Entwicklung und zur aktiven Gestaltung
+		unserer Gesellschaft zu begleiten? Erfahre hier, wie du uns unterstützen kannst!
+	</p>
+	<Button class="mt-8 lg:mt-6" color="dark" text="Werde Fördermitglied" />
 	<Disclosure data-testid="benefits" let:open>
 		{#if open}
 			<div transition:slide>
 				<DisclosurePanel class="pb-12 pt-16 lg:px-16" static>
 					<h3 class="font-serif text-2xl font-bold">Vorteile</h3>
-					<ul class="grid grid-cols-3 py-12 lg:grid-cols-9 lg:gap-y-14">
+					<ol id="benefits" class="grid grid-cols-3 py-12 lg:gap-y-14">
 						{#each benefits as benefit, index}
-							<li
-								class={clsx('group col-span-3 grid grid-cols-subgrid items-center', {
-									// TODO: this will break if we have more than 5 benefits
-									'lg:col-start-2': index === 3
-								})}
-							>
+							<li class="group col-span-3 grid grid-cols-subgrid items-center">
 								<div
-									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end lg:group-odd:order-first"
+									class="flex flex-none flex-row group-odd:order-last group-odd:justify-end
+									lg:group-odd:order-first lg:group-odd:justify-start"
 								>
 									<div
-										class="flex h-24 w-24 flex-none items-center justify-center rounded-full bg-gray-300 font-serif text-5xl font-bold lg:h-32 lg:w-32 lg:bg-green-50 lg:text-white"
+										class="flex h-24 w-24 flex-none items-center justify-center rounded-full
+										bg-gray-300 font-serif text-5xl font-bold lg:h-28 lg:w-28 lg:bg-green-50 lg:text-white"
 									>
 										{index + 1}
 									</div>
 								</div>
-								<p class="col-span-2 ml-2 text-justify text-sm lg:mx-10 lg:text-xl">{benefit}</p>
+								<p class="col-span-2 ml-2 text-sm lg:ml-8 lg:mr-5 lg:text-xl">
+									{benefit}
+								</p>
 							</li>
 						{/each}
-					</ul>
-					<div class="gap-x-5 lg:flex lg:text-xl">
+					</ol>
+					<div class="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-x-5 lg:text-xl">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+							Dein Beitrag, unsere Vision: Deine Unterstützung ermöglicht es uns, inspirierende
+							Projekte und Veranstaltungen für junge Menschen zu schaffen und eine unterstützende
+							Gemeinschaft aufzubauen.
 						</p>
-						<p class="mt-4 lg:mt-0">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua ut enim ad. T1
+						<p>
+							Wir schätzen deine Beteiligung und freuen uns darauf, gemeinsam eine bessere Zukunft
+							zu gestalten.
 						</p>
 					</div>
 				</DisclosurePanel>
@@ -105,9 +104,14 @@
 		background-image: url($lib/assets/background-supporting-member.png);
 		background-position: top center;
 	}
-	.benefit-item {
-		display: grid;
-		grid-template-columns: subgrid;
+
+	@media (min-width: 1024px) {
+		#benefits {
+			grid-template-columns: 7rem repeat(2, minmax(0, 1fr)) 7rem repeat(2, minmax(0, 1fr)) 7rem repeat(
+					2,
+					minmax(0, 1fr)
+				);
+		}
 	}
 
 	@media (min-width: 1024px) {
