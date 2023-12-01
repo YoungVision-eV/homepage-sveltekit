@@ -33,7 +33,7 @@
 	let only_members = true;
 </script>
 
-<section class="relative px-4 pt-14 lg:px-20 lg:pt-24">
+<section class="relative px-4 pt-14 lg:px-20 lg:pt-24 mb-20">
 	<enhanced:img
 		src="$lib/assets/projects-bg-lg-3.jpg"
 		alt=""
@@ -61,7 +61,7 @@
 	>
 		{#each events as event}
 			{#if (event.for_all && for_all) || (!event.for_all && only_members)}
-				<li class="lg:shrink">
+				<li class="">
 					<enhanced:img
 						alt=""
 						src={event.image}
