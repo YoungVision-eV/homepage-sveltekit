@@ -64,7 +64,7 @@
 			</div>
 		{/if}
 		<DisclosureButton class="mt-12 flex w-full flex-col items-center justify-center lg:mt-8">
-			<span class="text-sm">Show Benefits</span>
+			<span class="text-sm">{open ? 'Weniger' : 'Mehr'}</span>
 			<div>
 				<svg
 					class="mt-2"

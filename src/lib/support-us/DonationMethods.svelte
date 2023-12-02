@@ -1,5 +1,9 @@
 <script>
 	import SachspendenImage from '$lib/assets/sachspenden.jpeg';
+	import GeldspendenImage from '$lib/assets/Geld-spenden.jpeg';
+	import ExpertiseImage from '$lib/assets/Expertise-spenden.jpeg';
+	import PartnerImage from '$lib/assets/Partner-werden.jpeg';
+
 	import JakobPortrait from '$lib/assets/jakob-portait.jpeg';
 	import Button from '$lib/components/Button.svelte';
 	import {
@@ -23,20 +27,23 @@
 		{
 			title: 'Partner werden',
 			description: 'Deine Stiftung oder Organisation ist interessiert an einer Kooperation?',
-			text: 'Wenn deine Organisation oder Firma unsere Werte und Ziele teilt, können wir gemeinsam an Projekten arbeiten oder Partnerschaften entwickeln, die unsere Gemeinschaft und junge Menschen fördern.',
-			icon: HandShake
+			text: 'Wenn deine Stiftung, Organisation oder Unternehmen unsere Werte und Ziele teilen, können wir gemeinsam Projekte entwickeln, die unsere Gemeinschaft und junge Menschen fördern. Für mehr Informationen und Austausch schreibe uns richtig gerne eine Email.',
+			icon: HandShake,
+			image: PartnerImage
 		},
 		{
 			title: 'Geld spenden',
 			description: 'Du willst uns einmalig oder regelmäßig Geld spenden?',
-			text: 'Wenn du Geld spenden willst, dann schreib Name kurz ein Email: Email',
-			icon: DonationBoxHand
+			text: 'Deine Spende unterstützt YoungVision und seine Mitglieder enorm. Von dem Geld wird die Vereinsstruktur gehalten und Veranstaltungen für junge Menschen realisiert.',
+			icon: DonationBoxHand,
+			image: GeldspendenImage
 		},
 		{
 			title: 'Expertise Spenden',
 			description: 'Du hast Lust deine Expertise mit uns zu teilen?',
 			text: 'Du hast Lust YoungVision mit deiner Expertise voranzubringen?',
-			icon: HeadLightbulb
+			icon: HeadLightbulb,
+			image: ExpertiseImage
 		},
 		{
 			title: 'Sachspenden',
@@ -89,22 +96,31 @@
 					<div class="mt-16 flex justify-between gap-x-28">
 						<div class="mt-16">
 							<p class="max-w-prose">
-								Wenn deine Organisation oder Firma unsere Werte und Ziele teilt, können wir
-								gemeinsam an Projekten arbeiten oder Partnerschaften entwickeln, die unsere
-								Gemeinschaft und junge Menschen fördern.
+								Wenn deine Stiftung, Organisation oder Unternehmen unsere Werte und Ziele teilen,
+								können wir gemeinsam Projekte entwickeln, die unsere Gemeinschaft und junge Menschen
+								fördern. Für mehr Informationen und Austausch schreibe uns richtig gerne eine Email.
 							</p>
 							<Button class="mt-8" text="Schreibe uns" color="dark" />
 						</div>
-						<img class="h-[38rem] w-[28rem] flex-none bg-gray-300" alt="Partner werden" />
+						<img
+							src={PartnerImage}
+							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
+							alt="Partner werden"
+						/>
 					</div>
 				</TabPanel>
 				<TabPanel class="pb-16 pt-40 text-2xl">
 					<h3 class="text-center font-serif text-5xl font-bold">Geld spenden</h3>
 					<div class="mt-16 flex justify-between gap-x-28">
-						<img class="h-[38rem] w-[28rem] flex-none bg-gray-300" alt="Geld spenden" />
+						<img
+							src={GeldspendenImage}
+							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
+							alt="Geld spenden"
+						/>
 						<div class="mt-16">
 							<p class="max-w-prose">
-								Wenn du Geld spenden willst, dann schreib Name kurz ein Email: Email
+								Deine Spende unterstützt YoungVision und seine Mitglieder enorm. Von dem Geld wird
+								die Vereinsstruktur gehalten und Veranstaltungen für junge Menschen realisiert.
 							</p>
 							<Button class="mt-8" text="Schreibe uns" color="dark" />
 						</div>
@@ -131,7 +147,11 @@
 							</p>
 							<Button class="mt-8" text="Schreibe uns" color="dark" />
 						</div>
-						<img class="h-[38rem] w-[28rem] flex-none bg-gray-300" alt="Expertise Spenden" />
+						<img
+							src={ExpertiseImage}
+							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
+							alt="Expertise Spenden"
+						/>
 					</div>
 				</TabPanel>
 				<TabPanel class="pb-16 pt-40 text-2xl">
