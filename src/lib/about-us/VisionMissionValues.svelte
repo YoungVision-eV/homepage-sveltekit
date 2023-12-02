@@ -1,28 +1,10 @@
 <script>
-	import Background from '$lib/assets/background-vision-statement.png?enhanced';
-
 	import MissionIcon from './icons/MissionIcon.svelte';
 	import ValuesIcon from './icons/ValuesIcon.svelte';
 	import VisionIcon from './icons/VisionIcon.svelte';
 </script>
 
-<section class="relative mb-28 w-full px-5 pt-14 text-center lg:px-56">
-	<enhanced:img
-		class="absolute right-[-5rem] top-[-5rem] -z-10 h-[19rem] w-auto lg:right-[-7rem] lg:top-[-7rem] lg:h-[32rem]"
-		src={Background}
-		alt="YoungVision Logo"
-	/>
-	<enhanced:img
-		class="absolute left-[-7rem] top-[7rem] -z-10 h-[14rem] w-auto lg:top-[17rem] lg:h-[25rem]"
-		src={Background}
-		alt="YoungVision Logo"
-	/>
-	<enhanced:img
-		class="absolute bottom-[-7rem] right-[-4rem] -z-10 h-[14rem] w-auto"
-		src={Background}
-		alt="YoungVision Logo"
-	/>
-
+<section class="mb-28 w-full px-5 pt-14 text-center lg:px-56">
 	<h1 class="mt-3 text-center font-serif text-3xl font-bold lg:text-5xl">Wer wir sind</h1>
 	<div id="statements" class="grid grid-cols-1 lg:mt-16 lg:items-center lg:gap-x-10 lg:gap-y-8">
 		<div
