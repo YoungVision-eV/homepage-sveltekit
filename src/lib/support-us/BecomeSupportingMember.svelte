@@ -23,7 +23,12 @@
 		Du willst junge Menschen auf ihrer Reise zur persönlichen Entwicklung und zur aktiven Gestaltung
 		unserer Gesellschaft zu begleiten? Erfahre hier, wie du uns unterstützen kannst!
 	</p>
-	<Button class="mt-8 lg:mt-6" color="dark" text="Werde Fördermitglied" />
+	<Button
+		href="https://easyverein.com/public/yv/applicationform/7237"
+		class="mt-8 lg:mt-6"
+		color="dark"
+		text="Werde Fördermitglied"
+	/>
 	<Disclosure data-testid="benefits" let:open>
 		{#if open}
 			<div transition:slide>
