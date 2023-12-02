@@ -15,12 +15,7 @@ test('Expanding Fördermitglieder', async ({ page }) => {
 });
 
 test.describe('Donation method details', () => {
-	for (const method of [
-		'Partner werden',
-		'Geld spenden',
-		'Expertise Spenden',
-		'Sachspenden'
-	]) {
+	for (const method of ['Partner werden', 'Geld spenden', 'Expertise Spenden', 'Sachspenden']) {
 		test(`Expanding '${method}'`, async ({ isMobile, page }) => {
 			const element = page.getByRole(isMobile ? 'button' : 'tab', {
 				name: new RegExp(method)
