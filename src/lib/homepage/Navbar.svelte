@@ -5,10 +5,10 @@
 	// TODO: get these from CMS?
 	const pages = {
 		Home: '/',
-		About: '/about-us',
-		Projekte: '/projects',
-		Support: '/support-us',
-		Mitglieder: '/members'
+		'Über Uns': '/about-us',
+		Veranstaltungen: '/projects',
+		'Unterstütze uns': '/support-us',
+		Mitgliedschaft: '/members'
 	};
 
 	// TODO: shouldn't this work because of the subscription?
