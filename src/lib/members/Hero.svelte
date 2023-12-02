@@ -6,10 +6,15 @@
 	<div class="flex flex-col items-center bg-black bg-opacity-60 px-4 py-12 text-white">
 		<h1 class="font-serif text-4xl font-bold lg:text-5xl">Werde Mitglied</h1>
 		<p class="mt-6 max-w-[35rem] lg:mt-7 lg:text-xl">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua ut enim ad.
+			Du willst Teil der YoungVision Community werden, dich selbst und andere tiefer erfahren und
+			echte Verbindungen aufbauen? Dann bist du hier richtig.
 		</p>
-		<Button class="mt-12 lg:mt-4" text="Call to action" color="black" />
+		<Button
+			class="mt-12 lg:mt-4"
+			text="Mitglied werden"
+			href="https://easyverein.com/public/yv/applicationform/7213"
+			color="dark"
+		/>
 	</div>
 </section>
 

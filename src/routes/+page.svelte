@@ -9,6 +9,20 @@
 <Hero />
 <ReadMore />
 <Events />
-<Testimonial />
-<Instagram />
-<div class="h-40 w-full bg-light-green" />
+<div id="testimonials-and-instagram">
+	<Testimonial />
+	<Instagram />
+</div>
+
+<style>
+	#testimonials-and-instagram {
+		background-position: bottom -200px right 95%;
+		background-repeat: no-repeat;
+		background-image: url($lib/assets/background-instagram.jpeg);
+	}
+	@media (min-width: 1024px) {
+		#testimonials-and-instagram {
+			background-position: bottom -100px right -500px;
+		}
+	}
+</style>

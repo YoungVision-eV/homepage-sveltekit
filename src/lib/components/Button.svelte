@@ -1,30 +1,31 @@
 <script lang="ts">
+	import Circle from '$lib/icons/Circle.svelte';
 	import clsx from 'clsx';
 
 	let className = '';
 	export { className as class };
 	export let text: string;
-	export let color: 'black' | 'white';
+	export let color: 'dark' | 'bright';
+	export let href: string = '#';
+	export let download: string | undefined = undefined;
 </script>
 
-<button
+<a
+	{download}
+	{href}
 	class={clsx(
-		'flex items-center justify-between p-4 px-8 font-bold',
+		'inline-flex items-center gap-x-4 p-4 px-8 font-bold',
 		{
 			// black background, white text
-			'bg-black': color === 'black',
-			'text-white': color === 'black',
+			'bg-green-50': color === 'dark',
+			'text-white': color === 'dark',
 			// white background, black text
-			'bg-white': color === 'white',
-			'text-black': color === 'white'
+			'bg-white': color === 'bright',
+			'text-black': color === 'bright'
 		},
 		className
 	)}
 >
-	<svg class="h-6 w-6" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-		<circle cx="12" cy="12" r="10" stroke-width="3.45596" fill="none" />
-	</svg>
-	<span class="ml-4">
-		{text}
-	</span>
-</button>
+	<Circle />
+	{text}
+</a>

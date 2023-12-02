@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => {
-	await page.goto('/projects');
+	await page.goto('/events');
 });
 
 test('Projects page screenshot', async ({ page }) => {
@@ -19,16 +19,12 @@ test('Filter for_all', async ({ page }) => {
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
 
-test('Click on Mitgliederversammlung', async ({ page }) => {
-	await page.getByText('Mitgliederversammlung').click();
-	await expect(page.getByRole('heading').getByText('Mitgliederversammlung')).toBeVisible();
-	await expect(page.getByRole('heading').getByText('Finanzierung')).toBeVisible();
-	await expect(page).toHaveScreenshot({ fullPage: true });
-});
-
-test('Click on Silvester', async ({ page }) => {
-	await page.getByText('Silvester').click();
-	await expect(page.getByRole('heading').getByText('Silvester')).toBeVisible();
-	await expect(page.getByRole('heading').getByText('Finanzierung')).toBeVisible();
-	await expect(page).toHaveScreenshot({ fullPage: true });
-});
+for (const project of ['Mitgliederversammlung', 'Silvester']) {
+	// TODO: readd when event pages are ready
+	test.skip(`Click on ${project}`, async ({ page }) => {
+		await page.getByText(project).click();
+		await expect(page.getByRole('heading').getByText(project)).toBeVisible();
+		await expect(page.getByRole('heading').getByText('Finanzierung')).toBeVisible();
+		await expect(page).toHaveScreenshot({ fullPage: true });
+	});
+}

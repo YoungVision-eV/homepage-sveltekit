@@ -22,7 +22,7 @@
 		</dl>
 		<div class="mt-3 md:mt-0 md:w-3/5 lg:w-1/2">
 			<form class="bg-green-50">
-				<h2 class="text-xl font-bold text-orange">Subscribe to our Newsletter!</h2>
+				<h2 class="text-xl font-bold text-orange">Für unseren Newsletter anmelden</h2>
 				<div class="mt-2">
 					<label for="email" class="sr-only">Email</label>
 					<div class="relative">

@@ -3,32 +3,40 @@
 </script>
 
 <section class="w-full bg-cover">
-	<div class="grid-cols-2 items-center gap-x-20 px-5 py-16 lg:grid lg:px-20">
-		<div class="mx-9 h-96 lg:mx-0 lg:h-[36rem]">
+	<div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 px-5 py-16 lg:grid-cols-2 lg:px-20">
+		<div class="h-96 px-9 lg:h-[36rem] lg:px-0">
 			<enhanced:img
-				class="h-full w-auto rounded-2xl object-cover"
+				class="h-full w-full rounded-2xl object-cover object-center"
 				src="$lib/assets/hero-image.jpeg"
-				alt="People sit before a wall and one is smiling into the camera"
+				alt="Eine Frau breitet ihre Arme aus und lächelt mit geschlossenen Augen in die Kamera,
+				während sie ihren Kopf zur Seite neigt. Hinter ihr ist ein Haufen mit Holzscheiten zu sehen."
 			/>
 		</div>
-		<div class="order-first mt-10 lg:mt-0">
-			<h1 class="font-serif text-3xl font-bold lg:text-5xl">Schön, dass du hier bist!</h1>
+		<div class="lg:order-first">
+			<h1 class="font-serif text-3xl font-bold lg:text-5xl">
+				<span class="text-orange">Schön,</span> dass du hier bist!
+			</h1>
 			<p class="mt-6 text-xl lg:mt-14">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua ut enim ad.
+				Ein Raum für dich, um zu wachsen, dich selbst zu entdecken und echte Verbindungen zu anderen
+				zu knüpfen. Hier darfst du Teil einer inspirierenden Gemeinschaft junger Menschen werden.
 			</p>
-			<Button class="mx-auto mt-12 lg:mx-0" text="Call To Action" color="black" />
+			<Button
+				class="mx-auto mt-12 w-64 lg:mx-0"
+				text="Mitglied werden"
+				href="/members"
+				color="dark"
+			/>
 		</div>
 	</div>
 </section>
 
 <style>
 	section {
-		background-image: url($lib/assets/background-hero-landscape.jpeg);
+		background-image: url($lib/assets/background-hero-landscape.png);
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		section {
-			background-image: url($lib/assets/background-hero.jpeg);
+			background-image: url($lib/assets/background-hero.png);
 		}
 	}
 </style>

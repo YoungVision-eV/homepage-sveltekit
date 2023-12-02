@@ -65,7 +65,7 @@
 	alt="Gathering 2024"
 />
 <div class="pr-4 lg:pr-20">
-	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl">
+	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow-500 bg-opacity-60 lg:text-xl">
 		<button on:click={goBack} class="p-3">
 			<img src={ArrowLeft} alt="" class="h-6 w-6" />
 			<span class="sr-only">Zur vorherigen Seite</span>
@@ -80,7 +80,7 @@
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button text="Sign Up" color="black" class="mt-12 lg:mt-14" />
+	<Button text="Sign Up" color="dark" class="mt-12 lg:mt-14" />
 </section>
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold lg:text-3xl">Wichtige Infos</h2>
@@ -89,7 +89,7 @@
 		class="mt-12 grid grid-cols-1 items-center justify-center lg:grid-flow-col lg:grid-cols-4 lg:gap-x-16"
 	>
 		{#each infos as info}
-			<div class="mx-auto h-40 w-40 rounded-full bg-yellow bg-opacity-60 p-7">
+			<div class="mx-auto h-40 w-40 rounded-full bg-yellow-500 bg-opacity-60 p-7">
 				<svelte:component this={info.icon} />
 			</div>
 			<h3
@@ -108,9 +108,9 @@
 		labore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing
 		elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.
 	</p>
-	<Button class="mt-12" color="black" text="Follow Telegram Kanal" />
+	<Button class="mt-12" color="dark" text="Follow Telegram Kanal" />
 </section>
-<Testimonial class="mt-14 bg-yellow bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
+<Testimonial class="mt-14 bg-yellow-500 bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Fotos vom letzten Gathering</h2>
 	<div

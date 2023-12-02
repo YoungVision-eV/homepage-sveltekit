@@ -15,25 +15,25 @@
 
 	const events = [
 		{
-			title: 'YV Gathering',
-			date: new Date(2024, 7, 24),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Bauwoche in Rosow',
+			date: new Date(2024, 3, 1),
+			description: 'Können wir das schaffen? Yo wir schaffen das!',
 			image: {
 				src: calendarCover
 			}
 		},
 		{
-			title: 'YV Gathering',
-			date: new Date(2023, 5, 12),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Mitgliederversammlung',
+			date: new Date(2024, 3, 4),
+			description: 'Alle Jahre wieder: Sei dabei, entscheide und gestalte mit!',
 			image: {
 				src: pastEvent
 			}
 		},
 		{
-			title: 'YV Gathering',
-			date: new Date(2022, 9, 15),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Gathering',
+			date: new Date(2024, 9, 2),
+			description: 'Das Highlight des Jahres',
 			image: {
 				src: thirdEvent
 			}
@@ -78,7 +78,7 @@
 					{#each events as _event, index}
 						<button on:click={() => (selectedEvent = index)}>
 							<svg
-								class="h-5 w-5 text-yellow text-opacity-60"
+								class="h-5 w-5 text-yellow-500 text-opacity-60"
 								fill="currentColor"
 								viewBox="0 0 100 100"
 								xmlns="http://www.w3.org/2000/svg"
@@ -105,8 +105,7 @@
 		{#each events as event, index}
 			<li
 				class={clsx(
-					'col-span-4 grid grid-cols-subgrid bg-soft-yellow transition-colors lg:col-span-5 lg:bg-yellow lg:bg-opacity-60',
-					index === selectedEvent ? 'text-black' : 'text-dark-green',
+					'col-span-4 grid grid-cols-subgrid bg-yellow-700 transition-colors lg:col-span-5 lg:bg-yellow-500 lg:bg-opacity-60',
 					index === 0 ? 'rounded-t-2xl lg:rounded-tl-none' : ''
 				)}
 			>
@@ -115,22 +114,15 @@
 					on:click={() => (selectedEvent = index)}
 					disabled={selectedEvent === index}
 				>
-					<div
-						class={clsx(
-							'z-30 flex flex-col items-center justify-center',
-							index === selectedEvent ? '' : 'lg:text-dark-green'
-						)}
-					>
+					<div class={clsx('z-30 flex flex-col items-center justify-center')}>
 						<span class="font-serif text-5xl font-bold">{event.date.getDate()}</span>
 						<span>{event.date.toLocaleString('de-DE', { month: 'long' })}</span>
-						<p class="text-sm italic text-dark-green lg:text-base">
-							{event.date <= new Date() ? 'Past Event' : 'Upcoming'}
+						<p class="text-sm italic text-gray-700 lg:text-base">
+							{event.date <= new Date() ? 'Vorbei' : 'Demnächst'}
 						</p>
 					</div>
 					<div class="z-30 col-span-3 px-4 lg:col-span-4 lg:px-10 lg:py-3">
-						<h3 class="font-bold lg:text-xl">
-							<span class="hidden lg:inline">Our Next Event: </span>{event.title}
-						</h3>
+						<h3 class="font-bold lg:text-xl">{event.title}</h3>
 						<p>{event.description}</p>
 					</div>
 				</button>
@@ -152,8 +144,8 @@
 				class={clsx(
 					'col-span-4 grid h-36 grid-cols-subgrid items-center lg:col-span-5',
 					index === 0
-						? 'rounded-l-2xl bg-background text-black lg:rounded-r-2xl'
-						: 'bg-yellow bg-opacity-60 text-dark-green '
+						? 'rounded-l-2xl bg-background lg:rounded-r-2xl'
+						: 'bg-yellow-500 bg-opacity-60 '
 				)}
 			>
 				<div
@@ -164,8 +156,8 @@
 				>
 					<span class="font-serif text-5xl font-bold">{event.date.getDate()}</span>
 					<span>{event.date.toLocaleString('de-DE', { month: 'long' })} <br /></span>
-					<p class="text-sm italic text-dark-green">
-						{event.date <= new Date() ? 'Past Event' : 'Upcoming'}
+					<p class="text-sm italic">
+						{event.date <= new Date() ? 'Vorbei' : 'Demnächst'}
 					</p>
 				</div>
 				<div class="col-span-3">
@@ -178,7 +170,7 @@
 </div>
 
 <style>
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		div#calendar {
 			grid-template-columns: 1.5rem repeat(4, minmax(0, 1fr));
 		}

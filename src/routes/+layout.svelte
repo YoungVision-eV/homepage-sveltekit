@@ -5,6 +5,7 @@
 	import '../app.postcss';
 	import NewsletterSignupDialog from '$lib/components/NewsletterSignupDialog.svelte';
 	import Footer from '$lib/homepage/Footer.svelte';
+	import MainSponsors from '$lib/about-us/MainSponsors.svelte';
 
 	const {
 		elements: { overlay, content, portalled },
@@ -17,6 +18,8 @@
 	<main>
 		<slot />
 	</main>
+
+	<MainSponsors />
 	<Footer />
 
 	{#if $open}

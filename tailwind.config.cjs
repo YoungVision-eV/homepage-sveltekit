@@ -10,7 +10,7 @@ const config = {
 	theme: {
 		fontFamily: {
 			sans: ['Montserrat', 'sans-serif'],
-			serif: ['"Source Serif 4"', 'serif']
+			serif: ['source-serif-pro', 'serif']
 		},
 		colors: {
 			black: colors.black,
@@ -18,16 +18,21 @@ const config = {
 			green: {
 				50: '#21291F',
 				200: '#6A845E',
-				500: '#BBCEA8'
+				500: '#BBCEA8',
+				700: '#D4DEC7'
 			},
 			'dark-green': '#6A845E',
 			'light-green': '#BBCEA8',
 			background: '#F9F8F6',
 			gray: colors.gray,
 			orange: '#E97D2B',
-			yellow: '#F0EC57',
-			'soft-yellow': '#F4F197',
-			pink: '#EA6C92'
+			yellow: {
+				500: '#F0EC57',
+				700: '#F4F197',
+				900: '#F9F6E4'
+			},
+			pink: '#EA6C92',
+			blue: colors.blue
 		},
 		extend: {
 			gridTemplateColumns: {
