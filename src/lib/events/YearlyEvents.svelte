@@ -38,26 +38,24 @@
 						? 'bg-yellow-700'
 						: 'bg-light-green'}"
 				>
-					<a href="/events/{event.slug}">
-						<enhanced:img
-							alt=""
-							src={event.image}
-							class="max-h-64 w-full rounded-t-2xl object-cover"
-						/>
-						<div class="flex p-6">
-							<div class="mt-4 flex flex-col items-center">
-								<div class="font-serif text-5xl font-bold">{event.day}</div>
-								<div>{event.month}</div>
-							</div>
-							<div class="ml-10">
-								<h3 class="font-bold lg:text-xl">{event.title}</h3>
-								<p class="mt-3">{event.short_description}</p>
-								<p class="mt-3 inline-block rounded-full bg-white px-5">
-									{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
-								</p>
-							</div>
+					<enhanced:img
+						alt=""
+						src={event.image}
+						class="max-h-64 w-full rounded-t-2xl object-cover"
+					/>
+					<div class="flex p-6">
+						<div class="mt-4 flex flex-col items-center">
+							<div class="font-serif text-5xl font-bold">{event.day}</div>
+							<div>{event.month}</div>
 						</div>
-					</a>
+						<div class="ml-10">
+							<h3 class="font-bold lg:text-xl">{event.title}</h3>
+							<p class="mt-3">{event.short_description}</p>
+							<p class="mt-3 inline-block rounded-full bg-white px-5">
+								{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}
+							</p>
+						</div>
+					</div>
 				</li>
 			{/if}
 		{/each}
