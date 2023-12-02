@@ -12,14 +12,14 @@
 
 <section class="mb-28 px-4 lg:px-20">
 	<div
-		class="w-full items-center rounded-2xl bg-green-700 px-6 pb-10 pt-8 shadow-lg lg:flex lg:h-[30rem] lg:p-0 lg:pb-16 lg:pt-10"
+		class="z-10 rounded-2xl bg-green-700 px-6 pb-10 pt-8 shadow-lg lg:flex lg:h-[30rem] lg:items-center lg:p-0"
 	>
 		<h2 class="font-serif text-2xl font-bold lg:hidden">YoungVision's Entstehung</h2>
-		<div class="flex-none">
+		<div class="mt-7 flex-none lg:mt-0">
 			<enhanced:img
 				src="$lib/assets/luna-about-us-history.jpeg"
 				alt=""
-				class="mt-7 h-96 w-full rounded-2xl object-cover lg:mt-0 lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
+				class="h-96 w-full rounded-2xl object-cover lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
 			/>
 		</div>
 
@@ -48,7 +48,7 @@
 					</p>
 				</div>
 			{/if}
-			<div class="mt-5 flex w-full flex-col items-center justify-center lg:mt-6">
+			<div class="z-10 mt-5 flex w-full flex-col items-center justify-center lg:mt-6">
 				<button use:melt={$trigger} class="flex items-center">
 					Mehr lesen
 					<div class="h-10 w-10 p-2">
