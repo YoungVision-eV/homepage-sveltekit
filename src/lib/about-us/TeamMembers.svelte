@@ -44,13 +44,3 @@
 		{/each}
 	</div>
 </section>
-
-<style>
-	@media (min-width: 1024px) {
-		section {
-			background-color: transparent;
-			background-image: url($lib/assets/background-team.png);
-			background-size: cover;
-		}
-	}
-</style>
