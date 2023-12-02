@@ -23,7 +23,12 @@
 					deine Vision Wirklichkeit werden zu lassen.
 				</p>
 			</div>
-			<Button class="mx-auto mt-14 lg:mx-0 lg:mt-12" text="Follow us on Telegram" color="dark" />
+			<Button
+				class="mx-auto mt-14 lg:mx-0 lg:mt-12"
+				text="Zeig mir mehr"
+				href="/events"
+				color="dark"
+			/>
 		</div>
 	</div>
 </section>
