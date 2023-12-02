@@ -16,13 +16,14 @@
 		<div class="flex flex-col items-center px-4 py-6 text-white lg:items-start lg:pr-24">
 			<h1 class="font-serif text-2xl font-bold lg:text-3xl">Wir sind YoungVision e.V.</h1>
 			<p class="mt-6 text-center leading-7 lg:text-left lg:leading-5">
-				Ein Raum für dich, um zu wachsen, dich selbst zu entdecken und echte Verbindungen zu anderen
-				zu knüpfen. Hier darfst du Teil einer inspirierenden Gemeinschaft junger Menschen werden.
+				YoungVision ist eine Community von jungen Menschen für junge Menschen in Verbindung mit
+				innerer Entwicklungsarbeit.
 			</p>
 			<p class="mt-7 text-center leading-7 lg:text-left lg:leading-5">
-				Gemeinsam gestalten wir so eine Welt, in der Achtsamkeit, Verbundenheit und persönliche
-				Entwicklung im Mittelpunkt stehen. Entdecke YoungVision und werde Teil dieser inspirierenden
-				Gemeinschaft.
+				Unsere Community ist geprägt von Offenheit, Empathie und gegenseitiger Unterstützung. Wir
+				glauben daran, dass wahre Veränderung durch Selbstwahrnehmung und das authentische Teilen
+				von Erfahrungen entsteht. Gemeinsam gestalten wir so eine Welt, in der Achtsamkeit,
+				Verbundenheit und persönliche Entwicklung im Mittelpunkt stehen.
 			</p>
 			<Button class="mt-12" text="Erfahre mehr" href="/about-us" color="bright" />
 		</div>

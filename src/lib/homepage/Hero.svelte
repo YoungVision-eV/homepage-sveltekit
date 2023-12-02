@@ -17,9 +17,8 @@
 				<span class="text-orange">Schön,</span> dass du hier bist!
 			</h1>
 			<p class="mt-6 text-xl lg:mt-14">
-				YoungVision - Ein Raum für dich, um zu wachsen, dich selbst zu entdecken und echte
-				Verbindungen zu anderen zu knüpfen. Hier darfst du ankommen und Teil einer inspirierenden
-				Gemeinschaft junger Menschen werden.
+				Ein Raum für dich, um zu wachsen, dich selbst zu entdecken und echte Verbindungen zu anderen
+				zu knüpfen. Hier darfst du Teil einer inspirierenden Gemeinschaft junger Menschen werden.
 			</p>
 			<Button
 				class="mx-auto mt-12 w-64 lg:mx-0"
