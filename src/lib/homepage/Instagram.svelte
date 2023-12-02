@@ -28,8 +28,8 @@
 		<div class="flex max-w-full gap-x-2 overflow-hidden lg:mx-14">
 			{#each images as image}
 				<a href={image.link} target="_blank" rel="noopener">
-					<div class="shrink-0">
-						<enhanced:img class="h-52 w-52 object-cover" src={image.src} alt={image.alt} />
+					<div class="h-52 w-52 shrink-0">
+						<enhanced:img class="object-cover" src={image.src} alt={image.alt} />
 					</div>
 				</a>
 			{/each}
