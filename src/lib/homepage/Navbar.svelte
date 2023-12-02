@@ -3,14 +3,6 @@
 	import { page } from '$app/stores';
 	import clsx from 'clsx';
 	import { getAllPages } from '$lib/data/pages';
-	// TODO: get these from CMS?
-	/*const pages = {
-		Home: '/',
-		'Über Uns': '/about-us',
-		Veranstaltungen: '/projects',
-		'Unterstütze uns': '/support-us',
-		Mitgliedschaft: '/members'
-	};*/
 	const pages = getAllPages();
 
 	// TODO: shouldn't this work because of the subscription?
