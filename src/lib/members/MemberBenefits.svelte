@@ -17,7 +17,7 @@
 	<img
 		src={BenefitsImage}
 		alt="YoungVision"
-		class="h-48 w-full bg-gray-300 object-cover lg:h-[27rem] lg:w-[50rem]"
+		class="h-48 w-full bg-gray-300 object-cover object-bottom lg:h-[27rem] lg:w-[50rem]"
 	/>
 	<h2 class="mt-10 text-center font-serif text-2xl font-bold lg:hidden">Werde Mitglied</h2>
 	<h2 class="mt-20 hidden text-center font-serif text-4xl font-bold lg:block">
