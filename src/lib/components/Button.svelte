@@ -7,9 +7,11 @@
 	export let text: string;
 	export let color: 'dark' | 'bright';
 	export let href: string = '#';
+	export let download: string | undefined = undefined;
 </script>
 
 <a
+	{download}
 	{href}
 	class={clsx(
 		'inline-flex items-center gap-x-4 p-4 px-8 font-bold',
