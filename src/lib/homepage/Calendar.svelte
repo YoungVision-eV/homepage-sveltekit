@@ -15,25 +15,25 @@
 
 	const events = [
 		{
-			title: 'YV Gathering',
-			date: new Date(2024, 7, 24),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Bauwoche in Rosow',
+			date: new Date(2024, 3, 1),
+			description: 'Können wir das schaffen? Yo wir schaffen das!',
 			image: {
 				src: calendarCover
 			}
 		},
 		{
-			title: 'YV Gathering',
-			date: new Date(2023, 5, 12),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Mitgliederversammlung',
+			date: new Date(2024, 3, 4),
+			description: 'Alle Jahre wieder: Sei dabei, entscheide und gestalte mit!',
 			image: {
 				src: pastEvent
 			}
 		},
 		{
-			title: 'YV Gathering',
-			date: new Date(2022, 9, 15),
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			title: 'Gathering',
+			date: new Date(2024, 9, 2),
+			description: 'Das Highlight des Jahres',
 			image: {
 				src: thirdEvent
 			}
@@ -122,9 +122,7 @@
 						</p>
 					</div>
 					<div class="z-30 col-span-3 px-4 lg:col-span-4 lg:px-10 lg:py-3">
-						<h3 class="font-bold lg:text-xl">
-							<span class="hidden lg:inline">Our Next Event: </span>{event.title}
-						</h3>
+						<h3 class="font-bold lg:text-xl">{event.title}</h3>
 						<p>{event.description}</p>
 					</div>
 				</button>
