@@ -13,7 +13,6 @@
 	<Testimonial />
 	<Instagram />
 </div>
-<div class="h-40 w-full bg-light-green" />
 
 <style>
 	#testimonials-and-instagram {
