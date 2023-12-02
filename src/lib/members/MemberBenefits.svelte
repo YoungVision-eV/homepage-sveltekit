@@ -17,7 +17,7 @@
 	<img
 		src={BenefitsImage}
 		alt="YoungVision"
-		class="h-48 w-full bg-gray-300 object-cover px-10 lg:h-[27rem] lg:w-[50rem]"
+		class="h-48 w-full bg-gray-300 object-cover lg:h-[27rem] lg:w-[50rem]"
 	/>
 	<h2 class="mt-10 text-center font-serif text-2xl font-bold lg:hidden">Werde Mitglied</h2>
 	<h2 class="mt-20 hidden text-center font-serif text-4xl font-bold lg:block">
@@ -67,7 +67,7 @@
 	/>
 
 	<div class="mt-10 flex w-full flex-col gap-4 lg:mt-20 lg:h-[22rem] lg:flex-row">
-		<img src={Image1} alt="YoungVision" class="h-48 w-full bg-gray-300 lg:h-full" />
-		<img src={Image2} alt="YoungVision" class="h-48 w-full bg-gray-300 lg:h-full" />
+		<img src={Image1} alt="YoungVision" class="h-48 w-full bg-gray-300 object-cover lg:h-full" />
+		<img src={Image2} alt="YoungVision" class="h-48 w-full bg-gray-300 object-cover lg:h-full" />
 	</div>
 </main>

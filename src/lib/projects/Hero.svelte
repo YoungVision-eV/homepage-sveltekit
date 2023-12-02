@@ -1,5 +1,5 @@
 <section class="flex h-[44rem] w-full flex-col justify-between bg-cover bg-center pt-12 lg:pt-20">
-	<h1 class="text-center font-serif text-4xl font-bold text-white lg:text-5xl">Get Involved</h1>
+	<h1 class="text-center font-serif text-4xl font-bold text-white lg:text-5xl">Sei Dabei</h1>
 	<div class="w-full bg-gray-800 bg-opacity-60 px-4 pb-6 pt-10 text-white lg:px-20">
 		<h2 class="font-serif text-2xl font-bold lg:text-3xl">
 			Vergangene Veranstaltungen: Sommercamp Ressourcen
