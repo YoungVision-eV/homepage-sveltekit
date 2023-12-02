@@ -18,3 +18,17 @@ test('Filter for_all', async ({ page }) => {
 	await expect(page.getByRole('list').getByText('Für Alle')).not.toBeVisible();
 	await expect(page).toHaveScreenshot({ fullPage: true });
 });
+
+test('Click on Mitgliederversammlung', async ({ page }) => {
+	await page.getByText('Mitgliederversammlung').click();
+	await expect(page.getByRole('heading').getByText('Mitgliederversammlung')).toBeVisible();
+	await expect(page.getByRole('heading').getByText('Finanzierung')).toBeVisible();
+	await expect(page).toHaveScreenshot({ fullPage: true });
+});
+
+test('Click on Silvester', async ({ page }) => {
+	await page.getByText('Silvester').click();
+	await expect(page.getByRole('heading').getByText('Silvester')).toBeVisible();
+	await expect(page.getByRole('heading').getByText('Finanzierung')).toBeVisible();
+	await expect(page).toHaveScreenshot({ fullPage: true });
+});

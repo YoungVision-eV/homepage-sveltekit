@@ -53,6 +53,10 @@
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua ut enim ad. Lorem ipsum dolor sit amet, consectetur adipiscing			elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.'
 		}
 	];
+
+	function goBack() {
+		window.history.back();
+	}
 </script>
 
 <enhanced:img
@@ -62,7 +66,7 @@
 />
 <div class="pr-4 lg:pr-20">
 	<div class="flex h-12 w-full items-center rounded-br-xl bg-yellow bg-opacity-60 lg:text-xl">
-		<button class="p-3">
+		<button on:click={goBack} class="p-3">
 			<img src={ArrowLeft} alt="" class="h-6 w-6" />
 			<span class="sr-only">Zur vorherigen Seite</span>
 		</button>

@@ -7,7 +7,7 @@ const webServer = process.env.PLAYWRIGHT_TEST_BASE_URL
 			command: 'pnpm run build && pnpm run preview',
 			port: 4173,
 			// optimizing images takes a long time
-			timeout: 180 * 1000
+			timeout: 240 * 1000
 	  };
 
 const config: PlaywrightTestConfig = {
