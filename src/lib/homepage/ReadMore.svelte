@@ -13,7 +13,7 @@
 				alt="Menschen sitzen in einem Van und singen. Die Person in der Mitte spielt Ukulele."
 			/>
 		</div>
-		<div class="flex flex-col items-center px-4 py-6 text-white lg:items-start lg:pr-24">
+		<div class="flex flex-col items-center px-4 py-6 lg:items-start lg:pr-24">
 			<h1 class="font-serif text-2xl font-bold lg:text-3xl">Wir sind YoungVision e.V.</h1>
 			<p class="mt-6 text-center leading-7 lg:text-left lg:leading-5">
 				YoungVision ist eine Community von jungen Menschen für junge Menschen in Verbindung mit
