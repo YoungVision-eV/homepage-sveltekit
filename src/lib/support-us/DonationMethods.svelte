@@ -223,14 +223,13 @@
 		</ul>
 	</div>
 	<div
-		class="mt-24 w-full gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20
-		lg:mt-36 lg:flex lg:flex-row lg:rounded-2xl lg:border-2 lg:px-24"
+		class="mt-24 gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20 lg:mt-36 lg:flex lg:flex-row lg:rounded-2xl lg:border-2 lg:px-24"
 	>
 		<h3 class="font-serif text-2xl font-bold lg:hidden">Falls sie Fragen haben!</h3>
 		<img
 			src={JakobPortrait}
 			alt="Jakob"
-			class="mx-auto mt-5 h-56 w-56 rounded-2xl bg-gray-300 lg:mx-0 lg:mt-0"
+			class="mx-auto mt-5 h-56 w-56 rounded-2xl bg-gray-300 object-cover object-center lg:mx-0 lg:mt-0"
 		/>
 		<div>
 			<h3 class="hidden text-center font-serif text-4xl font-bold lg:block">
