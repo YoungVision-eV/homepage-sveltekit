@@ -2,14 +2,16 @@
 	import logo from '$lib/assets/logo.svg';
 	import { page } from '$app/stores';
 	import clsx from 'clsx';
+	import { getAllPages } from '$lib/data/pages';
 	// TODO: get these from CMS?
-	const pages = {
+	/*const pages = {
 		Home: '/',
 		'Über Uns': '/about-us',
 		Veranstaltungen: '/projects',
 		'Unterstütze uns': '/support-us',
 		Mitgliedschaft: '/members'
-	};
+	};*/
+	const pages = getAllPages();
 
 	// TODO: shouldn't this work because of the subscription?
 	$: currentPage = $page.url.pathname;
@@ -57,13 +59,13 @@
 		</div>
 		<!-- Desktop menu -->
 		<div class="hidden lg:flex lg:gap-x-12">
-			{#each Object.entries(pages) as [page, url]}
+			{#each pages as page}
 				<a
-					href={url}
+					href={page.url}
 					class={clsx('text-sm leading-6 text-black hover:underline ', {
-						'font-semibold': currentPage === url
+						'font-semibold': currentPage === page.url
 					})}
-					aria-current={currentPage === url ? 'page' : undefined}>{page}</a
+					aria-current={currentPage === page.url ? 'page' : undefined}>{page.name}</a
 				>
 			{/each}
 		</div>
@@ -100,14 +102,14 @@
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
-							{#each Object.entries(pages) as [page, url]}
+							{#each pages as page}
 								<a
-									href={url}
-									aria-current={currentPage === url ? 'page' : undefined}
+									href={page.url}
+									aria-current={currentPage === page.url ? 'page' : undefined}
 									on:click={closeMenu}
 									class={clsx('-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-black', {
-										'font-semibold': currentPage === url
-									})}>{page}</a
+										'font-semibold': currentPage === page.url
+									})}>{page.name}</a
 								>
 							{/each}
 						</div>
