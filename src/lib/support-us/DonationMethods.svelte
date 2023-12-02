@@ -203,7 +203,7 @@
 		</ul>
 	</div>
 	<div
-		class="mt-24 w-full gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20
+		class="mt-24 gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20
 		lg:mt-36 lg:flex lg:flex-row lg:rounded-2xl lg:border-2 lg:px-24"
 	>
 		<h3 class="font-serif text-2xl font-bold lg:hidden">Falls sie Fragen haben!</h3>
