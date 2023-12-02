@@ -16,7 +16,7 @@
 		</a>
 
 		<div class="mt-5 text-center">
-			<Button color="black" text="Jetzt Partner werden" />
+			<Button color="dark" text="Jetzt Partner werden" />
 		</div>
 	</div>
 </section>

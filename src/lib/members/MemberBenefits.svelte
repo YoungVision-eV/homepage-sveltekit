@@ -63,7 +63,7 @@
 		class="mt-12 lg:mt-6"
 		text="Mitglied werden"
 		href="https://easyverein.com/public/yv/applicationform/7213"
-		color="black"
+		color="dark"
 	/>
 
 	<div class="mt-10 flex w-full flex-col gap-4 lg:mt-20 lg:h-[22rem] lg:flex-row">
