@@ -4,6 +4,10 @@
 	import Events from '$lib/homepage/Events.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
 	import Instagram from '$lib/homepage/Instagram.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	let { testimonials } = data;
 </script>
 
 <svelte:head>
@@ -24,7 +28,7 @@
 <ReadMore />
 <Events />
 <div id="testimonials-and-instagram">
-	<Testimonial />
+	<Testimonial {testimonials} />
 	<Instagram />
 </div>
 

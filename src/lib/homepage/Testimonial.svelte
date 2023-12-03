@@ -1,10 +1,9 @@
 <script lang="ts">
+	import type { Testimonial } from '$lib/data/testimonials';
 	import emblaCarouselSvelte, { type EmblaCarouselType } from 'embla-carousel-svelte';
 
 	import ArrowRight from '$lib/assets/Icons/Arrow-Right.svg';
 	import ArrowLeft from '$lib/assets/Icons/Arrow-Left.svg';
-	import LenaProfile from '$lib/assets/lena-testimonial-profile.jpeg?enhanced';
-	import Placeholder400 from '$lib/assets/placeholder/400.jpeg?enhanced';
 	import clsx from 'clsx';
 
 	let className = '';
@@ -17,20 +16,7 @@
 		emblaApi = event.detail;
 	};
 
-	const testimonials = [
-		{
-			name: 'Name',
-			age: 'Age',
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.',
-			image: LenaProfile
-		},
-		{
-			name: 'Name 2',
-			age: 'Age 2',
-			text: 'Hello',
-			image: Placeholder400
-		}
-	];
+	export let testimonials: Testimonial[];
 </script>
 
 <!-- TODO: add Background -->
