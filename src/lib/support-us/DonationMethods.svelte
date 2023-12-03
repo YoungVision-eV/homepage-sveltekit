@@ -1,10 +1,10 @@
 <script>
-	import SachspendenImage from '$lib/assets/sachspenden.jpeg';
-	import GeldspendenImage from '$lib/assets/Geld-spenden.jpeg';
-	import ExpertiseImage from '$lib/assets/Expertise-spenden.jpeg';
-	import PartnerImage from '$lib/assets/Partner-werden.jpeg';
+	import SachspendenImage from '$lib/assets/sachspenden.jpeg?enhanced';
+	import GeldspendenImage from '$lib/assets/Geld-spenden.jpeg?enhanced';
+	import ExpertiseImage from '$lib/assets/Expertise-spenden.jpeg?enhanced';
+	import PartnerImage from '$lib/assets/Partner-werden.jpeg?enhanced';
 
-	import JakobPortrait from '$lib/assets/jakob-portait.jpeg';
+	import JakobPortrait from '$lib/assets/jakob-portait.jpeg?enhanced';
 	import Button from '$lib/components/Button.svelte';
 	import {
 		Disclosure,
@@ -112,21 +112,25 @@
 								color="dark"
 							/>
 						</div>
-						<img
-							src={PartnerImage}
-							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
-							alt="Partner werden"
-						/>
+						<div class="h-[38rem] w-[28rem] flex-none">
+							<enhanced:img
+								src={PartnerImage}
+								class="h-full w-full bg-gray-300 object-cover object-center"
+								alt="Partner werden"
+							/>
+						</div>
 					</div>
 				</TabPanel>
 				<TabPanel class="pb-16 pt-40 text-2xl">
 					<h3 class="text-center font-serif text-5xl font-bold">Geld spenden</h3>
 					<div class="mt-16 flex justify-between gap-x-28">
-						<img
-							src={GeldspendenImage}
-							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
-							alt="Geld spenden"
-						/>
+						<div class="h-[38rem] w-[28rem] flex-none">
+							<enhanced:img
+								src={GeldspendenImage}
+								class="h-full w-full bg-gray-300 object-cover object-center"
+								alt="Geld spenden"
+							/>
+						</div>
 						<div class="mt-16">
 							<p class="max-w-prose">
 								Deine Spende unterstützt YoungVision und seine Mitglieder enorm. Von dem Geld wird
@@ -167,21 +171,25 @@
 								color="dark"
 							/>
 						</div>
-						<img
-							src={ExpertiseImage}
-							class="h-[38rem] w-[28rem] flex-none bg-gray-300 object-cover object-center"
-							alt="Expertise Spenden"
-						/>
+						<div class="h-[38rem] w-[28rem] flex-none">
+							<enhanced:img
+								src={ExpertiseImage}
+								class="h-full w-full bg-gray-300 object-cover object-center"
+								alt="Expertise Spenden"
+							/>
+						</div>
 					</div>
 				</TabPanel>
 				<TabPanel class="pb-16 pt-40 text-2xl">
 					<h3 class="text-center font-serif text-5xl font-bold">Sachspenden</h3>
 					<div class="mt-16 flex items-center justify-between gap-x-28">
-						<img
-							src={SachspendenImage}
-							class="h-[38rem] w-[28rem] flex-none bg-gray-300"
-							alt="Sachspenden"
-						/>
+						<div class="h-[38rem] w-[28rem] flex-none">
+							<enhanced:img
+								src={SachspendenImage}
+								class="h-full w-full bg-gray-300 object-cover object-center"
+								alt="Sachspenden"
+							/>
+						</div>
 						<div>
 							<p>
 								Sachspenden, sei es in Form von Ausrüstung, Ressourcen oder anderen Gütern, können
@@ -235,11 +243,13 @@
 						</DisclosureButton>
 						<DisclosurePanel class="pb-8 pt-4">
 							<p>{possibility.text}</p>
-							<img
-								src={possibility.image}
-								alt=""
-								class="mt-10 h-[27rem] w-full flex-none bg-gray-300"
-							/>
+							<div class="mt-10 h-[27rem] w-full flex-none">
+								<enhanced:img
+									src={possibility.image}
+									alt={possibility.title}
+									class="h-full w-full bg-gray-300 object-cover object-center"
+								/>
+							</div>
 						</DisclosurePanel>
 					</Disclosure>
 					<Button
@@ -256,7 +266,7 @@
 		class="mt-24 gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20 lg:mt-36 lg:flex lg:flex-row lg:rounded-2xl lg:border-2 lg:px-24"
 	>
 		<h3 class="font-serif text-2xl font-bold lg:hidden">Falls sie Fragen haben!</h3>
-		<img
+		<enhanced:img
 			src={JakobPortrait}
 			alt="Jakob"
 			class="mx-auto mt-5 h-56 w-56 rounded-2xl bg-gray-300 object-cover object-center lg:mx-0 lg:mt-0"
