@@ -1,28 +1,29 @@
-import LenaProfile from '$lib/assets/lena-testimonial-profile.jpeg?enhanced';
-import Placeholder400 from '$lib/assets/placeholder/400.jpeg?enhanced';
+import AndreaProfile from '$lib/assets/testimonials/Portrait-Andrea.jpg?enhanced';
+import LenaProfile from '$lib/assets/testimonials/Portrait-Lena.jpeg?enhanced';
 
 export type Testimonial = {
 	name: string;
-	age: string;
+	age: number;
 	text: string;
 	image: string;
 };
 
 const testimonials: Testimonial[] = [
 	{
-		name: 'Name',
-		age: 'Age',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad.',
-		image: LenaProfile
+		name: 'Andrea',
+		age: 22,
+		text: 'Young Vision bedeutet für mich Verbundenheit mit mir selbst und anderen Leuten sowie Leichtigkeit und einfach einen Ort zu haben wo man für einen Moment mal den Alltagsstress beiseite lassen kann ❤️',
+		image: AndreaProfile
 	},
 	{
-		name: 'Name 2',
-		age: 'Age 2',
-		text: 'Hello',
-		image: Placeholder400
+		name: 'Lena',
+		age: 17,
+		text: 'YoungVision bedeutet für mich, mich mit mir selbst zu beschäftigen, mich (besser) kennenzulernen, eine wundervolle Gemeinschaft mit absolut faszinierenden Begegnungen, einfach Liebe, Wohlfühlen, Erfüllung und Auftanken',
+		image: LenaProfile
 	}
 ];
 
 export function getAll() {
+	console.log(testimonials);
 	return testimonials;
 }
