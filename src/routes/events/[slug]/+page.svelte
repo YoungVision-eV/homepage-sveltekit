@@ -59,6 +59,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>YoungVision e.V. - {data.title}</title>
+	<meta name="description" content="YoungVision e.V. - {data.title}" />
+</svelte:head>
+
 <enhanced:img
 	class="h-[27rem] w-full object-cover"
 	src="$lib/assets/gathering-24-hero.jpeg"
@@ -110,7 +115,10 @@
 	</p>
 	<Button class="mt-12" color="dark" text="Follow Telegram Kanal" />
 </section>
-<Testimonial class="mt-14 bg-yellow-500 bg-opacity-60 lg:mt-40 lg:bg-opacity-0" />
+<Testimonial
+	testimonials={data.testimonials}
+	class="mt-14 bg-yellow-500 bg-opacity-60 lg:mt-40 lg:bg-opacity-0"
+/>
 <section class="mt-14 px-4 lg:mt-28 lg:px-20">
 	<h2 class="font-serif text-2xl font-bold lg:text-4xl">Fotos vom letzten Gathering</h2>
 	<div

@@ -1,8 +1,5 @@
-import { readable } from 'svelte/store';
-
 import { createDialog } from '@melt-ui/svelte';
 
-const dialog = createDialog();
-const newsletterSignup = readable(dialog);
+export const dialog = createDialog({ forceVisible: true, closeOnOutsideClick: true });
 
-export default newsletterSignup;
+export default dialog;

@@ -49,7 +49,10 @@
 							<div>{event.month}</div>
 						</div>
 						<div class="ml-10">
-							<h3 class="font-bold lg:text-xl">{event.title}</h3>
+							<h3 class="inline-block font-bold lg:text-xl">{event.title}</h3>
+							{#if event.future}
+								<span class="italic">ab {event.future}</span>
+							{/if}
 							<p class="mt-3">{event.short_description}</p>
 							<p class="mt-3 inline-block rounded-full bg-white px-5">
 								{event.for_all ? 'Für Alle' : 'Nur Mitglieder'}

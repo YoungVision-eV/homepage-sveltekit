@@ -5,7 +5,7 @@
 	import newsletterSignup from '$lib/stores/newsletterSignup';
 	const {
 		elements: { trigger }
-	} = $newsletterSignup;
+	} = newsletterSignup;
 </script>
 
 <footer class="w-full bg-green-50 px-4 py-6 lg:px-20">
@@ -21,7 +21,7 @@
 			</dd>
 		</dl>
 		<div class="mt-3 md:mt-0 md:w-3/5 lg:w-1/2">
-			<form class="bg-green-50">
+			<div class="bg-green-50">
 				<h2 class="text-xl font-bold text-orange">Für unseren Newsletter anmelden</h2>
 				<div class="mt-2">
 					<label for="email" class="sr-only">Email</label>
@@ -42,7 +42,7 @@
 						</div>
 					</div>
 				</div>
-			</form>
+			</div>
 			<div class="mt-6 flex justify-between text-white md:justify-end md:gap-x-8">
 				<a class="underline" href="/datenschutz">Datenschutz</a>
 				<a aria-disabled="true" class="pointer-events-none opacity-50" href="/transparency"

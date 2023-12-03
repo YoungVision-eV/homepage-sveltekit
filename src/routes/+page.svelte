@@ -4,13 +4,31 @@
 	import Events from '$lib/homepage/Events.svelte';
 	import Testimonial from '$lib/homepage/Testimonial.svelte';
 	import Instagram from '$lib/homepage/Instagram.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	let { testimonials } = data;
 </script>
+
+<svelte:head>
+	<title>YoungVision e.V.</title>
+	<meta
+		name="description"
+		content="YoungVision ist ein Verein für junge Menschen von jungen Menschen."
+	/>
+	<meta
+		name="keywords"
+		content="YoungVision, YoungVision e.V., Persönliche Entwicklung, Junge Menschen, Jugendliche, Spiritualität, Verein, Erwachsen werden"
+	/>
+	<meta name="author" content="YoungVision e.V." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</svelte:head>
 
 <Hero />
 <ReadMore />
 <Events />
 <div id="testimonials-and-instagram">
-	<Testimonial />
+	<Testimonial {testimonials} />
 	<Instagram />
 </div>
 
