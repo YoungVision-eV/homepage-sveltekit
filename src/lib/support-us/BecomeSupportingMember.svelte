@@ -21,7 +21,7 @@
 	</p>
 	<p class="mt-8 max-w-prose lg:mt-10 lg:text-xl">
 		Du willst junge Menschen auf ihrer Reise zur persönlichen Entwicklung und zur aktiven Gestaltung
-		unserer Gesellschaft zu begleiten? Erfahre hier, wie du uns unterstützen kannst!
+		unserer Gesellschaft begleiten? Erfahre hier, wie du uns unterstützen kannst!
 	</p>
 	<Button
 		href="https://easyverein.com/public/yv/applicationform/7237"

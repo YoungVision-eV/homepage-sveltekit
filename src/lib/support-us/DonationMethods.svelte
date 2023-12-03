@@ -84,7 +84,12 @@
 						</div>
 						<h3 class="mt-4 font-serif text-4xl font-bold">{possibility.title}</h3>
 						<p class="mt-4">{possibility.description}</p>
-						<Button class="mt-8" text="Schreibe uns" color="dark" />
+						<Button
+							class="mt-8"
+							text="Schreibe uns"
+							href="mailto:kontakt@youngvision.org"
+							color="dark"
+						/>
 					</Tab>
 				{/each}
 			</TabList>
@@ -100,7 +105,12 @@
 								können wir gemeinsam Projekte entwickeln, die unsere Gemeinschaft und junge Menschen
 								fördern. Für mehr Informationen und Austausch schreibe uns richtig gerne eine Email.
 							</p>
-							<Button class="mt-8" text="Schreibe uns" color="dark" />
+							<Button
+								class="mt-8"
+								text="Schreibe uns"
+								href="mailto:kontakt@youngvision.org"
+								color="dark"
+							/>
 						</div>
 						<img
 							src={PartnerImage}
@@ -122,7 +132,12 @@
 								Deine Spende unterstützt YoungVision und seine Mitglieder enorm. Von dem Geld wird
 								die Vereinsstruktur gehalten und Veranstaltungen für junge Menschen realisiert.
 							</p>
-							<Button class="mt-8" text="Schreibe uns" color="dark" />
+							<Button
+								class="mt-8"
+								text="Schreibe uns"
+								href="mailto:kontakt@youngvision.org"
+								color="dark"
+							/>
 						</div>
 					</div></TabPanel
 				>
@@ -145,7 +160,12 @@
 									>kontakt@youngvision.org</a
 								>
 							</p>
-							<Button class="mt-8" text="Schreibe uns" color="dark" />
+							<Button
+								class="mt-8"
+								text="Schreibe uns"
+								href="mailto:kontakt@youngvision.org"
+								color="dark"
+							/>
 						</div>
 						<img
 							src={ExpertiseImage}
@@ -167,7 +187,12 @@
 								Sachspenden, sei es in Form von Ausrüstung, Ressourcen oder anderen Gütern, können
 								einen direkten Einfluss auf unsere Projekte und Veranstaltungen haben.
 							</p>
-							<Button class="mt-8" text="Schreibe uns" color="dark" />
+							<Button
+								class="mt-8"
+								text="Schreibe uns"
+								href="mailto:kontakt@youngvision.org"
+								color="dark"
+							/>
 							<p class="mt-12">
 								Oder bring deine Sachspende einfach zum nächsten Event in Rosow mit:).
 							</p>
@@ -185,7 +210,7 @@
 				</TabPanel>
 			</TabPanels>
 		</TabGroup>
-		<ul class="mt-16 lg:hidden">
+		<ul class="mt-16 px-4 lg:hidden">
 			{#each possibilities as possibility}
 				<li class="group mt-24 first:mt-0">
 					<Disclosure let:open>
@@ -217,7 +242,12 @@
 							/>
 						</DisclosurePanel>
 					</Disclosure>
-					<Button class="group-odd:float-right" text="Schreibe uns" color="dark" />
+					<Button
+						class="group-odd:float-right"
+						text="Schreibe uns"
+						href="mailto:kontakt@youngvision.org"
+						color="dark"
+					/>
 				</li>
 			{/each}
 		</ul>
@@ -246,7 +276,7 @@
 					>
 				</dd>
 			</dl>
-			<Button class="mt-7" text="Schreibe uns" color="dark" />
+			<Button class="mt-7" text="Schreibe uns" href="mailto:kontakt@youngvision.org" color="dark" />
 		</div>
 	</div>
 </section>

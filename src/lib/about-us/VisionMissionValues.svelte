@@ -42,8 +42,8 @@
 		<div>
 			<h3 class="mt-3 text-left font-serif text-2xl font-bold lg:mt-0 lg:text-3xl">Werte</h3>
 			<p class="mt-3 text-justify lg:mt-4 lg:text-xl">
-				Unsere Werte sind Achtsamkeit, Empathie, Authentizität und Spielen und Ausprobieren. Mit
-				diesen Werten schaffen wir eine unterstützende Umgebung für junge Menschen.
+				Unsere Werte sind Achtsamkeit, Empathie, Authentizität, Spielen und Ausprobieren. Mit diesen
+				Werten schaffen wir eine unterstützende Umgebung für junge Menschen.
 			</p>
 		</div>
 	</div>

@@ -42,7 +42,7 @@
 			image: KuschelnImage,
 			title: 'Kuscheln',
 			description:
-				'Körperlicher Kontakt ist einer von vielen Ausdrücke von zwischenmenschlicher Verbindung. Bei unseren Veranstaltungen entsteht durch den sicheren Raum ganz natürlich eine Kuschelatmosphäre. Aber auch hier gilt: alles darf, nichts muss! Wir schreiben Konsent ganz groß und daher wird dein “nein” nicht nur respektiert sondern ist auch willkommen.'
+				'Körperlicher Kontakt ist einer von vielen Ausdrücken von zwischenmenschlicher Verbindung. Bei unseren Veranstaltungen entsteht durch den sicheren Raum ganz natürlich eine Kuschelatmosphäre. Aber auch hier gilt: alles darf, nichts muss! Wir schreiben Konsent ganz groß und daher wird dein “nein” nicht nur respektiert sondern ist auch willkommen.'
 		}
 	];
 
