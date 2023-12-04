@@ -14,7 +14,7 @@
 		<div class="rounded-2xl bg-green-700 py-4 lg:px-24">
 			<h2 class="hidden font-serif text-3xl font-bold lg:block">YoungVision's Entstehung</h2>
 			<p class="mt-4 lg:mt-6">
-				YoungVision wurde 2013, unter anderem inspiriert von Ideen und Werten von
+				YoungVision wurde 2013 gegründet, unter anderem inspiriert von Ideen und Werten von
 				<a class="text-blue-700 hover:underline" href="https://thomashuebl.com/">Thomas Hübl</a>.
 				Seitdem hat sich YoungVision stetig weiterentwickelt und ist zu einer engagierten
 				Gemeinschaft gewachsen.
