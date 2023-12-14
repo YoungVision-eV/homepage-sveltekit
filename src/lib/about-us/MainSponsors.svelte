@@ -8,8 +8,6 @@
 		<a href="https://www.deutsche-stiftung-engagement-und-ehrenamt.de/">
 			<span class="sr-only">Gefördert durch die Deutsche Stiftung für Engagement und Ehrenamt</span>
 			<enhanced:img
-				loading="lazy"
-				decoding="async"
 				class="w-full max-w-md"
 				src="$lib/assets/DSEE.png"
 				alt="Gefördert durch die Deutsche Stiftung für Engagement und Ehrenamt"
