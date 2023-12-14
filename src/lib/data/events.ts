@@ -1,6 +1,9 @@
 import EventImage1 from '$lib/assets/projects-event-image-1.jpeg?enhanced';
 import EventImage2 from '$lib/assets/projects-event-image-2.jpeg?enhanced';
 import EventImage3 from '$lib/assets/projects-event-image-3.jpeg?enhanced';
+import calendarCover from '$lib/assets/calendar-cover.jpeg?enhanced';
+import pastEvent from '$lib/assets/calendar-past-event.jpeg?enhanced';
+import thirdEvent from '$lib/assets/calendar-third-event.jpeg?enhanced';
 import type { Testimonial } from './testimonials';
 
 type YVEvent = {
@@ -15,7 +18,7 @@ type YVEvent = {
 	future?: string;
 };
 
-const events: YVEvent[] = [
+const yearlyEvents: YVEvent[] = [
 	{
 		slug: 'summer-gathering',
 		title: 'Sommer Gathering',
@@ -51,10 +54,49 @@ const events: YVEvent[] = [
 	}
 ];
 
+const next3Events = [
+	{
+		title: 'Silvester',
+		date: new Date(2023, 11, 29),
+		description: 'Lass uns gemeinsam in das neue Jahr starten!',
+		image: {
+			src: thirdEvent
+		}
+	},
+	{
+		title: 'Bauwoche in Rosow',
+		date: new Date(2024, 3, 1),
+		description: 'Können wir das schaffen? Yo wir schaffen das!',
+		image: {
+			src: calendarCover
+		}
+	},
+	{
+		title: 'Mitgliederversammlung',
+		date: new Date(2024, 3, 4),
+		description: 'Alle Jahre wieder: Sei dabei, entscheide und gestalte mit!',
+		image: {
+			src: pastEvent
+		}
+	}
+	/*{
+		title: 'Gathering',
+		date: new Date(2024, 9, 2),
+		description: 'Das Highlight des Jahres',
+		image: {
+			src: thirdEvent
+		}
+	}*/
+];
+
 export function getEventBySlug(slug: string) {
-	return events.find((e) => e.slug === slug);
+	return yearlyEvents.find((e) => e.slug === slug);
 }
 
 export function getAllYearlyEvents() {
-	return events;
+	return yearlyEvents;
+}
+
+export function getNext3Events() {
+	return next3Events;
 }

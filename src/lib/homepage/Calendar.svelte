@@ -2,6 +2,7 @@
 	import calendarCover from '$lib/assets/calendar-cover.jpeg?enhanced';
 	import pastEvent from '$lib/assets/calendar-past-event.jpeg?enhanced';
 	import thirdEvent from '$lib/assets/calendar-third-event.jpeg?enhanced';
+	import { getNext3Events } from '$lib/data/events';
 	import clsx from 'clsx';
 	import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
@@ -13,32 +14,7 @@
 	const location = tweened(0, { duration: 300, easing: cubicOut });
 	$: location.set(selectedEvent);
 
-	const events = [
-		{
-			title: 'Bauwoche in Rosow',
-			date: new Date(2024, 3, 1),
-			description: 'Können wir das schaffen? Yo wir schaffen das!',
-			image: {
-				src: calendarCover
-			}
-		},
-		{
-			title: 'Mitgliederversammlung',
-			date: new Date(2024, 3, 4),
-			description: 'Alle Jahre wieder: Sei dabei, entscheide und gestalte mit!',
-			image: {
-				src: pastEvent
-			}
-		},
-		{
-			title: 'Gathering',
-			date: new Date(2024, 9, 2),
-			description: 'Das Highlight des Jahres',
-			image: {
-				src: thirdEvent
-			}
-		}
-	];
+	const events = getNext3Events();
 </script>
 
 <div class="grid w-full grid-cols-4 lg:grid-cols-9 lg:px-20">
