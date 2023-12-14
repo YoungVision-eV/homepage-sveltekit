@@ -1,5 +1,6 @@
 <script>
 	import { createAccordion, melt } from '@melt-ui/svelte';
+	import { slide } from 'svelte/transition';
 
 	import SachspendenImage from '$lib/assets/sachspenden.jpeg?enhanced';
 	import GeldspendenImage from '$lib/assets/Geld-spenden.jpeg?enhanced';
@@ -241,7 +242,7 @@
 							</div>
 						</button>
 						{#if $isSelected(possibility.title)}
-							<div class="pb-8 pt-4" use:melt={$content(possibility.title)}>
+							<div class="pb-8 pt-4" use:melt={$content(possibility.title)} transition:slide>
 								<p>{possibility.text}</p>
 								<div class="mt-10 h-[27rem] w-full flex-none">
 									<enhanced:img
