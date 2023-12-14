@@ -20,9 +20,9 @@
 				Gemeinschaft gewachsen.
 			</p>
 			<p class="mt-4">
-				Im Jahr 2023 hat sich mit einer demokratischen Organisationsstruktur und einem neuen
-				Vorstand der Fokus des Vereins verändert. YoungVision strebt nun danach, noch stärker zu
-				einer Gemeinschaft zu werden, die von ihren Mitgliedern aktiv mitgestaltet werden kann.
+				Im Jahr 2023 hat sich mit einer neuen Organisationsstruktur und einem neuen Vorstand der
+				Fokus des Vereins verändert. YoungVision strebt nun danach, noch stärker als zuvor zu einer
+				Gemeinschaft zu werden, die von ihren Mitgliedern aktiv mitgestaltet wird.
 			</p>
 		</div>
 	</div>
