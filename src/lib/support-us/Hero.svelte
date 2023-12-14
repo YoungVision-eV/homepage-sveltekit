@@ -4,6 +4,6 @@
 
 <style>
 	section {
-		background-image: url($lib/assets/support-us-hero-background.jpeg);
+		background-image: url($lib/assets/backgrounds/support-us-hero/support-us-hero-background.webp);
 	}
 </style>

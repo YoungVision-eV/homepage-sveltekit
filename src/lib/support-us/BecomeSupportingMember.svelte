@@ -106,8 +106,14 @@
 
 <style>
 	section {
-		background-image: url($lib/assets/background-supporting-member.png);
+		background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-portrait-390.webp);
 		background-position: top center;
+	}
+
+	@media (min-width: 390) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-portrait-780.webp);
+		}
 	}
 
 	@media (min-width: 1024px) {
@@ -119,9 +125,40 @@
 		}
 	}
 
-	@media (min-width: 1024px) {
+	@media (min-width: 768px) {
 		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-portrait-1024.webp);
+		}
+	}
+
+	@media (min-width: 1081px) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-1366.webp);
 			background-size: cover;
+		}
+	}
+
+	@media (min-width: 1367px) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-1920.webp);
+		}
+	}
+
+	@media (min-width: 1921px) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-2560.webp);
+		}
+	}
+
+	@media (min-width: 2561px) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-3000.webp);
+		}
+	}
+
+	@media (min-width: 3001) {
+		section {
+			background-image: url($lib/assets/backgrounds/supporting-member/background-supporting-member-3840.webp);
 		}
 	}
 </style>
