@@ -39,8 +39,7 @@ const yearlyEvents: YVEvent[] = [
 			'Lass uns das vergangene Jahr ausklingen lassen und gemeinsam in das neue Jahr starten!',
 		image: EventImage2,
 		for_all: true,
-		testimonials: [],
-		future: '2024'
+		testimonials: []
 	},
 	{
 		slug: 'mitgliederversammlung',
