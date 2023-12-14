@@ -1,7 +1,4 @@
 <script lang="ts">
-	import calendarCover from '$lib/assets/calendar-cover.jpeg?enhanced';
-	import pastEvent from '$lib/assets/calendar-past-event.jpeg?enhanced';
-	import thirdEvent from '$lib/assets/calendar-third-event.jpeg?enhanced';
 	import { getNext3Events } from '$lib/data/events';
 	import clsx from 'clsx';
 	import { cubicOut } from 'svelte/easing';
