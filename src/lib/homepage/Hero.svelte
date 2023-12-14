@@ -32,11 +32,16 @@
 
 <style>
 	section {
-		background-image: url($lib/assets/background-hero-landscape.png);
+		background-image: url($lib/assets/backgrounds/homepage/background-hero-500.webp);
 	}
 	@media (min-width: 1024px) {
 		section {
-			background-image: url($lib/assets/background-hero.png);
+			background-image: url($lib/assets/backgrounds/homepage/background-hero-1920.webp);
+		}
+	}
+	@media (min-width: 1921px) {
+		section {
+			background-image: url($lib/assets/backgrounds/homepage/background-hero.webp);
 		}
 	}
 </style>
