@@ -1,4 +1,6 @@
 <script>
+	import { createCollapsible, melt } from '@melt-ui/svelte';
+
 	import SachspendenImage from '$lib/assets/sachspenden.jpeg?enhanced';
 	import GeldspendenImage from '$lib/assets/Geld-spenden.jpeg?enhanced';
 	import ExpertiseImage from '$lib/assets/Expertise-spenden.jpeg?enhanced';
@@ -6,16 +8,7 @@
 
 	import JakobPortrait from '$lib/assets/jakob-portait.jpeg?enhanced';
 	import Button from '$lib/components/Button.svelte';
-	import {
-		Disclosure,
-		DisclosureButton,
-		DisclosurePanel,
-		Tab,
-		TabGroup,
-		TabList,
-		TabPanel,
-		TabPanels
-	} from '@rgossiaux/svelte-headlessui';
+	import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
 	import HandShake from '$lib/icons/HandShake.svelte';
 	import DonationBoxHand from '$lib/icons/DonationBoxHand.svelte';
 	import HeadLightbulb from '$lib/icons/HeadLightbulb.svelte';
@@ -53,6 +46,11 @@
 			image: SachspendenImage
 		}
 	];
+
+	const {
+		elements: { root, content, trigger },
+		states: { open }
+	} = createCollapsible();
 </script>
 
 <section class="py-16 lg:py-24">
@@ -221,9 +219,10 @@
 		<ul class="mt-16 px-4 lg:hidden">
 			{#each possibilities as possibility}
 				<li class="group mt-24 first:mt-0">
-					<Disclosure let:open>
-						<DisclosureButton
+					<div use:melt={$root}>
+						<button
 							class="flex items-center gap-x-4 text-left group-even:flex-row-reverse"
+							use:melt={$trigger}
 						>
 							<div
 								class={clsx(
@@ -240,18 +239,20 @@
 								<h3 class="text-xl">{possibility.title}</h3>
 								<p class="mt-3">{possibility.description}</p>
 							</div>
-						</DisclosureButton>
-						<DisclosurePanel class="pb-8 pt-4">
-							<p>{possibility.text}</p>
-							<div class="mt-10 h-[27rem] w-full flex-none">
-								<enhanced:img
-									src={possibility.image}
-									alt={possibility.title}
-									class="h-full w-full bg-gray-300 object-cover object-center"
-								/>
+						</button>
+						{#if $open}
+							<div class="pb-8 pt-4" use:melt={$content}>
+								<p>{possibility.text}</p>
+								<div class="mt-10 h-[27rem] w-full flex-none">
+									<enhanced:img
+										src={possibility.image}
+										alt={possibility.title}
+										class="h-full w-full bg-gray-300 object-cover object-center"
+									/>
+								</div>
 							</div>
-						</DisclosurePanel>
-					</Disclosure>
+						{/if}
+					</div>
 					<Button
 						class="group-odd:float-right"
 						text="Schreibe uns"
