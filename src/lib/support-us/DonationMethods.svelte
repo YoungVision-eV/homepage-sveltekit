@@ -55,7 +55,7 @@
 </script>
 
 <section class="py-16 lg:py-24">
-	<div class="mt-4 lg:px-20">
+	<div class="mt-4 px-4 lg:px-20">
 		<h2 class="font-serif text-2xl font-bold">Weitere Möglichkeiten, uns zu unterstützen</h2>
 		<p class="mt-3 text-xl lg:mt-4">
 			Deine Unterstützung ist der Schlüssel, um unsere Mission voranzutreiben und jungen Menschen
@@ -217,9 +217,9 @@
 				</TabPanel>
 			</TabPanels>
 		</TabGroup>
-		<ul class="mt-16 px-4 lg:hidden" use:melt={$root}>
+		<ul class="mt-16 flex flex-col gap-24 lg:hidden" use:melt={$root}>
 			{#each possibilities as possibility}
-				<li class="group mt-24 first:mt-0" use:melt={$item(possibility.title)}>
+				<li class="group" use:melt={$item(possibility.title)}>
 					<div>
 						<button
 							class="flex items-center gap-x-4 text-left group-even:flex-row-reverse"
