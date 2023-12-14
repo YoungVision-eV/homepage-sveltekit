@@ -24,8 +24,7 @@ test.describe('Donation method details', () => {
 			let targetElement;
 			if (isMobile) {
 				// TODO: Find a better accessor
-				const controlledId = await element.getAttribute('aria-controls');
-				targetElement = page.locator(`id=${controlledId}`);
+				targetElement = page.getByTitle(method);
 			} else {
 				targetElement = page.getByRole('tabpanel');
 			}

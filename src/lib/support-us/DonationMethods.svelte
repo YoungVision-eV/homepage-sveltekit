@@ -242,7 +242,12 @@
 							</div>
 						</button>
 						{#if $isSelected(possibility.title)}
-							<div class="pb-8 pt-4" use:melt={$content(possibility.title)} transition:slide>
+							<div
+								title={possibility.title}
+								class="pb-8 pt-4"
+								use:melt={$content(possibility.title)}
+								transition:slide
+							>
 								<p>{possibility.text}</p>
 								<div class="mt-10 h-[27rem] w-full flex-none">
 									<enhanced:img
