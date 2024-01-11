@@ -24,7 +24,7 @@
 			image: MeditationImage,
 			title: 'Meditation',
 			description:
-				'Schon eine kurze Meditation zu Anfang jeder Runde macht einen riesen Unterschied! Sie schafft inneren Raum für eigene Empfinfungen, Tiefe in der Wahrnehmung und damit die Basis unserer gemeinsamen Arbeit'
+				'Schon eine kurze Meditation zu Anfang jeder Runde macht einen riesen Unterschied! Sie schafft inneren Raum für eigene Empfindungen, Tiefe in der Wahrnehmung und damit die Basis unserer gemeinsamen Arbeit'
 		},
 		{
 			image: SharingImage,
