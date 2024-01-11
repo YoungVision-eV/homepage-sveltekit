@@ -7,7 +7,14 @@
 	import ExpertiseImage from '$lib/assets/Expertise-spenden.jpeg?enhanced';
 	import PartnerImage from '$lib/assets/Partner-werden.jpeg?enhanced';
 
-	import JakobPortrait from '$lib/assets/jakob-portait.jpeg?enhanced';
+	import JakobPortraitAvif from '$lib/assets/support-us/jakob-portait.ba337af9.avif';
+	import JakobPortraitAvif2x from '$lib/assets/support-us/jakob-portait.8ca79f3c.avif';
+	import JakobPortraitWebp from '$lib/assets/support-us/jakob-portait.6f86856f.webp';
+	import JakobPortraitWebp2x from '$lib/assets/support-us/jakob-portait.465a1154.webp';
+	import JakobPortraitJpg from '$lib/assets/support-us/jakob-portait.b9bd9d83.jpg';
+	import JakobPortraitJpg2x from '$lib/assets/support-us/jakob-portait.2cf9ca51.jpg';
+	import JakobPortraitBase from '$lib/assets/support-us/jakob-portait.2cf9ca51.jpg';
+
 	import Button from '$lib/components/Button.svelte';
 	import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@rgossiaux/svelte-headlessui';
 	import HandShake from '$lib/icons/HandShake.svelte';
@@ -273,11 +280,19 @@
 		class="mt-24 gap-x-28 border-y-2 border-yellow-500 bg-yellow-900 px-4 py-10 lg:mx-20 lg:mt-36 lg:flex lg:flex-row lg:rounded-2xl lg:border-2 lg:px-24"
 	>
 		<h3 class="font-serif text-2xl font-bold lg:hidden">Falls sie Fragen haben!</h3>
-		<enhanced:img
-			src={JakobPortrait}
-			alt="Jakob"
-			class="mx-auto mt-5 h-56 w-56 rounded-2xl bg-gray-300 object-cover object-center lg:mx-0 lg:mt-0"
-		/>
+		<picture>
+			<source srcset="{JakobPortraitAvif} 1x, {JakobPortraitAvif2x} 2x" type="image/avif" />
+			<source srcset="{JakobPortraitWebp} 1x, {JakobPortraitWebp2x} 2x" type="image/webp" />
+			<source srcset="{JakobPortraitJpg} 1x, {JakobPortraitJpg2x} 2x" type="image/jpeg" />
+			<img
+				src={JakobPortraitBase}
+				alt="Jakob"
+				class="mx-auto mt-5 h-56 w-56 rounded-2xl bg-gray-300 object-cover object-center lg:mx-0 lg:mt-0"
+				width="1132"
+				height="1280"
+			/>
+		</picture>
+
 		<div>
 			<h3 class="hidden text-center font-serif text-4xl font-bold lg:block">
 				Falls sie Fragen haben!

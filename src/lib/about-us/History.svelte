@@ -1,14 +1,31 @@
+<script>
+	import OGImageAvif from '$lib/assets/about-us/OG-youngvision-people.45bfc4d5.avif';
+	import OGImageAvif2x from '$lib/assets/about-us/OG-youngvision-people.1887dda4.avif';
+	import OGImageWebp from '$lib/assets/about-us/OG-youngvision-people.f290673a.webp';
+	import OGImageWebp2x from '$lib/assets/about-us/OG-youngvision-people.70a522f4.webp';
+	import OGImageJpg from '$lib/assets/about-us/OG-youngvision-people.067804b1.jpg';
+	import OGImageJpg2x from '$lib/assets/about-us/OG-youngvision-people.d3d7e08b.jpg';
+	import OGImageBase from '$lib/assets/about-us/OG-youngvision-people.067804b1.jpg';
+</script>
+
 <section class="mb-28 px-4 lg:px-20">
 	<div
 		class="z-10 rounded-2xl bg-green-700 px-6 pb-10 pt-8 shadow-lg lg:flex lg:h-[30rem] lg:items-center lg:p-0"
 	>
 		<h2 class="font-serif text-2xl font-bold lg:hidden">YoungVision's Entstehung</h2>
 		<div class="mt-7 flex-none lg:mt-0">
-			<enhanced:img
-				src="$lib/assets/OG-youngvision-people.jpg"
-				alt=""
-				class="h-96 w-full rounded-2xl object-cover lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
-			/>
+			<picture>
+				<source srcset="{OGImageAvif} 1x, {OGImageAvif2x} 2x" type="image/avif" />
+				<source srcset="{OGImageWebp} 1x, {OGImageWebp2x} 2x" type="image/webp" />
+				<source srcset="{OGImageJpg} 1x, {OGImageJpg2x} 2x" type="image/jpeg" />
+				<img
+					src={OGImageBase}
+					alt=""
+					class="h-96 w-full rounded-2xl object-cover lg:h-[30rem] lg:w-[29rem] lg:rounded-r-none"
+					width="960"
+					height="640"
+				/>
+			</picture>
 		</div>
 
 		<div class="rounded-2xl bg-green-700 py-4 lg:px-24">

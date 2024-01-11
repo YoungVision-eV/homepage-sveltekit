@@ -1,16 +1,29 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
+	import HeroImageAvif from '$lib/assets/homepage/hero-image.503c4857.avif';
+	import HeroImageAvif2x from '$lib/assets/homepage/hero-image.220bbd26.avif';
+	import HeroImageWebp from '$lib/assets/homepage/hero-image.c245d3b1.webp';
+	import HeroImageWebp2x from '$lib/assets/homepage/hero-image.ace35709.webp';
+	import HeroImageJpg from '$lib/assets/homepage/hero-image.e11349d0.jpg';
+	import HeroImageJpg2x from '$lib/assets/homepage/hero-image.dd98b13e.jpg';
+	import HeroImageBase from '$lib/assets/homepage/hero-image.e11349d0.jpg';
 </script>
 
 <section class="w-full bg-cover">
 	<div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 px-5 py-16 lg:grid-cols-2 lg:px-20">
 		<div class="h-96 px-9 lg:h-[36rem] lg:px-0">
-			<enhanced:img
-				class="h-full w-full rounded-2xl object-cover object-center"
-				src="$lib/assets/hero-image.jpeg"
-				alt="Eine Frau breitet ihre Arme aus und lächelt mit geschlossenen Augen in die Kamera,
-				während sie ihren Kopf zur Seite neigt. Hinter ihr ist ein Haufen mit Holzscheiten zu sehen."
-			/>
+			<picture
+				><source srcset="{HeroImageAvif} 1x, {HeroImageAvif2x} 2x" type="image/avif" />
+				<source srcset="{HeroImageWebp} 1x, {HeroImageWebp2x} 2x" type="image/webp" />
+				<source srcset="{HeroImageJpg} 1x, {HeroImageJpg2x} 2x" type="image/jpeg" />
+				<img
+					class="h-full w-full rounded-2xl object-cover object-center"
+					src={HeroImageBase}
+					alt="Eine Frau breitet ihre Arme aus und lächelt mit geschlossenen Augen in die Kamera, während sie ihren Kopf zur Seite neigt. Hinter ihr ist ein Haufen mit Holzscheiten zu sehen."
+					width="2731"
+					height="4096"
+				/>
+			</picture>
 		</div>
 		<div class="lg:order-first">
 			<h1 class="font-serif text-3xl font-bold lg:text-5xl">
