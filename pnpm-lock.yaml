@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@melt-ui/pp':
-    specifier: ^0.1.4
-    version: 0.1.4(@melt-ui/svelte@0.70.0)(svelte@4.2.8)
+    specifier: ^0.3.0
+    version: 0.3.0(@melt-ui/svelte@0.70.0)(svelte@4.2.8)
   '@melt-ui/svelte':
     specifier: ^0.70.0
     version: 0.70.0(svelte@4.2.8)
@@ -447,8 +447,8 @@ packages:
       - supports-color
     dev: true
 
-  /@melt-ui/pp@0.1.4(@melt-ui/svelte@0.70.0)(svelte@4.2.8):
-    resolution: {integrity: sha512-zR+Kl3CZJPJBHW8V7YcdQCMI/dVcnW9Ct3yGbVaIywYVStVRS7F9uEDOea3xLLT2WTGodQePzPlUn53yKFu87g==}
+  /@melt-ui/pp@0.3.0(@melt-ui/svelte@0.70.0)(svelte@4.2.8):
+    resolution: {integrity: sha512-b07Bdh8l2KcwKVCXOY+SoBw1dk9eWvQfMSi6SoacpRVyVmmfpi0kV4oGt3HYF0tUCB3sEmVicxse50ZzZxEzEA==}
     engines: {pnpm: '>=8.6.3'}
     peerDependencies:
       '@melt-ui/svelte': '>= 0.29.0'
@@ -456,6 +456,7 @@ packages:
     dependencies:
       '@melt-ui/svelte': 0.70.0(svelte@4.2.8)
       estree-walker: 3.0.3
+      magic-string: 0.30.5
       svelte: 4.2.8
     dev: true
 
