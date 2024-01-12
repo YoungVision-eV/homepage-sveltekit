@@ -27,7 +27,7 @@
 		"@tailwindcss/forms": "0.5.7",
 		"@tailwindcss/typography": "0.5.10",
 		"@typescript-eslint/eslint-plugin": "6.13.2",
-		"@typescript-eslint/parser": "6.13.2",
+		"@typescript-eslint/parser": "6.18.1",
 		"@types/node": "20.11.0",
 		"autoprefixer": "10.4.16",
 		"clsx": "2.0.0",
