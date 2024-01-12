@@ -3,13 +3,15 @@
 	import ArrowRight from '$lib/icons/ArrowRight.svelte';
 
 	import newsletterSignup from '$lib/stores/newsletterSignup';
+	import YoungVisionLogoFull from '$lib/icons/YoungVisionLogoFull.svelte';
 	const {
 		elements: { trigger }
 	} = newsletterSignup;
 </script>
 
 <footer class="w-full bg-green-50 px-4 py-6 lg:px-20">
-	<span class="font-serif text-3xl font-bold text-green-500">YoungVision</span>
+	<YoungVisionLogoFull class="h-10 w-auto" />
+	<span class="sr-only">YoungVision</span>
 
 	<div class="mt-4 justify-between md:flex">
 		<dl class="text-white">

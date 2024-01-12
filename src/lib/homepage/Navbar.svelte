@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import clsx from 'clsx';
 	import { getAllPages } from '$lib/data/pages';
+	import YoungVisionLogoFull from '$lib/icons/YoungVisionLogoFull.svelte';
 	const pages = getAllPages();
 
 	// TODO: shouldn't this work because of the subscription?
@@ -22,8 +23,8 @@
 <header>
 	<nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 		<a href="/" class="-m-1.5 flex p-1.5">
-			<img class="h-8 w-auto" src={logo} alt="YoungVision Logo" />
-			<span class="ml-2 font-sans text-2xl font-bold text-dark-green">YoungVision</span>
+			<YoungVisionLogoFull class="h-8 w-auto" />
+			<span class="sr-only">YoungVision</span>
 		</a>
 		<!-- Mobile menu -->
 		<div class="flex lg:hidden">
