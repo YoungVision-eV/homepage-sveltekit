@@ -1,5 +1,4 @@
 <script>
-	import logo from '$lib/assets/logo.svg';
 	import { page } from '$app/stores';
 	import clsx from 'clsx';
 	import { getAllPages } from '$lib/data/pages';
