@@ -9,8 +9,7 @@
 		'Regelmäßige Updates',
 		'Jährliche Dankes​karte',
 		'Spenden​bescheinigung',
-		'Mitgliedschaft jederzeit kündbar',
-		'??'
+		'Mitgliedschaft jederzeit kündbar'
 	];
 </script>
 
