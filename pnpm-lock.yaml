@@ -48,8 +48,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   embla-carousel-svelte:
-    specifier: 8.0.0-rc15
-    version: 8.0.0-rc15(svelte@4.2.8)
+    specifier: 8.0.0-rc22
+    version: 8.0.0-rc22(svelte@4.2.8)
   eslint:
     specifier: 8.55.0
     version: 8.55.0
@@ -1439,26 +1439,26 @@ packages:
     resolution: {integrity: sha512-iu/2D0zolKU3iDGXXxdOzNf72Jnokn+K1IN6Kk4iV6l1Tr2g/qy+mvmtfAiBwZe5S3aB5r92vp+zSZ69scYRrg==}
     dev: true
 
-  /embla-carousel-reactive-utils@8.0.0-rc15(embla-carousel@8.0.0-rc15):
-    resolution: {integrity: sha512-17Pr+N2vULFS8Lxzi2jaebwVloiFJLpdJMJLKJKQ26NzEmX8pVtHSu3uuTWc8HPwye5HFugqCPJ2QoWWhKs6Kg==}
+  /embla-carousel-reactive-utils@8.0.0-rc22(embla-carousel@8.0.0-rc22):
+    resolution: {integrity: sha512-K4b8QhQGXYW5wr4l+U6XryhafsFV5c/IyohDnZN3MGoYIB9xY7qpjUWAcs5bTDjAD+qCZPOuXre0D3IVa28mqw==}
     peerDependencies:
-      embla-carousel: 8.0.0-rc15
+      embla-carousel: 8.0.0-rc22
     dependencies:
-      embla-carousel: 8.0.0-rc15
+      embla-carousel: 8.0.0-rc22
     dev: true
 
-  /embla-carousel-svelte@8.0.0-rc15(svelte@4.2.8):
-    resolution: {integrity: sha512-mQF3I5Uu6hSI/i8Kaitv94DplIxpsdLDdxQJgP6Ubphv3wE2ZR0Lz4NSGuIZB2/ut8ZbBFhRVc0xRSQE7HMlJA==}
+  /embla-carousel-svelte@8.0.0-rc22(svelte@4.2.8):
+    resolution: {integrity: sha512-kRcKJXslkfrtXjS97AdJHQ28ctm0HOfcTA3Fb9Y57fzLzrB5uC+qOGF7nLSI8Z1s+0ww+OaouxIvbrS987CkfA==}
     peerDependencies:
       svelte: ^3.49.0 || ^4.0.0
     dependencies:
-      embla-carousel: 8.0.0-rc15
-      embla-carousel-reactive-utils: 8.0.0-rc15(embla-carousel@8.0.0-rc15)
+      embla-carousel: 8.0.0-rc22
+      embla-carousel-reactive-utils: 8.0.0-rc22(embla-carousel@8.0.0-rc22)
       svelte: 4.2.8
     dev: true
 
-  /embla-carousel@8.0.0-rc15:
-    resolution: {integrity: sha512-s7VPexK2h8VEYjEVQFnJAPcRnY5YqJYicFxKVVyWXP3Hk9FFDkT0kqVxMM1PcL187qHOUgmGVHOrfC8xWy3OKQ==}
+  /embla-carousel@8.0.0-rc22:
+    resolution: {integrity: sha512-MeXnPT1LShfgAu8qXj3CskayV0R6OkHx7w3cPTx+Q5ZWKyShKpIuu7qVQJ5BoFegalE4n6yxqoQaRuGFbK9pYw==}
     dev: true
 
   /emoji-regex@8.0.0:
